@@ -1,0 +1,13 @@
+@import "header/header";
+@import "footer/footer";
+
+// Главная
+@import "pages/home/home-intro/home-intro.scss";
+@import "pages/home/home-numbers/home-numbers.scss";
+@import "pages/home/home-projects/home-projects.scss";
+@import "pages/home/home-about/home-about.scss";
+
+/*@import "mobile-menu/mobile-menu";
+@import "modals/modals";
+@import "intro-slider/intro-slider";
+@import "intro-slider-bg/intro-slider";*/

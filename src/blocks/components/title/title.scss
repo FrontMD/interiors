@@ -1,0 +1,62 @@
+.title {
+    font-family: $titleFont;
+    line-height: 1.08em;
+    color: $c-white;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: inherit;
+        line-height: inherit;
+        font-size: inherit;
+        letter-spacing: inherit;
+        font-weight: inherit;
+        text-wrap: inherit;
+    }
+
+    &__h1 {
+        font-size: 56px;
+    }
+
+    &__h2 {
+        font-size: 260px;
+        text-align: center;
+
+        &--small {
+            font-size: 56px;
+            text-align: left;
+        }
+    }
+
+    &__h3 {
+        font-size: 0.6875em;
+        font-weight: 700;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+
+    &__h4 {
+        font-size: 0.5833em;
+        font-weight: 700;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+
+    &__h5 {
+        font-size: 0.4792em;
+        font-weight: 700;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+
+    &__h6 {
+        font-size: 0.3958em;
+        font-weight: 700;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+
+}

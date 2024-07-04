@@ -1,0 +1,16 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+
+    &__container {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+}

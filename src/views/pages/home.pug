@@ -1,0 +1,11 @@
+extends ../layouts/default
+
+block variables
+    - const title = "Главная"
+
+block content
+    .page
+        include ../../blocks/modules/pages/home/home-intro/home-intro.pug
+        include ../../blocks/modules/pages/home/home-numbers/home-numbers.pug
+        include ../../blocks/modules/pages/home/home-projects/home-projects.pug
+        include ../../blocks/modules/pages/home/home-about/home-about.pug

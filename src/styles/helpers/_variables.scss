@@ -1,0 +1,34 @@
+$textFont: "Inter", sans-serif;
+$titleFont: "Vertino";
+
+
+/* media */
+$media-list: (
+    'xs': 480,
+    'sm': 640,
+    'md': 960,
+    'lg': 1440,
+);
+
+/* transitions */
+$tr-time-and-type: 0.3s ease;
+
+/*Цвета*/
+$c-white: #fff;
+$c-white-1: #424242;
+$c-white-2: #646464;
+$c-white-3: #909090;
+$c-white-4: #BCBCBC;
+
+$c-grey: #292929;
+$c-grey-1: #212121;
+
+$c-beige: #DAC5B1;
+$c-beige-1: #2A2928;
+$c-beige-2: #33312F;
+$c-beige-3: #7D7369;
+
+$c-brown: #563F3B;
+$c-brown-1: #3B302E;
+$c-brown-2: #4B3936;
+$c-brown-3: #26211B;

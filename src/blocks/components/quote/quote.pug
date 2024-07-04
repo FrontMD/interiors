@@ -1,0 +1,30 @@
+-
+    const defaultQuoteProps = {
+        classes: '',
+        text: '',
+        author: '',
+        position: ''
+    }
+
+mixin quote(props = defaultQuoteProps)
+    -
+        const checkProps = {
+            classes: props.classes ? props.classes : defaultQuoteProps.classes,
+            text: props.text ? props.text : defaultQuoteProps.text,
+            author: props.author ? props.author : defaultQuoteProps.author,
+            position: props.position ? props.position : defaultQuoteProps.position
+
+        }
+
+    .quote(class=checkProps.classes)&attributes(attributes)
+        .quote__icon “
+        .quote__content
+            if(checkProps.text)
+                .quote__text
+                    != checkProps.text
+            if(checkProps.author)
+                .quote__author
+                    != checkProps.author
+            if(checkProps.position)
+                .quote__position
+                    != checkProps.position

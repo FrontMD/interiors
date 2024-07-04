@@ -1,0 +1,101 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 24px 40px;
+    width: fit-content;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.5em;
+        color: inherit;
+        transition: all 0.3s linear;
+    }
+
+    &__icon {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            color: inherit;
+            transition: all 0.3s linear;
+        }
+    }
+}
+
+.btn.btn--transparent {
+    color: $c-white;
+    background-color: transparent;
+    transition: color $tr-time-and-type;
+
+    @include hover() {
+        color: $c-beige;
+    }
+}
+
+.btn.btn--white {
+    background-color: white;
+    color: $c-white;
+    border: none;
+    transition: all 0.3s linear;
+
+    @include hover() {
+        background-color: $c-white;
+        color: white;
+    }
+}
+
+.btn.btn--link {
+    border: none;
+    padding: 0;
+    min-width: fit-content;
+    flex-direction: row-reverse;
+    gap: 20px;
+    color: black;
+
+    @include hover() {
+        background-color: transparent;
+
+        .btn__text,
+        .btn__icon {
+            color: $c-white;
+        }
+    }
+}
+
+.btn.btn--icon {
+    border: none;
+    padding: 12px 20px;
+    color: $c-white;
+
+    .btn__icon {
+        svg {
+            width: 25px;
+            height: 25px;
+            color: inherit;
+
+            @include max(1024) {
+                width: 25px;
+                height: 25px;
+            }
+
+            @include max(768) {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+.btn.btn--revers {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}

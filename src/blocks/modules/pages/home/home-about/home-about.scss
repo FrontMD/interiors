@@ -1,0 +1,16 @@
+.home-about {
+    &__container {
+        display: flex;
+        align-items: stretch;
+    }
+
+    &__video {
+        flex-basis: 43.5%;
+    }
+
+    &__text {
+        flex-basis: 56.5%;
+        padding: 64px;
+        background-color: $c-grey;
+    }
+}
