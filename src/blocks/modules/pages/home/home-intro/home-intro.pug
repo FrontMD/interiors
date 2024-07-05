@@ -1,7 +1,19 @@
-section.home-intro
-    .home-intro__bg
+section.home-intro(data-js="homeIntro")
+    .home-intro__bg(data-js="homeIntroBg")
         img(src="../../../../img/home/home_intro.png")
-    .home-intro__content
+    .home-intro__fake.home-intro__fake--2(data-js="homeIntroFake2")
+        img(src="../../../../img/home/home_fake-2.png")
+    .home-intro__fake.home-intro__fake--1(data-js="homeIntroFake1")
+        img(src="../../../../img/home/home_fake-1.png")
+    .home-intro__fake.home-intro__fake--5(data-js="homeIntroFake5")
+        img(src="../../../../img/home/home_fake-5.png")        
+    .home-intro__fake.home-intro__fake--3(data-js="homeIntroFake3")
+        img(src="../../../../img/home/home_fake-3.png")
+    .home-intro__fake.home-intro__fake--4(data-js="homeIntroFake4")
+        img(src="../../../../img/home/home_fake-4.png")
+    .home-intro__fake.home-intro__fake--logo(data-js="homeIntroFakeLogo")
+        img(src="../../../../img/logo.svg")
+    .home-intro__content(data-js="homeIntroContent")
         .container
             +title({
                 classes: 'home-intro__title',

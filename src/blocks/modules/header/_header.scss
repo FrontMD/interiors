@@ -5,12 +5,38 @@
     width: 100%;
     z-index: 100;
     background-color: transparent;
+    opacity: 0;
+    transition: opacity 0.8s linear;
 
     &__container {
-        height: 70px;
-        width: 100%;
+        padding-top: 22px;
         display: flex;
-        align-items: stretch;
+        align-items: flex-start;
         justify-content: space-between;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 13px;
+        left: 50%;
+        width: 104px;
+        transform: translateX(-50%);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .header-menu {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        cursor: pointer;
+
+        &__item {
+            font-size: 16px;
+            line-height: 1.5em;
+            color: $c-white;
+        }
     }
 }
