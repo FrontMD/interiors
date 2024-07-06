@@ -1,0 +1,42 @@
+.m-projects {
+    &__tabs {
+        width: fit-content;
+        max-width: 100%;
+        margin: 24px auto 0;
+        overflow: hidden;
+    }
+
+    &__tab {
+        font-size: 12px;
+        line-height: 1.22em;
+    }
+
+    &__slides {
+        margin-top: 160px;
+    }
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+
+        &:not(.swiper-slide-active) {
+            opacity: 0 !important;
+            z-index: -10;
+        }
+    }
+
+    &__all {
+        margin: 96px auto 0;
+    }
+
+    .projects-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__two {
+            display: flex;
+            gap: 24px;
+        }
+    }
+}

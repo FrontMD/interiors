@@ -7,21 +7,21 @@
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="./img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="./img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="./img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="./img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="stylesheet" href="styles/main.min.css">
   </head>
   <body>
@@ -47,14 +47,14 @@
             <div class="container">
                   <div class="title title__h1 home-intro__title">
                     <h1>Интерьеры с характером</h1>
-                  </div><a class="btn btn--btn btn--transparent home-intro__btn" href="javascript:void(0);"><span class="btn__text">Скролл</span><span class="btn__icon">
+                  </div><a class="btn btn--btn btn--transparent home-intro__btn" href="#homeNumbers"><span class="btn__text">Скролл</span><span class="btn__icon">
                       <svg>
-                        <use xlink:href="img/sprites/sprite.svg#scroll"></use>
+                        <use xlink:href="./img/sprites/sprite.svg#scroll"></use>
                       </svg></span></a>
             </div>
           </div>
         </section>
-        <section class="section home-numbers">
+        <section class="section home-numbers" id="homeNumbers">
           <div class="container">
             <div class="home-numbers__numbers">
               <div class="home-numbers__number number">
@@ -76,9 +76,13 @@
           </div>
           <div class="home-numbers__picture">
             <div class="container">
-              <div class="home-numbers__img"><img src="../../../../img/home/home_numbers.png"></div>
+              <div class="home-numbers__img"><img src="./img/home/home_numbers.png"></div>
                   <div class="quote home-numbers__quote">
-                    <div class="quote__icon">“</div>
+                    <div class="quote__icon">
+                      <svg> 
+                        <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                      </svg>
+                    </div>
                     <div class="quote__content">
                       <div class="quote__text">Мы хотим, чтобы интерьеры отражали Ваш характер. имея собственный. Чтобы смотря на визуализации будущего интерьера Вы чувствовали, что мечты сбываются
                       </div>
@@ -87,22 +91,382 @@
             </div>
           </div>
         </section>
-        <section class="section home-projects">
-          <div class="container">
-                <div class="title title__h2 home-projects__title">
-                  <h2>Проекты</h2>
+            <section class="section m-projects">
+              <div class="container">
+                    <div class="title title__h2 home-projects__title">
+                      <h2>Проекты</h2>
+                    </div>
+                <div class="m-projects__controls">
+                  <div class="m-projects__tabs" data-js="mProjectsTabs">
+                    <div class="swiper-wrapper"><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Квартиры</span></a><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Дома</span></a><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Апартаменты</span></a>
+                    </div>
+                  </div>
                 </div>
-          </div>
-        </section>
+                <div class="m-projects__slides" data-js="mProjectsSlides">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide m-projects__slide">
+                      <div class="m-projects__row projects-group">
+                        <div class="projects-group__one">
+                              <div class="project-card  project-card--big">
+                                <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="projects-group__two">
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
+                                <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="m-projects__row projects-group">
+                        <div class="projects-group__two">
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
+                                <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="projects-group__one">
+                              <div class="project-card  project-card--big">
+                                <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
+                                <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="m-projects__row projects-group">
+                        <div class="projects-group__one">
+                              <div class="project-card  project-card--big">
+                                <div class="project-card__bg"><img src="./img/projects/project-7.jpg" alt="Русский дом"></div>
+                                <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                <div class="project-card__title">Русский дом</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="projects-group__two">
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-8.jpg" alt="Старый Арбат II"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Старый Арбат II</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-9.jpg" alt="Старый Арбат"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Старый Арбат</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide m-projects__slide">
+                      <div class="m-projects__row projects-group">
+                        <div class="projects-group__one">
+                              <div class="project-card  project-card--big">
+                                <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="projects-group__two">
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
+                                <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="m-projects__row projects-group">
+                        <div class="projects-group__two">
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
+                                <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="projects-group__one">
+                              <div class="project-card  project-card--big">
+                                <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
+                                <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide m-projects__slide">
+                      <div class="m-projects__row projects-group">
+                        <div class="projects-group__one">
+                              <div class="project-card  project-card--big">
+                                <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="projects-group__two">
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
+                                <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="m-projects__row projects-group">
+                        <div class="projects-group__two">
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
+                                <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="projects-group__one">
+                              <div class="project-card  project-card--big">
+                                <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
+                                <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="m-projects__row projects-group">
+                        <div class="projects-group__one">
+                              <div class="project-card  project-card--big">
+                                <div class="project-card__bg"><img src="./img/projects/project-7.jpg" alt="Русский дом"></div>
+                                <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                <div class="project-card__title">Русский дом</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="projects-group__two">
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-8.jpg" alt="Старый Арбат II"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Старый Арбат II</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="project-card  project-card--small">
+                                <div class="project-card__bg"><img src="./img/projects/project-9.jpg" alt="Старый Арбат"></div>
+                                <div class="project-card__location">Россия, Москва</div>
+                                <div class="project-card__title">Старый Арбат</div><a class="project-card__overlay" href="javascript:void(0);">
+                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                  </div></a>
+                                <div class="project-card__cursor">
+                                  <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><a class="btn btn--btn btn--beige2 m-projects__all" href="javascript:void(0);"><span class="btn__text">Все проекты</span></a>
+              </div>
+            </section>
         <section class="section home-about">
           <div class="container home-about__container">
-            <div class="home-about__video"><img src="../../../../img/home/home_about.png" alt="about video"></div>
+            <div class="home-about__video"><img src="./img/home/home_about.png" alt="about video"><a class="btn btn--circle btn--beige home-about__play" href="javascript:void(0);"><span class="btn__icon">
+                      <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#play"></use>
+                      </svg></span></a>
+            </div>
             <div class="home-about__text">
                   <div class="title title__h2 title__h2--small home-about__title">
                     <h2>Как мы работаем</h2>
                   </div>
-                  <div class="quote">
-                    <div class="quote__icon">“</div>
+                  <div class="quote home-about__quote">
+                    <div class="quote__icon">
+                      <svg> 
+                        <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                      </svg>
+                    </div>
                     <div class="quote__content">
                       <div class="quote__text">Уверена, что облик дома формируют арт-объекты, придающие ему интеллектуальность. И с опытом я все больше убеждаюсь в том, что концепцию жилья надо начинать именно с искусства и лишь потом углубляться в технические моменты
                       </div>
@@ -111,6 +475,82 @@
                       <div class="quote__position">Руководитель студии VI interiors
                       </div>
                     </div>
+                  </div><a class="btn btn--btn btn--beige2 home-about__btn" href="javascript:void(0);"><span class="btn__text">Узнать подробнее</span></a>
+            </div>
+          </div>
+        </section>
+        <section class="section home-reviews" data-js="homeReviews">
+          <div class="home-reviews__container">
+            <div class="home-reviews__slider" data-js="homeReviewsSlider">
+              <div class="home-reviews__header"> 
+                    <div class="title title__h2 title__h2--small">
+                      <h2>Истории клиентов</h2>
+                    </div>
+                <div class="home-reviews__controls"><a class="btn btn--slider btn--transparent slider-control slider-control--prev" href="javascript:void(0);" data-js="sliderControlPrev"><span class="btn__icon">
+                          <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#slider_arrow"></use>
+                          </svg></span></a><a class="btn btn--slider btn--transparent slider-control slider-control--next" href="javascript:void(0);" data-js="sliderControlNext"><span class="btn__icon">
+                          <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#slider_arrow"></use>
+                          </svg></span></a>
+                </div>
+              </div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide home-reviews__slide">
+                  <div class="home-reviews__review">
+                    <div class="home-reviews__title">Интерьер квартиры для ЖК «Монблан»</div>
+                    <div class="home-reviews__preview"><img src="./img/home/review_small.jpg" alt=""></div>
+                    <div class="home-reviews__info">
+                          <div class="quote home-reviews__quote">
+                            <div class="quote__icon">
+                              <svg> 
+                                <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                              </svg>
+                            </div>
+                            <div class="quote__content">
+                              <div class="quote__text">Рекомендую от души и со всей ответственностью
+                              </div>
+                              <div class="quote__author">Грибанова Анна
+                              </div>
+                            </div>
+                          </div><a class="btn btn--btn btn--beige2 " href="javascript:void(0);"><span class="btn__text">Читать историю</span></a>
+                    </div>
+                  </div>
+                  <div class="home-reviews__img"><img src="./img/home/review.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+            <section class="section m-contacts">
+              <div class="container m-contacts__container">
+                <div class="m-contacts__images">
+                  <div class="m-contacts__image"><img src="./img/m-contacts/m_contacts_1.png" alt=""></div>
+                  <div class="m-contacts__image"><img src="./img/m-contacts/m_contacts_2.png" alt=""></div>
+                  <div class="m-contacts__image"><img src="./img/m-contacts/m_contacts_3.png" alt=""></div>
+                  <div class="m-contacts__image"><img src="./img/m-contacts/m_contacts_4.png" alt=""></div>
+                </div>
+                    <div class="title title__h2 m-contacts__title">
+                      <h2>Контакты</h2>
+                    </div>
+                <div class="m-contacts__contacts"><a class="m-contacts__contact" href="tel:79112276452">+7 911 227 64 52</a>
+                  <div class="m-contacts__contact">Санкт-Петербург, набережная реки Фонтанки д.8</div><a class="m-contacts__contact" href="mailto:arinavolkova@mail.ru">Arinavolkova@mail.ru</a>
+                </div>
+              </div>
+            </section>
+        <section class="section home-discussion">
+          <div class="container home-discussion__container">
+            <div class="home-discussion__left"><a class="btn btn--btn btn--beige2 " href="javascript:void(0);"><span class="btn__text">Обсудить проект</span></a>
+            </div>
+            <div class="home-discussion__rigth">
+                  <div class="title title__h2 title__h2--small">
+                    <h2>Интерьеры с характером, дизайн-проекты в Санкт-Петербурге</h2>
+                  </div>
+                  <div class="text-editor">
+                    <p>«Я хотела воссоздать в этом проекте атмосферу семейного быта моих предков, и это мне удалось. Я никогда не бывала в нашей старой квартире на Моховой, но рассказы о семейных традициях, отдельные детали декора, старинные вещи помогли создать убедительный образ дома, где за большим столом собиралась вся семья»</p>
+                    <p>Главный акцент в гостиной-столовой — ширма с репродукцией картины Пабло Пикассо «Любительница абсента». Ширма размером 2х3 метра выполнена автором проекта совместно с архитектором Еленой Шируновой.</p>
+                    <p>Открытое пространство гостиной-кухни занимает порядка 50 квадратных метров. Над обеденным столом — хрустальная люстра (её привезли из Европы, поставщик — bufet_taburet). Гипсовая розетка изготовлена на заводе «Дикарт».</p>
+                    <p>В этом с любовью сделанном интерьере нашли своё место и старинные вещи, например, подстолье для швейной машинки «Зингер». «Я увидела его в 2005 году и принесла домой, за что меня чуть не предали анафеме. Но я его отстояла, и оно, накрытое столешницей, «изображало» консоль в прихожей, а в новую квартиру переехало в гостевой санузел в качестве подстолья для раковины».</p>
                   </div>
             </div>
           </div>

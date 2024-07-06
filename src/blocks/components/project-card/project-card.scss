@@ -1,0 +1,122 @@
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    aspect-ratio: 1 / 1.27;
+    color: $c-white;
+    max-width: 100%;
+    cursor: pointer;
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.2;
+            transition: opacity $tr-time-and-type;
+        }
+    }
+
+    &__location {
+        width: fit-content;
+        padding: 10px 16px;
+        font-size: 12px;
+        line-height: 1.22em;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        border-radius: 40px;
+        z-index: 5;
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 1.5em;
+        z-index: 5;
+    }
+
+    &__overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        visibility: hidden;
+        z-index: 10;
+        opacity: 0;
+        transition: opacity $tr-time-and-type;
+
+        >svg {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+
+    &__award {
+        display: flex;
+        align-self: flex-end;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        line-height: 1.22em;
+
+        >img {
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    &__cursor {
+        position: absolute;
+    }
+
+    @include hover() {
+        .project-card__overlay {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .project-card__bg::after {
+            opacity: 0.6;
+        }
+    }
+}
+
+.project-card {
+    &--big {
+        width: 435px;
+        padding: 40px;
+    }
+
+    &--big &__overlay {
+        padding: 29px 20px;
+    }
+
+    &--small {
+        width: 285px;
+        padding: 24px;
+    }
+
+    &--small &__overlay {
+        padding: 24px;
+    }
+}

@@ -11,7 +11,7 @@ $media-list: (
 );
 
 /* transitions */
-$tr-time-and-type: 0.3s ease;
+$tr-time-and-type: 0.2s ease;
 
 /*Цвета*/
 $c-white: #fff;
@@ -25,8 +25,10 @@ $c-grey-1: #212121;
 
 $c-beige: #DAC5B1;
 $c-beige-1: #2A2928;
-$c-beige-2: #33312F;
+$c-beige-2: rgba(218, 197, 177, 0.1);
 $c-beige-3: #7D7369;
+
+$c-beige-hover: #C5A486;
 
 $c-brown: #563F3B;
 $c-brown-1: #3B302E;

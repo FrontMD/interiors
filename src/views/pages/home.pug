@@ -7,5 +7,164 @@ block content
     .page
         include ../../blocks/modules/pages/home/home-intro/home-intro.pug
         include ../../blocks/modules/pages/home/home-numbers/home-numbers.pug
-        include ../../blocks/modules/pages/home/home-projects/home-projects.pug
+        +m-projects()
+            .swiper-slide.m-projects__slide
+                .m-projects__row.projects-group
+                    .projects-group__one
+                        +project-card()
+                    .projects-group__two
+                        +project-card({
+                            type: 'small',
+                            title: 'Монблан',
+                            location: 'Россия, Москва',
+                            bgImage: 'project-2.jpg',
+                        })
+                        +project-card({
+                            type: 'small',
+                            title: 'Галерная 12',
+                            location: 'Россия, Санкт-Петербург',
+                            bgImage: 'project-3.jpg',
+                        })
+                .m-projects__row.projects-group
+                    .projects-group__two
+                        +project-card({
+                            type: 'small',
+                            title: 'Neva House',
+                            location: 'Россия, Санкт-Петербург',
+                            bgImage: 'project-4.jpg',
+                        })
+                        +project-card({
+                            type: 'small',
+                            title: 'Бассейная 45',
+                            location: 'Россия, Москва',
+                            bgImage: 'project-5.jpg',
+                        }) 
+                    .projects-group__one
+                        +project-card({
+                            type: 'big',
+                            title: 'Маленькая Франция',
+                            location: 'Россия, Санкт-Петербург',
+                            bgImage: 'project-6.jpg',
+                        })    
+                .m-projects__row.projects-group
+                    .projects-group__one
+                        +project-card({
+                            type: 'big',
+                            title: 'Русский дом',
+                            location: 'Россия, Санкт-Петербург',
+                            bgImage: 'project-7.jpg',
+                        })
+                    .projects-group__two
+                        +project-card({
+                            type: 'small',
+                            title: 'Старый Арбат II',
+                            location: 'Россия, Москва',
+                            bgImage: 'project-8.jpg',
+                        })
+                        +project-card({
+                            type: 'small',
+                            title: 'Старый Арбат',
+                            location: 'Россия, Москва',
+                            bgImage: 'project-9.jpg',
+                        })                                           
+            .swiper-slide.m-projects__slide
+                .m-projects__row.projects-group
+                    .projects-group__one
+                        +project-card()
+                    .projects-group__two
+                        +project-card({
+                            type: 'small',
+                            title: 'Монблан',
+                            location: 'Россия, Москва',
+                            bgImage: 'project-2.jpg',
+                        })
+                        +project-card({
+                            type: 'small',
+                            title: 'Галерная 12',
+                            location: 'Россия, Санкт-Петербург',
+                            bgImage: 'project-3.jpg',
+                        })
+                .m-projects__row.projects-group
+                    .projects-group__two
+                        +project-card({
+                            type: 'small',
+                            title: 'Neva House',
+                            location: 'Россия, Санкт-Петербург',
+                            bgImage: 'project-4.jpg',
+                        })
+                        +project-card({
+                            type: 'small',
+                            title: 'Бассейная 45',
+                            location: 'Россия, Москва',
+                            bgImage: 'project-5.jpg',
+                        }) 
+                    .projects-group__one
+                        +project-card({
+                            type: 'big',
+                            title: 'Маленькая Франция',
+                            location: 'Россия, Санкт-Петербург',
+                            bgImage: 'project-6.jpg',
+                        })              
+            .swiper-slide.m-projects__slide
+                .m-projects__row.projects-group
+                    .projects-group__one
+                        +project-card()
+                    .projects-group__two
+                        +project-card({
+                            type: 'small',
+                            title: 'Монблан',
+                            location: 'Россия, Москва',
+                            bgImage: 'project-2.jpg',
+                        })
+                        +project-card({
+                            type: 'small',
+                            title: 'Галерная 12',
+                            location: 'Россия, Санкт-Петербург',
+                            bgImage: 'project-3.jpg',
+                        })
+                .m-projects__row.projects-group
+                    .projects-group__two
+                        +project-card({
+                            type: 'small',
+                            title: 'Neva House',
+                            location: 'Россия, Санкт-Петербург',
+                            bgImage: 'project-4.jpg',
+                        })
+                        +project-card({
+                            type: 'small',
+                            title: 'Бассейная 45',
+                            location: 'Россия, Москва',
+                            bgImage: 'project-5.jpg',
+                        }) 
+                    .projects-group__one
+                        +project-card({
+                            type: 'big',
+                            title: 'Маленькая Франция',
+                            location: 'Россия, Санкт-Петербург',
+                            bgImage: 'project-6.jpg',
+                        })    
+                .m-projects__row.projects-group
+                    .projects-group__one
+                        +project-card({
+                            type: 'big',
+                            title: 'Русский дом',
+                            location: 'Россия, Санкт-Петербург',
+                            bgImage: 'project-7.jpg',
+                        })
+                    .projects-group__two
+                        +project-card({
+                            type: 'small',
+                            title: 'Старый Арбат II',
+                            location: 'Россия, Москва',
+                            bgImage: 'project-8.jpg',
+                        })
+                        +project-card({
+                            type: 'small',
+                            title: 'Старый Арбат',
+                            location: 'Россия, Москва',
+                            bgImage: 'project-9.jpg',
+                        })             
         include ../../blocks/modules/pages/home/home-about/home-about.pug
+        include ../../blocks/modules/pages/home/home-reviews/home-reviews.pug
+        +m-contacts()
+        include ../../blocks/modules/pages/home/home-discussion/home-discussion.pug

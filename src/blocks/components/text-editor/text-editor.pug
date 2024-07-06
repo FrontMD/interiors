@@ -1,0 +1,13 @@
+-
+	const defaultTextEditorProps = {
+		classes: '',
+	}
+
+mixin text-editor(props = defaultTextEditorProps)
+	-
+		const checkProps = {
+			classes: props.classes ? props.classes : defaultTextEditorProps.classes,
+		}
+
+	.text-editor(class=checkProps.classes)
+		block

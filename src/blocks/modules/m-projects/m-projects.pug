@@ -1,0 +1,53 @@
+-
+    const defaultMProjectsProps = {
+        classes: '',
+        filters: false
+    }
+
+mixin m-projects(props = defaultMProjectsProps)
+    -
+        const checkProps = {
+            classes: props.classes ? props.classes : defaultMProjectsProps.classes,
+            filters: props.filters ? props.filters : defaultMProjectsProps.filters
+        }
+
+    section.section.m-projects
+        .container
+            +title({
+                classes: 'home-projects__title',
+                text: 'Проекты'
+            })
+            .m-projects__controls
+                .m-projects__tabs(data-js="mProjectsTabs")
+                    .swiper-wrapper
+                        +btn({
+                            classes: 'swiper-slide m-projects__tab',
+                            vMode: 'tab',
+                            text: 'Квартиры',
+                            cMode: 'beige',
+                        })
+                        +btn({
+                            classes: 'swiper-slide m-projects__tab',
+                            vMode: 'tab',
+                            text: 'Дома',
+                            cMode: 'beige',
+                        })
+                        +btn({
+                            classes: 'swiper-slide m-projects__tab',
+                            vMode: 'tab',
+                            text: 'Апартаменты',
+                            cMode: 'beige',
+                        })
+                if(checkProps.filters)
+                    .m-projects__filters
+            .m-projects__slides(data-js="mProjectsSlides")
+                .swiper-wrapper
+                    block
+
+            +btn({
+                classes: 'm-projects__all',
+                vMode: 'btn',
+                text: 'Все проекты',
+                cMode: 'beige2',
+            })
+

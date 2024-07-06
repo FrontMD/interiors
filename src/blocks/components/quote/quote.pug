@@ -17,7 +17,9 @@ mixin quote(props = defaultQuoteProps)
         }
 
     .quote(class=checkProps.classes)&attributes(attributes)
-        .quote__icon “
+        .quote__icon
+            svg 
+                use(xlink:href=`./img/sprites/sprite.svg#quotes`)
         .quote__content
             if(checkProps.text)
                 .quote__text

@@ -1,0 +1,45 @@
+section.section.home-reviews(data-js="homeReviews")
+    .home-reviews__container
+
+        .home-reviews__slider(data-js="homeReviewsSlider")
+            .home-reviews__header 
+                +title({
+                    classes: 'title__h2--small',
+                    text: 'Истории клиентов',
+                })
+                .home-reviews__controls
+                    +btn({
+                        classes: 'slider-control slider-control--prev',
+                        vMode: 'slider',
+                        icon: true,
+                        iconName: 'slider_arrow',
+                    })(data-js="sliderControlPrev")
+                    +btn({
+                        classes: 'slider-control slider-control--next',
+                        vMode: 'slider',
+                        icon: true,
+                        iconName: 'slider_arrow',
+                    })(data-js="sliderControlNext")
+            .swiper-wrapper
+                .swiper-slide.home-reviews__slide
+                    .home-reviews__review
+                        .home-reviews__title Интерьер квартиры для ЖК «Монблан»
+                        .home-reviews__preview
+                            img(src="./img/home/review_small.jpg" alt="")
+                        .home-reviews__info
+                            +quote({
+                                classes: 'home-reviews__quote',
+                                text: 'Рекомендую от души и со всей ответственностью',
+                                author: 'Грибанова Анна'
+                            })
+                            +btn({
+                                classes: '',
+                                vMode: 'btn',
+                                cMode: 'beige2',
+                                text: 'Читать историю',
+                                icon: false,
+                            })
+                    .home-reviews__img
+                        img(src="./img/home/review.jpg" alt="")
+
+

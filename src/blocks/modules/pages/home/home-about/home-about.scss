@@ -5,12 +5,37 @@
     }
 
     &__video {
+        position: relative;
         flex-basis: 43.5%;
     }
 
+    &__play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+    }
+
     &__text {
+        display: flex;
+        flex-direction: column;
         flex-basis: 56.5%;
         padding: 64px;
         background-color: $c-grey;
+        background-image: url(../img/home/home_about_bg.svg);
+        background-repeat: no-repeat;
+        background-size: 47% auto;
+        background-position: bottom 48px right 48px;
+    }
+
+    &__quote {
+        margin-top: 61px;
+        max-width: 518px;
+    }
+
+    &__btn {
+        margin-top: auto;
+        margin-left: 62.27px;
     }
 }

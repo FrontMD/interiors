@@ -398,7 +398,7 @@ html {
     &__link {
         font-size: 32px;
         text-decoration: none;
-        color: black;
+        color: $c-white;
         transition: color 0.3s linear;
 
         @include max(1024) {

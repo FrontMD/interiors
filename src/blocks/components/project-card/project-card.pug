@@ -1,0 +1,33 @@
+-
+	const defaultProjectCardProps = {
+		classes: '',
+		type: 'big',
+		title: 'Кантале',
+		location: 'Россия, Москва',
+		bgImage: 'project-1.jpg',
+	}
+
+mixin project-card(props = defaultProjectCardProps)
+	-
+		const checkProps = {
+			classes: props.classes ? props.classes : defaultProjectCardProps.classes,
+			type: props.type ? props.type : defaultProjectCardProps.type,
+			title: props.title ? props.title : defaultProjectCardProps.title,
+			location: props.location ? props.location : defaultProjectCardProps.location,
+			bgImage: props.bgImage ? props.bgImage : defaultProjectCardProps.bgImage,
+		}
+
+	.project-card(class=`${checkProps.classes} project-card--${checkProps.type}`)
+		.project-card__bg
+			img(src=`./img/projects/${checkProps.bgImage}` alt=checkProps.title)
+		.project-card__location!= checkProps.location
+		.project-card__title!= checkProps.title
+		a(href="javascript:void(0);").project-card__overlay
+			.project-card__award
+				if(checkProps.type == 'big')
+					!= 'ADD Awards'
+				img(src='./img/award_logo.png' alt='award logo')
+		.project-card__cursor
+			svg
+				use(xlink:href=`./img/sprites/sprite.svg#plus`)
+

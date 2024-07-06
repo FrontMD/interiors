@@ -1,11 +1,16 @@
 @import "header/header";
 @import "footer/footer";
 
+//модули
+@import "m-contacts/m-contacts.scss";
+@import "m-projects/m-projects.scss";
+
 // Главная
 @import "pages/home/home-intro/home-intro.scss";
 @import "pages/home/home-numbers/home-numbers.scss";
-@import "pages/home/home-projects/home-projects.scss";
 @import "pages/home/home-about/home-about.scss";
+@import "pages/home/home-reviews/home-reviews.scss";
+@import "pages/home/home-discussion/home-discussion.scss";
 
 /*@import "mobile-menu/mobile-menu";
 @import "modals/modals";
