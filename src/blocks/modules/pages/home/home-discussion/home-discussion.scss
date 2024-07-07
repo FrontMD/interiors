@@ -1,1 +1,21 @@
-.home-discussion {}
+.home-discussion {
+    padding-bottom: 120px;
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        gap: 129px;
+    }
+
+    &__left {
+        flex: 0 0 auto;
+    }
+
+    &__right {
+        flex: 1 1 auto;
+    }
+
+    &__text {
+        margin-top: 32px;
+    }
+}

@@ -1,0 +1,65 @@
+.thanks-message {
+    position: fixed;
+    top: 30px;
+    left: 15px;
+    width: fit-content;
+    display: none;
+    align-items: center;
+    gap: 10px;
+    padding: 12.5px 25px 12.5px 12px;
+    background-color: lightblue;
+    border-radius: 10px;
+    z-index: 99;
+
+    @include max(1024) {
+        top: 150px;
+        right: 15px;
+        gap: 10px;
+        padding: 12.5px 25px 12.5px 12px;
+        border-radius: 10px;
+    }
+
+    @include max(768) {
+        top: 110px;
+        right: 15px;
+        width: calc(100% - 30px);
+        gap: 10px;
+        padding: 12.5px 25px 12.5px 12px;
+        border-radius: 10px;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+        color: $c-beige;
+
+        @include max(1024) {
+            width: 20px;
+            height: 20px;
+        }
+
+        @include max(768) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    span {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.17em;
+        color: #222224;
+
+        @include max(1024) {
+            font-size: 12px;
+        }
+
+        @include max(768) {
+            font-size: 12px;
+        }
+    }
+
+    &--active {
+        display: flex;
+    }
+}

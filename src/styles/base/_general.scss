@@ -112,6 +112,19 @@ body {
     font-family: $textFont;
     font-size: 16px;
     line-height: 1.5em;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $c-beige;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $c-brown;
+    }
 }
 
 html {
@@ -147,7 +160,7 @@ html {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .site-main {
@@ -158,6 +171,23 @@ html {
 
 .section {
     padding-top: 120px;
+}
+
+.has-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $c-beige;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $c-brown;
+    }
 }
 
 /*.my-fancybox {

@@ -1,8 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
 function homeIntroAnim() {
-    console.log("работатет")
-    console.log(gsap)
 
     document.activeElement.blur()
 

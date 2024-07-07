@@ -1,15 +1,15 @@
 header.site-header(data-js="siteHeader")
     .container.site-header__container
-        nav.site-header__menu.header-menu
-            a(href="#").header-menu__item Проекты
-            a(href="#").header-menu__item Услуги
-            a(href="#").header-menu__item О нас
-            a(href="#").header-menu__item Награды
-            a(href="#").header-menu__item Блог
-            a(href="#").header-menu__item Контакты
+        nav.site-header__menu.header-menu(data-js="reversHoversBlock")
+            a(href="#" data-js="reversHoversItem").header-menu__item Проекты
+            a(href="#" data-js="reversHoversItem").header-menu__item Услуги
+            a(href="#" data-js="reversHoversItem").header-menu__item О нас
+            a(href="#" data-js="reversHoversItem").header-menu__item Награды
+            a(href="#" data-js="reversHoversItem").header-menu__item Блог
+            a(href="#" data-js="reversHoversItem").header-menu__item Контакты
         .site-header__logo 
             img(src="./img/logo_full.svg" alt="logo")
-        .site-header__menu.header-menu
-            a(href="#").header-menu__item Instagram
-            a(href="#").header-menu__item 8 (911) 227-64-52
-            a(href="#").header-menu__item Обсудить проект
+        .site-header__menu.header-menu(data-js="reversHoversBlock")
+            a(href="https://www.instagram.com/" data-js="reversHoversItem").header-menu__item Instagram
+            a(href="#" data-js="reversHoversItem").header-menu__item 8 (911) 227-64-52
+            a(href="#" data-js="reversHoversItem").header-menu__item Обсудить проект

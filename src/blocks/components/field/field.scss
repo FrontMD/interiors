@@ -1,0 +1,120 @@
+.field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+
+    &__error {
+        display: none;
+    }
+
+    &--invalid {
+        .field__error {
+            display: block;
+        }
+    }
+
+    .field-error {
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        width: 32px;
+        height: 32px;
+        transform: translateY(-50%);
+
+        &__icon {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__text {
+            display: block;
+            position: absolute;
+            min-width: 117px;
+            top: calc(100% + 17.65px);
+            left: 50%;
+            padding: 10px 16px;
+            transform: translateX(-50%);
+            background-color: $c-beige-hover;
+            border-radius: 40px;
+            font-size: 12px;
+            line-height: 1.22em;
+            color: $c-brown;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: -19px;
+                transform: translateX(-50%);
+                border: 6px solid transparent;
+                border-bottom: 13px solid $c-beige-hover;
+            }
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 40px 20px;
+        border-bottom: 1px solid $c-beige;
+        border-color: $c-beige;
+        font-size: 16px;
+        line-height: 1.5em;
+        background-color: transparent;
+        outline: none;
+        color: $c-beige-hover;
+        text-align: center;
+        cursor: pointer;
+        transition: border-color $tr-time-and-type;
+
+        &::placeholder {
+            color: $c-beige-3;
+            opacity: 1;
+        }
+
+        &:-ms-input-placeholder {
+            color: $c-beige-3;
+        }
+
+        &::-ms-input-placeholder {
+            color: $c-beige-3;
+        }
+
+        &:focus {
+            border-color: $c-beige-hover;
+        }
+
+    }
+
+}
+
+.field {
+    @include hover() {
+        .field__input {
+            border-color: $c-beige-hover;
+
+            &::placeholder {
+                color: $c-beige-hover;
+                opacity: 1;
+            }
+
+            &:-ms-input-placeholder {
+                color: $c-beige-hover;
+            }
+
+            &::-ms-input-placeholder {
+                color: $c-beige-hover;
+            }
+        }
+    }
+}

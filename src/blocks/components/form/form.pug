@@ -1,0 +1,34 @@
+-
+    const defaultFormProps = {
+        classes: '',
+        title: '',
+        text: '',
+        btnText: '',
+    }
+
+mixin form(props = defaultFormProps)
+    -
+        const checkProps = {
+            classes: props.classes ? props.classes : defaultFormProps.classes,
+            title: props.title ? props.title : defaultFormProps.title,
+            text: props.text ? props.text : defaultFormProps.text,
+            btnText: props.btnText ? props.btnText : defaultFormProps.btnText,
+        }
+
+    form.form(action="#" class= checkProps.classes data-validate novalidate)&attributes(attributes)
+        .form__content(data-js='form-content')
+            .form__title!= checkProps.title
+            - if(checkProps.text.length > 0)
+                .form__text!= checkProps.text
+            .form__fields
+                block
+            .form__privacy
+                p!= 'Нажимая на кнопку «Отправить заявку» я соглашаюсь <a href="#" target="_blank">с политикой конфиденциальности</a>'
+            +btn({
+                classes: 'form__submit',
+                tag: 'button',
+                buttonType: 'submit',
+                vMode: 'btn',
+                text: checkProps.btnText,
+                cMode: 'beige',
+            })

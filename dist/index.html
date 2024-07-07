@@ -6,7 +6,7 @@
     <title>Разводящая</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
     <link rel="icon" sizes="16x16" href="./img/favicons/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="./img/favicons/favicon-32x32.png" type="image/png">
@@ -27,9 +27,9 @@
   <body>
     <header class="site-header" data-js="siteHeader">
       <div class="container site-header__container">
-        <nav class="site-header__menu header-menu"><a class="header-menu__item" href="#">Проекты</a><a class="header-menu__item" href="#">Услуги</a><a class="header-menu__item" href="#">О нас</a><a class="header-menu__item" href="#">Награды</a><a class="header-menu__item" href="#">Блог</a><a class="header-menu__item" href="#">Контакты</a></nav>
+        <nav class="site-header__menu header-menu" data-js="reversHoversBlock"><a class="header-menu__item" href="#" data-js="reversHoversItem">Проекты</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Услуги</a><a class="header-menu__item" href="#" data-js="reversHoversItem">О нас</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Награды</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Блог</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Контакты</a></nav>
         <div class="site-header__logo"> <img src="./img/logo_full.svg" alt="logo"></div>
-        <div class="site-header__menu header-menu"><a class="header-menu__item" href="#">Instagram</a><a class="header-menu__item" href="#">8 (911) 227-64-52</a><a class="header-menu__item" href="#">Обсудить проект</a></div>
+        <div class="site-header__menu header-menu" data-js="reversHoversBlock"><a class="header-menu__item" href="https://www.instagram.com/" data-js="reversHoversItem">Instagram</a><a class="header-menu__item" href="#" data-js="reversHoversItem">8 (911) 227-64-52</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Обсудить проект</a></div>
       </div>
     </header>
     <main class="site-main">
@@ -44,6 +44,33 @@
         </section>
       </div>
     </main>
+    <footer class="site-footer">
+      <div class="container site-footer__container">
+        <div class="site-footer__top">
+          <div class="site-footer__column">
+            <div class="site-footer__menu" data-js="reversHoversBlock">
+              <div class="site-footer__title">Проекты</div><a class="site-footer__link" href="javascript:void(0)" data-js="reversHoversItem">Квартиры</a><a class="site-footer__link" href="javascript:void(0)" data-js="reversHoversItem">Дома</a><a class="site-footer__link" href="javascript:void(0)" data-js="reversHoversItem">Апартаменты</a>
+            </div>
+            <div class="site-footer__menu" data-js="reversHoversBlock">
+              <div class="site-footer__title">Контакты</div>
+              <div class="site-footer__link site-footer__link--noLink" data-js="reversHoversItem">Санкт-Петербург, ул. Фучика, 9</div><a class="site-footer__link" href="tel:79112276452" data-js="reversHoversItem">8 (911) 227-64-52</a><a class="site-footer__link" href="mailto:vi@yandex.ru" data-js="reversHoversItem">vi@yandex.ru					</a>
+            </div>
+          </div>
+          <div class="site-footer__column">
+            <div class="site-footer__menu" data-js="reversHoversBlock"><a class="site-footer__link" href="javascript:void(0)" data-js="reversHoversItem">Услуги</a><a class="site-footer__link" href="javascript:void(0)" data-js="reversHoversItem">Часто задаваемые вопросы</a><a class="site-footer__link" href="javascript:void(0)" data-js="reversHoversItem">Награды</a><a class="site-footer__link" href="javascript:void(0)" data-js="reversHoversItem">Контакты</a></div>
+            <div class="site-footer__menu" data-js="reversHoversBlock">
+              <div class="site-footer__title">Социальные сети</div><a class="site-footer__link" href="https://www.houzz.ru/" data-js="reversHoversItem">Houzz</a><a class="site-footer__link" href="https://web.telegram.org/" data-js="reversHoversItem">Telegram</a><a class="site-footer__link" href="https://www.youtube.com/" data-js="reversHoversItem">YouTube</a><a class="site-footer__link" href="https://www.instagram.com/" data-js="reversHoversItem">Instagram</a>
+            </div>
+          </div>
+          <div class="site-footer__column site-footer__column--logo">
+            <div class="site-footer__logo"><img src="./img/footer_logo.png" alt=""></div>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <div class="site-footer__link site-footer__link--noLink">©2024, Interiors by Arina Volkova</div><a class="site-footer__link link" href="javascript:void(0)">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
     <script src="js/main.min.js"></script>
   </body>
 </html>

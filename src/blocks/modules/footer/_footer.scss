@@ -1,95 +1,75 @@
 .site-footer {
-    background-color: black;
+    padding: 64px 48px;
+    background-color: $c-grey;
     color: white;
-
-    &__container.container {
-        padding: 0;
-    }
+    font-size: 16px;
+    line-height: 1.5em;
 
     &__top {
         display: flex;
-        justify-content: space-between;
-        gap: 50px;
-        padding: 80px 0;
-
+        justify-content: flex-start;
+        gap: 96px;
     }
 
     &__bottom {
         display: flex;
         justify-content: space-between;
-        padding: 32px 0;
-        border-top: 1px solid lightgrey;
+        margin-top: 48px;
     }
 
     &__column {
-        max-width: 25%;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 70px;
+        flex: 0 0 248px;
+
+        &--logo {
+            display: flex;
+            align-items: flex-end;
+            flex: 1 1 auto;
+            margin-left: auto;
+        }
     }
 
-    &__subtitle {
-        font-weight: 700;
+    &__title {
+        opacity: 0.3;
     }
 
     &__link {
         display: flex;
         align-items: center;
-        gap: 25px;
-        color: white;
-        font-weight: 700;
-        transition: color $tr-time-and-type;
+        color: $c-white;
+        transition: opacity $tr-time-and-type;
         width: fit-content;
 
-        &--text {
-            color: darkgrey;
-            font-weight: 400;
+        &.noHovered {
+            opacity: 0.5;
         }
 
-        &:hover {
-            color: $c-white;
-        }
-
-        svg {
-            width: 16px;
-            height: 16px;
+        &--noLink {
+            pointer-events: none;
         }
     }
 
-    &__text {
-        color: darkgrey;
-    }
-
-    &__contact {
-        padding-bottom: 12px;
-        border-bottom: 1px solid lightgrey;
-    }
-
-    &__phone {
-        font-size: 32px;
-    }
-
-    &__address {
-        margin-top: auto;
+    &__menu {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
     }
 
-    .footer-menu {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+    &__logo {
+        max-width: 557px;
 
-        &__subtitle {
-            margin-bottom: 32px;
-        }
-
-        &--inner {
-            gap: 15px;
-            padding-bottom: 7px;
+        img {
+            width: 100%;
         }
     }
 
+    .link {
+        transition: color $tr-time-and-type;
 
+        @include hover() {
+            color: $c-beige;
+        }
+    }
 }
