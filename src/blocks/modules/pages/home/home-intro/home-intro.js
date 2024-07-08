@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 function homeIntroAnim() {
 
     document.activeElement.blur()

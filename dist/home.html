@@ -30,7 +30,7 @@
         <nav class="site-header__menu header-menu" data-js="reversHoversBlock"><a class="header-menu__item" href="#" data-js="reversHoversItem">Проекты</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Услуги</a><a class="header-menu__item" href="#" data-js="reversHoversItem">О нас</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Награды</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Блог</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Контакты</a></nav>
         <div class="site-header__logo site-header__logo--full" data-js="siteHeaderLogoFull"><img src="./img/logo_full.svg" alt="logo"></div>
         <div class="site-header__logo" data-js="siteHeaderLogo"><img src="./img/logo.svg" alt="logo"></div>
-        <div class="site-header__menu header-menu" data-js="reversHoversBlock"><a class="header-menu__item" href="https://www.instagram.com/" data-js="reversHoversItem">Instagram</a><a class="header-menu__item" href="#" data-js="reversHoversItem">8 (911) 227-64-52</a><a class="header-menu__item" href="#" data-js="reversHoversItem" data-modal="#discussProject">Обсудить проект</a></div>
+        <div class="site-header__menu header-menu" data-js="reversHoversBlock"><a class="header-menu__item" href="https://www.instagram.com/" data-js="reversHoversItem">Instagram</a><a class="header-menu__item" href="#" data-js="reversHoversItem">8 (911) 227-64-52</a><a class="header-menu__item" href="#" data-js="reversHoversItem" data-hystmodal="#discussProject">Обсудить проект</a></div>
       </div>
     </header>
     <main class="site-main">
@@ -92,17 +92,17 @@
             </div>
           </div>
         </section>
-            <section class="section m-projects">
-              <div class="container">
+            <section class="section m-projects" data-js="mProjects">
+              <div class="m-projects__controls" data-js="mProjectsControls">
+                <div class="m-projects__tabs" data-js="mProjectsTabs">
+                  <div class="swiper-wrapper"><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Квартиры</span></a><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Дома</span></a><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Апартаменты</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="container" data-js="mProjectsContainer">
                     <div class="title title__h2 home-projects__title">
                       <h2>Проекты</h2>
                     </div>
-                <div class="m-projects__controls">
-                  <div class="m-projects__tabs" data-js="mProjectsTabs">
-                    <div class="swiper-wrapper"><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Квартиры</span></a><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Дома</span></a><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Апартаменты</span></a>
-                    </div>
-                  </div>
-                </div>
                 <div class="m-projects__slides" data-js="mProjectsSlides">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide m-projects__slide">
@@ -448,12 +448,12 @@
                       </div>
                     </div>
                   </div>
-                </div><a class="btn btn--btn btn--beige2 m-projects__all" href="javascript:void(0);"><span class="btn__text">Все проекты</span></a>
+                </div><a class="btn btn--btn btn--beige2 m-projects__all" href="javascript:void(0);" data-js="mProjectsAll"><span class="btn__text">Все проекты</span></a>
               </div>
             </section>
         <section class="section home-about">
           <div class="container home-about__container">
-            <div class="home-about__video"><img src="./img/home/home_about.png" alt="about video"><a class="btn btn--circle btn--beige home-about__play" href="javascript:void(0);" data-modal="#homeAboutVideo"><span class="btn__icon">
+            <div class="home-about__video"><img src="./img/home/home_about.png" alt="about video"><a class="btn btn--circle btn--beige home-about__play" href="javascript:void(0);" data-hystmodal="#homeAboutVideo"><span class="btn__icon">
                       <svg>
                         <use xlink:href="./img/sprites/sprite.svg#play"></use>
                       </svg></span></a>
@@ -699,7 +699,7 @@
             </section>
         <section class="section home-discussion">
           <div class="container home-discussion__container">
-            <div class="home-discussion__left"><a class="btn btn--btn btn--beige2 " href="javascript:void(0);" data-modal="#discussProject"><span class="btn__text">Обсудить проект</span></a>
+            <div class="home-discussion__left"><a class="btn btn--btn btn--beige2 " href="javascript:void(0);" data-hystmodal="#discussProject"><span class="btn__text">Обсудить проект</span></a>
             </div>
             <div class="home-discussion__rigth">
                   <div class="title title__h2 title__h2--small">

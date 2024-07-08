@@ -11,35 +11,34 @@ mixin m-projects(props = defaultMProjectsProps)
             filters: props.filters ? props.filters : defaultMProjectsProps.filters
         }
 
-    section.section.m-projects
-        .container
+    section.section.m-projects(data-js="mProjects")
+        .m-projects__controls(data-js="mProjectsControls")
+            .m-projects__tabs(data-js="mProjectsTabs")
+                .swiper-wrapper
+                    +btn({
+                        classes: 'swiper-slide m-projects__tab',
+                        vMode: 'tab',
+                        text: 'Квартиры',
+                        cMode: 'beige',
+                    })
+                    +btn({
+                        classes: 'swiper-slide m-projects__tab',
+                        vMode: 'tab',
+                        text: 'Дома',
+                        cMode: 'beige',
+                    })
+                    +btn({
+                        classes: 'swiper-slide m-projects__tab',
+                        vMode: 'tab',
+                        text: 'Апартаменты',
+                        cMode: 'beige',
+                    })
+            if(checkProps.filters)
+        .container(data-js="mProjectsContainer")
             +title({
                 classes: 'home-projects__title',
                 text: 'Проекты'
             })
-            .m-projects__controls
-                .m-projects__tabs(data-js="mProjectsTabs")
-                    .swiper-wrapper
-                        +btn({
-                            classes: 'swiper-slide m-projects__tab',
-                            vMode: 'tab',
-                            text: 'Квартиры',
-                            cMode: 'beige',
-                        })
-                        +btn({
-                            classes: 'swiper-slide m-projects__tab',
-                            vMode: 'tab',
-                            text: 'Дома',
-                            cMode: 'beige',
-                        })
-                        +btn({
-                            classes: 'swiper-slide m-projects__tab',
-                            vMode: 'tab',
-                            text: 'Апартаменты',
-                            cMode: 'beige',
-                        })
-                if(checkProps.filters)
-                    .m-projects__filters
             .m-projects__slides(data-js="mProjectsSlides")
                 .swiper-wrapper
                     block
@@ -49,5 +48,5 @@ mixin m-projects(props = defaultMProjectsProps)
                 vMode: 'btn',
                 text: 'Все проекты',
                 cMode: 'beige2',
-            })
+            })(data-js="mProjectsAll")
 

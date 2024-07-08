@@ -5,6 +5,12 @@ function headerControllInit() {
     let header = $('[data-js="siteHeader"]');
     let screenHeight = $(window).height();
     
+    const initScroll = $(window).scrollTop();
+
+    if(initScroll > screenHeight * 0.85) {
+        header.addClass("site-header--small");
+        header.addClass("site-header--hidden");
+    }
 
     $(window).scroll(function() {
         const scroll = $(window).scrollTop();
@@ -21,46 +27,14 @@ function headerControllInit() {
                 header.removeClass("site-header--small");
             }
 
-            if(scroll > screenHeight * 0.85) {
-                header.addClass("site-header--hidden");
-            } else {
+            if(scroll > screenHeight || scroll < screenHeight *0.85) {
                 header.removeClass("site-header--hidden");
-            }
-        }
-
-
-
-
-
-        /*if(scroll > oldScrollY && scroll <= screenHeight) {
-            header.addClass("site-header--small");
-        } else if (scroll > oldScrollY && scroll >= screenHeight * 0.85) {
-            header.addClass("site-header--hidden");
-        } else if (scroll <= oldScrollY && scroll <= screenHeight) {
-            header.removeClass("site-header--small");
-            if (scroll <= oldScrollY && scroll <= screenHeight * 0.85) {
-                header.removeClass("site-header--hidden");
-            }
-        } else {
-            header.addClass("site-header--hidden");
-        }
-
-        /*if (scroll >= screenHeight * 0.85) {
-            if(scroll < oldScrollY && scroll <= screenHeight) {
-                header.addClass("site-header--hidden");
-                header.removeClass("site-header--small");
-            } else if(scroll < oldScrollY) {
-                header.removeClass("site-header--hidden");
-                header.addClass("site-header--small");
             } else {
                 header.addClass("site-header--hidden");
             }
-
-        } else {
-            header.removeClass("site-header--small");
-            header.removeClass("site-header--hidden");
-        }*/
+        }
 
         oldScrollY = scroll
+
     });
 }

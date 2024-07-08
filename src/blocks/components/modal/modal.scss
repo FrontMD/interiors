@@ -1,3 +1,11 @@
+/*.hystmodal__opened,
+.hystmodal__shadow {
+    top: 0 !important;
+    margin-right: 0 !important;
+    position: relative !important;
+    overflow-x: hidden;
+}*/
+
 .modal.hystmodal {
     z-index: 120;
     background: rgba(0, 0, 0, 0);

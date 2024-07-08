@@ -1,8 +1,11 @@
 .m-projects {
+    height: calc(100vh + 315px);
+    overflow: hidden;
+
     &__tabs {
         width: fit-content;
         max-width: 100%;
-        margin: 24px auto 0;
+        margin: 0 auto;
         overflow: hidden;
     }
 
@@ -12,7 +15,19 @@
     }
 
     &__slides {
-        margin-top: 160px;
+        padding-top: 250px;
+    }
+
+    &__controls {
+        position: absolute;
+        left: 50%;
+        top: 425px;
+        transform: translatex(-50%);
+        z-index: 10
+    }
+
+    &__container {
+        transform: translateY(100%);
     }
 
     &__slide {

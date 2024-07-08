@@ -1,3 +1,4 @@
 const modals = new HystModal({
-    linkAttributeName: "data-modal"
+    linkAttributeName: "data-hystmodal",
+    //catchFocus: false
 });

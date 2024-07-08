@@ -1,4 +1,4 @@
-.mobile-menu.hystmodal.mobile-menu--main(id='mobileMenuMain' aria-hidden="true")
+//-.mobile-menu.hystmodal.mobile-menu--main(id='mobileMenuMain' aria-hidden="true")
     .hystmodal__wrap
         .hystmodal__window(role="dialog" aria-modal="true")
             .mobile-menu__content
@@ -22,7 +22,7 @@
                         cMode: 'transparent',
                         icon: true,
                         iconName: 'card_arrow',
-                    })(data-modal="#mobileMenuServices")
+                    })(data-hystmodal="#mobileMenuServices")
                     +btn({
                         classes: 'mobile-menu__link',
                         vMode: 'link',
@@ -31,7 +31,7 @@
                         cMode: 'transparent',
                         icon: true,
                         iconName: 'card_arrow',
-                    })(data-modal="#mobileMenuAbout")
+                    })(data-hystmodal="#mobileMenuAbout")
                     +btn({
                         classes: 'mobile-menu__link',
                         vMode: 'link',
@@ -66,12 +66,12 @@
                         iconName: 'card_arrow',
                     })
 
-.mobile-menu.hystmodal(id='mobileMenuServices' aria-hidden="true")
+//-.mobile-menu.hystmodal(id='mobileMenuServices' aria-hidden="true")
     .hystmodal__wrap
         .hystmodal__window(role="dialog" aria-modal="true")
             .mobile-menu__content
                 .mobile-menu__header
-                    a.mobile-menu__title(href="javascript:void(0)" data-modal="#mobileMenuMain") Продукция и услуги
+                    a.mobile-menu__title(href="javascript:void(0)" data-hystmodal="#mobileMenuMain") Продукция и услуги
                     +btn({
                         classes: 'mobile-menu__close',
                         tag: 'button',
@@ -107,12 +107,12 @@
                         iconName: 'card_arrow'
                     })
 
-.mobile-menu.hystmodal(id='mobileMenuAbout' aria-hidden="true")
+//-.mobile-menu.hystmodal(id='mobileMenuAbout' aria-hidden="true")
     .hystmodal__wrap
         .hystmodal__window(role="dialog" aria-modal="true")
             .mobile-menu__content
                 .mobile-menu__header
-                    a.mobile-menu__title(href="javascript:void(0)" data-modal="#mobileMenuMain") О компании
+                    a.mobile-menu__title(href="javascript:void(0)" data-hystmodal="#mobileMenuMain") О компании
                     +btn({
                         classes: 'mobile-menu__close',
                         tag: 'button',
@@ -180,12 +180,12 @@
                         iconName: 'card_arrow'
                     })                    
 
-.mobile-menu.hystmodal(id='mobileMenuStaff' aria-hidden="true")
+//-.mobile-menu.hystmodal(id='mobileMenuStaff' aria-hidden="true")
     .hystmodal__wrap
         .hystmodal__window(role="dialog" aria-modal="true")
             .mobile-menu__content
                 .mobile-menu__header
-                    a.mobile-menu__title(href="javascript:void(0)" data-modal="#mobileMenuMain") Персонал
+                    a.mobile-menu__title(href="javascript:void(0)" data-hystmodal="#mobileMenuMain") Персонал
                     +btn({
                         classes: 'mobile-menu__close',
                         tag: 'button',
@@ -245,7 +245,7 @@
                         iconName: 'card_arrow'
                     })
 
-.mobile-menu.hystmodal(id='mobileMenuSearch' aria-hidden="true")
+//-.mobile-menu.hystmodal(id='mobileMenuSearch' aria-hidden="true")
     .hystmodal__wrap
         .hystmodal__window(role="dialog" aria-modal="true")
             .mobile-menu__content
