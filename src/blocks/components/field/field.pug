@@ -40,8 +40,8 @@ mixin field(props = defaultFieldProps)
                         use(xlink:href=`./img/sprites/sprite.svg#invalid_field`)
                 span.field-error__text(data-js='fieldError')
 
-        //- if(checkProps.tag === 'textarea')
-            textarea.field__textarea(rows="3")
+        - if(checkProps.tag === 'textarea')
+            textarea.field__textarea.has-scroll(rows="1" placeholder=checkProps.placeholder)
         //- if(checkProps.tag === 'select')
             select.field__select(data-js='formSelect')
                 option

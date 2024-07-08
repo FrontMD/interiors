@@ -1,5 +1,3 @@
-@@include("../../components/thanks-message/thanks-message.js")
-
 function validation() {
 
     const forms = document.querySelectorAll('[data-validate]')
@@ -133,4 +131,8 @@ function inputMasksInit(form) {
             }).mask(phone); 
         })
     }
+}
+
+function thanksMessageShow() {
+    modals.open('#thankMessage')
 }

@@ -1,0 +1,14 @@
+mixin modal(modalId="myModal", classes= "")
+    .modal.hystmodal(id=modalId class= classes aria-hidden="true")
+        .hystmodal__wrap
+            .hystmodal__window(role="dialog" aria-modal="true")
+                .modal__content
+                    +btn({
+                        classes: 'modal__close',
+                        tag: 'button',
+                        vMode: 'icon',
+                        cMode: 'transparent',
+                        icon: true,
+                        iconName: 'close'
+                    })(data-hystclose)
+                    block

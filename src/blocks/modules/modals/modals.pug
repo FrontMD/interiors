@@ -1,0 +1,51 @@
+noindex
+    div
+        //- код модалок сюда
+        //- include ../mobile-menu/mobile-menu
+
+        //- Обсудить проект
+        +modal('discussProject', 'discuss-project')
+            +form({
+                classes: 'discuss-project__form',
+                title: 'Обсудить проект',
+                btnText: 'Отправить заявку',
+            })
+                +field({
+                    classes: '',
+                    placeholder: 'Ваше имя*',
+                    inputAttr: {
+                        "required": ""
+                    },
+                    isRequired: true
+                })
+                +field({
+                    classes: '',
+                    type: 'tel',
+                    placeholder: '+7 (___)___-__-__*',
+                    inputAttr: {
+                        "data-type": "phoneNumber",
+                        "data-v-name": "phone",
+                        "required": ""
+                    },
+                    isRequired: true
+                })
+                +field({
+                    classes: 'width100',
+                    tag: 'textarea',
+                    placeholder: 'Сообщение',
+                })
+
+        //- Видео о нас
+        +modal('homeAboutVideo', 'media-modal')
+            +video({
+                video: './video/about',
+                poster: './img/home/home_about_full.jpg',
+                classes: '',
+                autoplay: false,
+                muted: false
+            })
+
+        //- Спасибо за заявку
+        +modal('thankMessage', 'thank-modal')
+            .thank-modal__title Спасибо!
+            .thank-modal__text Спасибо за заявку, мы свяжемся с Вами в ближайшее время

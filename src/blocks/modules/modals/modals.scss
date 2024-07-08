@@ -1,0 +1,76 @@
+.hystmodal__shadow.hystmodal__shadow--show {
+    background-color: #000;
+    opacity: 0.9;
+}
+
+.discuss-project {
+    &__form {
+        height: 100%;
+        padding: 100px 154px;
+        background-color: $c-brown-3;
+
+        .form__content {
+            justify-content: center;
+        }
+    }
+}
+
+.media-modal {
+    .modal__content {
+        background-color: transparent;
+    }
+
+    .modal__close {
+        background-color: $c-beige;
+        color: $c-brown;
+
+        @include hover() {
+            background-color: $c-beige-hover;
+        }
+    }
+}
+
+.thank-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $c-white;
+
+    .hystmodal__window {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 395px;
+        padding: 64px;
+        height: fit-content;
+        min-height: 294px;
+        background-color: $c-grey;
+        text-align: center;
+    }
+
+    .modal__close {
+        right: 12px;
+        top: 12px;
+    }
+
+    &__title {
+        font-family: $titleFont;
+        font-size: 56px;
+        line-height: 1.08em;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.5em;
+        opacity: 0.7;
+    }
+}

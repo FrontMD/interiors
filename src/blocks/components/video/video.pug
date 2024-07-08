@@ -1,0 +1,42 @@
+-
+    const defaultVideoProps = {
+        video: 'video/video',
+        poster: 'img/poster.jpg',
+        classes: '',
+        autoplay: false,
+        muted: false
+    }
+
+mixin video(props = defaultVideoProps)
+    -
+        const checkProps = {
+            video: props.video ? props.video : defaultVideoProps.video,
+            poster: props.poster ? props.poster : defaultVideoProps.poster,
+            autoplay: props.autoplay ? props.autoplay : defaultVideoProps.autoplay,
+            muted: props.muted ? props.muted : defaultVideoProps.muted,
+            classes: props.classes ? props.classes : defaultVideoProps.classes
+        }
+
+    .video
+        .video__container(data-js='videoContainer')
+            .video__video
+                video(poster=checkProps.poster)&attributes(attributes)
+                    source(src=`${checkProps.video}.mp4` type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+                    source(src=`${checkProps.video}.webm` type='video/webm; codecs="vp8, vorbis"')
+            .video__btns(data-js='videoBtnsBlock')
+                +btn({
+                    classes: 'video__btn active',
+                    vMode: 'circle',
+                    text: '',
+                    cMode: 'beige',
+                    icon: true,
+                    iconName: 'play'
+                })(data-js="videoBtnPlay")
+                +btn({
+                    classes: 'video__btn',
+                    vMode: 'circle',
+                    text: '',
+                    cMode: 'beige',
+                    icon: true,
+                    iconName: 'pause'
+                })(data-js="videoBtnPause")
