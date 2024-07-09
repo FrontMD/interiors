@@ -14,6 +14,11 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+
+        @include max(1199) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
     }
 
     &__logo {
@@ -25,6 +30,10 @@
         transform: translateX(-50%);
         transition: opacity 0.5s ease;
 
+        @include max(1199) {
+            width: 87.78px;
+        }
+
         img {
             width: 100%;
         }
@@ -32,6 +41,10 @@
         &--full {
             width: 104px;
             opacity: 1;
+
+            @include max(1199) {
+                width: 87.78px;
+            }
         }
     }
 
@@ -50,6 +63,24 @@
             &.noHovered {
                 opacity: 0.5;
             }
+        }
+
+        @include max(1199) {
+            display: none;
+        }
+    }
+
+    .mobile-menu__open,
+    .site-header__call {
+        display: none;
+
+        .btn__icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        @include max(1199) {
+            display: flex;
         }
     }
 }

@@ -6,11 +6,16 @@
     &__slider {
         overflow: hidden;
         position: relative;
-        margin-left: calc((100% - 1312px) / 2);
+        padding-left: calc((100% - 1312px) / 2);
+        max-width: 100%;
+
+        @include max(1440) {
+            padding-left: 64px;
+        }
     }
 
     &__slide {
-        max-height: 730px;
+        height: 730px;
         display: flex;
 
         &:not(.swiper-slide-active) {
@@ -28,6 +33,7 @@
         left: 0;
         width: 48.38%;
         padding-right: 64px;
+        padding-left: 64px;
         z-index: 5;
 
         .title {
@@ -82,6 +88,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        .btn {
+            margin-top: 16px;
+        }
     }
 
     &__quote {

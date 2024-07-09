@@ -89,16 +89,6 @@
             width: 25px;
             height: 25px;
             color: inherit;
-
-            @include max(1024) {
-                width: 25px;
-                height: 25px;
-            }
-
-            @include max(768) {
-                width: 25px;
-                height: 25px;
-            }
         }
     }
 }

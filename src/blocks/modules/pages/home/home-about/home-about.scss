@@ -7,6 +7,12 @@
     &__video {
         position: relative;
         flex-basis: 43.5%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     &__play {
@@ -37,5 +43,9 @@
     &__btn {
         margin-top: auto;
         margin-left: 62.27px;
+
+        @include max(1199) {
+            margin-top: 16px;
+        }
     }
 }

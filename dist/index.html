@@ -27,10 +27,18 @@
   <body>
     <header class="site-header" data-js="siteHeader">
       <div class="container site-header__container">
+            <button class="btn btn--icon btn--beige mobile-menu__open" type="button" data-hystmodal="mobileMenu"><span class="btn__icon"> 
+                <svg> 
+                  <use xlink:href="./img/sprites/sprite.svg#burger"></use>
+                </svg></span>
+            </button>
         <nav class="site-header__menu header-menu" data-js="reversHoversBlock"><a class="header-menu__item" href="#" data-js="reversHoversItem">Проекты</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Услуги</a><a class="header-menu__item" href="#" data-js="reversHoversItem">О нас</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Награды</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Блог</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Контакты</a></nav>
         <div class="site-header__logo site-header__logo--full" data-js="siteHeaderLogoFull"><img src="./img/logo_full.svg" alt="logo"></div>
         <div class="site-header__logo" data-js="siteHeaderLogo"><img src="./img/logo.svg" alt="logo"></div>
-        <div class="site-header__menu header-menu" data-js="reversHoversBlock"><a class="header-menu__item" href="https://www.instagram.com/" data-js="reversHoversItem">Instagram</a><a class="header-menu__item" href="#" data-js="reversHoversItem">8 (911) 227-64-52</a><a class="header-menu__item" href="#" data-js="reversHoversItem" data-hystmodal="#discussProject">Обсудить проект</a></div>
+        <div class="site-header__menu header-menu" data-js="reversHoversBlock"><a class="header-menu__item" href="https://www.instagram.com/" data-js="reversHoversItem">Instagram</a><a class="header-menu__item" href="+79112276452" data-js="reversHoversItem">8 (911) 227-64-52</a><a class="header-menu__item" href="#" data-js="reversHoversItem" data-hystmodal="#discussProject">Обсудить проект</a></div><a class="btn btn--icon btn--beige site-header__call" href="tel:79112276452"><span class="btn__icon">
+                <svg>
+                  <use xlink:href="./img/sprites/sprite.svg#handset"></use>
+                </svg></span></a>
       </div>
     </header>
     <main class="site-main">
@@ -74,6 +82,23 @@
     </footer>
     <noindex>
       <div>
+        <div class="modal hystmodal mobile-menu" id="mobileMenu">
+          <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+              <div class="modal__content">
+                    <button class="btn btn--icon btn--transparent modal__close" type="button" data-hystclose><span class="btn__icon"> 
+                        <svg> 
+                          <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                        </svg></span>
+                    </button>
+                <div class="header-menu mobile-menu__menu"><a class="header-menu__item" href="#">Проекты</a><a class="header-menu__item" href="#">Услуги</a><a class="header-menu__item" href="#">О нас</a><a class="header-menu__item" href="#">Награды</a><a class="header-menu__item" href="#">Блог</a><a class="header-menu__item" href="#">Контакты</a><a class="header-menu__item header-menu__item--phone" href="+79112276452">8 (911) 227-64-52</a></div>
+                <div class="header-menu mobile-menu__social"><a class="header-menu__item" href="https://www.houzz.ru/">Houzz</a><a class="header-menu__item" href="https://web.telegram.org/">Telegram</a><a class="header-menu__item" href="https://www.youtube.com/">YouTube</a><a class="header-menu__item" href="https://www.instagram.com/">Instagram</a></div>
+                    <button class="btn btn--btn btn--beige mobile-menu__btn" type="button" data-hystmodal="discussProject"><span class="btn__text">Обсудить проект</span>
+                    </button>
+              </div>
+            </div>
+          </div>
+        </div>
             <div class="modal hystmodal discuss-project" id="discussProject" aria-hidden="true">
               <div class="hystmodal__wrap">
                 <div class="hystmodal__window" role="dialog" aria-modal="true">
@@ -116,13 +141,13 @@
             </div>
             <div class="modal hystmodal media-modal" id="homeAboutVideo" aria-hidden="true">
               <div class="hystmodal__wrap">
+                    <button class="btn btn--icon btn--transparent modal__close" type="button" data-hystclose><span class="btn__icon"> 
+                        <svg> 
+                          <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                        </svg></span>
+                    </button>
                 <div class="hystmodal__window" role="dialog" aria-modal="true">
                   <div class="modal__content">
-                        <button class="btn btn--icon btn--transparent modal__close" type="button" data-hystclose><span class="btn__icon"> 
-                            <svg> 
-                              <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                            </svg></span>
-                        </button>
                         <div class="video">
                           <div class="video__container" data-js="videoContainer">
                             <div class="video__video">

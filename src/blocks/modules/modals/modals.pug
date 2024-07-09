@@ -1,7 +1,7 @@
 noindex
     div
         //- код модалок сюда
-        //- include ../mobile-menu/mobile-menu
+        include ../mobile-menu/mobile-menu
 
         //- Обсудить проект
         +modal('discussProject', 'discuss-project')
@@ -36,7 +36,7 @@ noindex
                 })
 
         //- Видео о нас
-        +modal('homeAboutVideo', 'media-modal')
+        +modal('homeAboutVideo', 'media-modal', false)
             +video({
                 video: './video/about',
                 poster: './img/home/home_about_full.jpg',

@@ -1,5 +1,14 @@
 header.site-header(data-js="siteHeader")
     .container.site-header__container
+        +btn({
+            classes: 'mobile-menu__open',
+            tag: 'button',
+            vMode: 'icon',
+            text: '',
+            cMode: 'beige',
+            icon: true,
+            iconName: 'burger',
+        })(data-hystmodal="mobileMenu")
         nav.site-header__menu.header-menu(data-js="reversHoversBlock")
             a(href="#" data-js="reversHoversItem").header-menu__item Проекты
             a(href="#" data-js="reversHoversItem").header-menu__item Услуги
@@ -13,5 +22,14 @@ header.site-header(data-js="siteHeader")
             img(src="./img/logo.svg" alt="logo")
         .site-header__menu.header-menu(data-js="reversHoversBlock")
             a(href="https://www.instagram.com/" data-js="reversHoversItem").header-menu__item Instagram
-            a(href="#" data-js="reversHoversItem").header-menu__item 8 (911) 227-64-52
+            a(href="+79112276452" data-js="reversHoversItem").header-menu__item 8 (911) 227-64-52
             a(href="#" data-js="reversHoversItem" data-hystmodal="#discussProject").header-menu__item Обсудить проект
+        +btn({
+            classes: 'site-header__call',
+            link: 'tel:79112276452',
+            vMode: 'icon',
+            text: '',
+            cMode: 'beige',
+            icon: true,
+            iconName: 'handset',
+        })

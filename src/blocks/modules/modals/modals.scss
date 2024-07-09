@@ -16,16 +16,25 @@
 }
 
 .media-modal {
+    .hystmodal__window {
+        max-width: 1120px;
+        margin: 0 auto;
+        height: auto !important;
+    }
+
     .modal__content {
         background-color: transparent;
     }
 
     .modal__close {
         background-color: $c-beige;
-        color: $c-brown;
 
         @include hover() {
             background-color: $c-beige-hover;
+        }
+
+        .btn__icon svg {
+            color: $c-brown;
         }
     }
 }
@@ -38,9 +47,7 @@
     color: $c-white;
 
     .hystmodal__window {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: auto !important;
     }
 
     .modal__content {

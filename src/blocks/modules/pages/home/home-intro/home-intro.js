@@ -2,11 +2,18 @@ function homeIntroAnim() {
 
     document.activeElement.blur()
 
+    let windowWidth = $(window).width()
+    let fakeLogoTop = '47px'
+
+    if(windowWidth < 1200) {
+        fakeLogoTop = '42px'
+    }
+
     if(document.querySelector('[data-js="homeIntro"]')) {
         let tl = gsap.timeline();
         //расставляем по местам элементы
         tl.to('[data-js="homeIntroFakeLogo"]', {
-            top: '47px',
+            top: fakeLogoTop,
             duration: 1,
             delay: 1
         })
@@ -21,7 +28,7 @@ function homeIntroAnim() {
             duration: 2
         }, '>')
         tl.to('[data-js="homeIntroFake1"]', {
-            top: '10%',
+            top: '0%',
             left: '50%',
             duration: 2
         }, '< +0.2')
@@ -36,7 +43,7 @@ function homeIntroAnim() {
             duration: 2
         }, '< +0.2')
         tl.to('[data-js="homeIntroFake3"]', {
-            top: '90%',
+            top: '100%',
             left: '70%',
             duration: 2
         }, '< +0.2')

@@ -23,6 +23,14 @@
         top: 250px;
         left: 50%;
         transform: translateX(-50%);
+
+        @include max(1300) {
+            top: 210px;
+        }
+
+        @include max(1199) {
+            top: 250px;
+        }
     }
 
     &__contacts {
