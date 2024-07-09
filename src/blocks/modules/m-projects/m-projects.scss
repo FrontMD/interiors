@@ -2,6 +2,10 @@
     height: calc(100vh + 315px);
     overflow: hidden;
 
+    @include max(1199) {
+        height: auto;
+    }
+
     &__tabs {
         width: fit-content;
         max-width: 100%;
@@ -16,6 +20,19 @@
 
     &__slides {
         padding-top: 250px;
+
+        @include max(1199) {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            padding-top: 48px;
+        }
+
+        .swiper-wrapper {
+            @include max(1199) {
+                display: contents;
+            }
+        }
     }
 
     &__controls {
@@ -23,7 +40,11 @@
         left: 50%;
         top: 425px;
         transform: translatex(-50%);
-        z-index: 10
+        z-index: 10;
+
+        @include max(1199) {
+            display: none;
+        }
     }
 
     &__container {
@@ -34,14 +55,42 @@
         display: flex;
         flex-direction: column;
 
-        &:not(.swiper-slide-active) {
-            opacity: 0 !important;
-            z-index: -10;
+        @include min(1200) {
+            &:not(.swiper-slide-active) {
+                opacity: 0 !important;
+                z-index: -10;
+            }
+        }
+    }
+
+    &__slide-title {
+        display: none;
+        font-family: $titleFont;
+        font-size: 24px;
+        line-height: 1.08;
+        text-align: center;
+        color: $c-white;
+
+        @include max(1199) {
+            display: block;
+        }
+    }
+
+    &__slide-btn {
+        display: none;
+        margin: 32px auto 0;
+
+        @include max(1199) {
+            display: block;
         }
     }
 
     &__all {
         margin: 96px auto 0;
+
+        @include max(1199) {
+            display: none;
+        }
     }
 
     .projects-group {
@@ -49,9 +98,38 @@
         align-items: center;
         justify-content: space-between;
 
+        @include max(1199) {
+            display: none;
+            margin-top: 24px;
+
+            &:nth-child(2) {
+                display: flex;
+                gap: 16px;
+            }
+
+            .project-card {
+                flex-basis: 50%;
+            }
+
+            &__two .project-card {
+                display: none;
+
+                &:nth-child(1) {
+                    display: flex;
+                }
+            }
+        }
+
         &__two {
             display: flex;
             gap: 24px;
+        }
+
+        &__one,
+        &__two {
+            @include max(1199) {
+                display: contents;
+            }
         }
     }
 }

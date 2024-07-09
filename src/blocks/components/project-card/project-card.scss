@@ -105,18 +105,44 @@
     &--big {
         width: 435px;
         padding: 40px;
+
+        @include max(768) {
+            padding: 24px;
+        }
     }
 
     &--big &__overlay {
         padding: 29px 20px;
+
+        @include max(768) {
+            padding: 24px;
+        }
     }
 
     &--small {
         width: 285px;
         padding: 24px;
+
+        @include max(1199) {
+            width: 435px;
+            padding: 40px;
+        }
+
+        @include max(768) {
+            padding: 24px;
+        }
     }
 
     &--small &__overlay {
         padding: 24px;
+
+        @include max(1199) {
+            padding: 29px 20px;
+        }
+
+
+        @include max(768) {
+            padding: 24px;
+        }
     }
 }

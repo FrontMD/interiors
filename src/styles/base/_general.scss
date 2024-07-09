@@ -182,7 +182,7 @@ html {
 }
 
 .mobile {
-    display: none;
+    display: none !important;
 
     @include max(1024) {
         display: block;

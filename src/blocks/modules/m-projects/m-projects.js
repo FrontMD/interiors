@@ -7,7 +7,14 @@ function mProjects() {
 
     if(!mProjectsEl) return
 
-    mProjectsSliderInit(mProjectsEl)
+    const windowWidth = $(window).width()
+
+    if(windowWidth > 1199) {
+        mProjectsSliderInit(mProjectsEl)
+    } else {
+        return
+    }
+
 }
 
 function mProjectsSliderInit(mProjectsEl) {

@@ -9,6 +9,7 @@ block content
         include ../../blocks/modules/pages/home/home-numbers/home-numbers.pug
         +m-projects()
             .swiper-slide.m-projects__slide
+                .m-projects__slide-title Квартиры
                 .m-projects__row.projects-group
                     .projects-group__one
                         +project-card()
@@ -66,8 +67,15 @@ block content
                             title: 'Старый Арбат',
                             location: 'Россия, Москва',
                             bgImage: 'project-9.jpg',
-                        })                                           
+                        }) 
+                +btn({
+                    classes: 'm-projects__slide-btn',
+                    text: 'Все проекты квартир',
+                    cMode: 'beige2',
+                })
+
             .swiper-slide.m-projects__slide
+                .m-projects__slide-title Дома
                 .m-projects__row.projects-group
                     .projects-group__one
                         +project-card()
@@ -104,8 +112,15 @@ block content
                             title: 'Маленькая Франция',
                             location: 'Россия, Санкт-Петербург',
                             bgImage: 'project-6.jpg',
-                        })              
+                        })  
+                +btn({
+                    classes: 'm-projects__slide-btn',
+                    text: 'Все проекты домов',
+                    cMode: 'beige2',
+                })     
+
             .swiper-slide.m-projects__slide
+                .m-projects__slide-title Апартаменты
                 .m-projects__row.projects-group
                     .projects-group__one
                         +project-card()
@@ -163,7 +178,12 @@ block content
                             title: 'Старый Арбат',
                             location: 'Россия, Москва',
                             bgImage: 'project-9.jpg',
-                        })             
+                        })  
+                +btn({
+                    classes: 'm-projects__slide-btn',
+                    text: 'Все проекты апартаментов',
+                    cMode: 'beige2',
+                })
         include ../../blocks/modules/pages/home/home-about/home-about.pug
         include ../../blocks/modules/pages/home/home-reviews/home-reviews.pug
         +m-contacts()
