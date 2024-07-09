@@ -9,6 +9,10 @@ function homeIntroAnim() {
         fakeLogoTop = '42px'
     }
 
+    if(windowWidth < 501) {
+        fakeLogoTop = '32px'
+    }
+
     if(document.querySelector('[data-js="homeIntro"]')) {
         let tl = gsap.timeline();
         //расставляем по местам элементы

@@ -13,6 +13,8 @@
             justify-content: center;
         }
     }
+
+
 }
 
 .media-modal {
@@ -20,6 +22,14 @@
         max-width: 1120px;
         margin: 0 auto;
         height: auto !important;
+
+        @include max(1199) {
+            max-width: calc(100% - 48px * 2);
+        }
+
+        @include max(500) {
+            max-width: calc(100% - 16px * 2);
+        }
     }
 
     .modal__content {
@@ -57,22 +67,40 @@
         justify-content: center;
         gap: 8px;
         width: 395px;
+        max-width: 100%;
         padding: 64px;
         height: fit-content;
         min-height: 294px;
         background-color: $c-grey;
         text-align: center;
+
+        @include max(768) {
+            min-height: 236px;
+        }
+
+        @include max(500) {
+            width: 328px;
+            min-height: 276px;
+        }
     }
 
     .modal__close {
-        right: 12px;
-        top: 12px;
+        right: 12px !important;
+        top: 12px !important;
     }
 
     &__title {
         font-family: $titleFont;
         font-size: 56px;
         line-height: 1.08em;
+
+        @include max(768) {
+            font-size: 48px;
+        }
+
+        @include max(500) {
+            font-size: 40px;
+        }
     }
 
     &__text {

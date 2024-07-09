@@ -87,6 +87,11 @@
                 width: 87.78px;
                 height: 57.39px;
             }
+
+            @include max(500) {
+                width: 59.95px;
+                height: 38.04px;
+            }
         }
     }
 
@@ -107,6 +112,10 @@
             @include max(768) {
                 padding: 72px 0 40px;
             }
+
+            @include max(500) {
+                padding: 45px 0 24px;
+            }
         }
     }
 
@@ -123,5 +132,9 @@
     &__btn {
         padding: 4px 0;
         color: $c-white;
+
+        @include max(500) {
+            padding: 0;
+        }
     }
 }

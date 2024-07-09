@@ -63,8 +63,7 @@
         }
     }
 
-    &__input,
-    &__textarea {
+    &__input {
         width: 100%;
         padding: 40px 20px;
         border-bottom: 1px solid $c-beige;
@@ -79,8 +78,56 @@
         transition: border-color $tr-time-and-type;
 
         @include max(1024) {
-            padding: 24px 12px;
+            padding: 24px 32px;
         }
+
+        @include max(500) {
+            padding: 13px 32px;
+        }
+
+        &::placeholder {
+            color: $c-beige-3;
+            opacity: 1;
+        }
+
+        &:-ms-input-placeholder {
+            color: $c-beige-3;
+        }
+
+        &::-ms-input-placeholder {
+            color: $c-beige-3;
+        }
+
+        &:focus {
+            border-color: $c-beige-hover;
+        }
+
+    }
+
+    &--textarea {
+        padding: 40px 20px;
+        border-bottom: 1px solid $c-beige;
+        border-color: $c-beige;
+        transition: border-color $tr-time-and-type;
+
+        @include max(1024) {
+            padding: 24px 32px;
+        }
+
+        @include max(500) {
+            padding: 13px 32px;
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5em;
+        background-color: transparent;
+        outline: none;
+        color: $c-beige-hover;
+        text-align: center;
+        cursor: pointer;
 
         &::placeholder {
             color: $c-beige-3;

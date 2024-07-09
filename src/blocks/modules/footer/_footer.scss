@@ -9,8 +9,16 @@
         padding: 48px;
     }
 
+    @include max(500) {
+        padding: 16px 20.5px;
+    }
+
     &__container {
         @include max(1024) {
+            max-width: 100%;
+        }
+
+        @include max(730) {
             max-width: 100%;
         }
     }
@@ -24,6 +32,10 @@
             flex-wrap: wrap;
             gap: 48px;
         }
+
+        @include max(500) {
+            gap: 32px;
+        }
     }
 
     &__bottom {
@@ -33,6 +45,16 @@
 
         @include max(1024) {
             margin-top: 56px;
+        }
+
+        @include max(730) {
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        @include max(500) {
+            margin-top: 48px;
         }
     }
 
@@ -44,6 +66,10 @@
 
         @include max(1024) {
             gap: 48px;
+        }
+
+        @include max(1024) {
+            flex: 0 0 100%;
         }
 
         &--logo {
@@ -78,6 +104,10 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+
+        @include max(500) {
+            gap: 12px;
+        }
     }
 
     &__logo {
@@ -86,6 +116,10 @@
         @include max(1024) {
             flex-basis: 100%;
             max-width: 100%;
+        }
+
+        @include max(500) {
+            margin-top: 8px;
         }
 
         img {

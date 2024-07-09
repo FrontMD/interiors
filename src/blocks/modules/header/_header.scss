@@ -19,6 +19,11 @@
             padding-top: 20px;
             padding-bottom: 20px;
         }
+
+        @include max(500) {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
     }
 
     &__logo {
@@ -32,6 +37,10 @@
 
         @include max(1199) {
             width: 87.78px;
+        }
+
+        @include max(500) {
+            width: 59.95px;
         }
 
         img {
@@ -74,10 +83,15 @@
     .site-header__call {
         display: none;
 
-        .btn__icon svg {
-            width: 24px;
-            height: 24px;
+        .btn__icon {
+            color: $c-brown;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
         }
+
 
         @include max(1199) {
             display: flex;
@@ -94,6 +108,13 @@
 
     &--small {
         background-color: $c-grey;
+    }
+
+    &--small &__container {
+        @include max(500) {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
     }
 
     &--small &__logo {

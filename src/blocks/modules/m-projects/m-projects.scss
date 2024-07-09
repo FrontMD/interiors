@@ -28,6 +28,10 @@
             padding-top: 48px;
         }
 
+        @include max(500) {
+            padding-top: 24px;
+        }
+
         .swiper-wrapper {
             @include max(1199) {
                 display: contents;
@@ -74,6 +78,10 @@
         @include max(1199) {
             display: block;
         }
+
+        @include max(500) {
+            font-size: 20px;
+        }
     }
 
     &__slide-btn {
@@ -117,6 +125,18 @@
                 &:nth-child(1) {
                     display: flex;
                 }
+            }
+        }
+
+        @include max(500) {
+            margin-top: 16px;
+
+            &:nth-child(2) {
+                flex-direction: column;
+            }
+
+            .project-card {
+                flex-basis: auto;
             }
         }
 

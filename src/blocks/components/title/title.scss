@@ -23,6 +23,10 @@
         @include max(768) {
             font-size: 48px;
         }
+
+        @include max(500) {
+            font-size: 40px;
+        }
     }
 
     &__h2 {
@@ -41,6 +45,10 @@
             font-size: 132px;
         }
 
+        @include max(730) {
+            font-size: 64px;
+        }
+
         &--small {
             font-size: 56px;
             text-align: left;
@@ -56,35 +64,10 @@
             @include max(1024) {
                 font-size: 48px;
             }
+
+            @include max(730) {
+                font-size: 40px;
+            }
         }
     }
-
-    &__h3 {
-        font-size: 0.6875em;
-        font-weight: 700;
-        line-height: 1.2em;
-        text-transform: uppercase;
-    }
-
-    &__h4 {
-        font-size: 0.5833em;
-        font-weight: 700;
-        line-height: 1.2em;
-        text-transform: uppercase;
-    }
-
-    &__h5 {
-        font-size: 0.4792em;
-        font-weight: 700;
-        line-height: 1.2em;
-        text-transform: uppercase;
-    }
-
-    &__h6 {
-        font-size: 0.3958em;
-        font-weight: 700;
-        line-height: 1.2em;
-        text-transform: uppercase;
-    }
-
 }

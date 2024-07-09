@@ -20,18 +20,31 @@
         flex-direction: column;
         gap: 24px;
         padding: 96px 48px 48px;
+
+        @include max(500) {
+            padding: 88px 16px 16px;
+        }
     }
 
     .modal__close.btn {
         right: auto;
         left: 48px;
         top: 20px;
+
+        @include max(500) {
+            left: 16px;
+            top: 12px;
+        }
     }
 
     &__menu {
         display: flex;
         flex-direction: column;
         gap: 64px;
+
+        @include max(500) {
+            gap: 32px;
+        }
 
     }
 

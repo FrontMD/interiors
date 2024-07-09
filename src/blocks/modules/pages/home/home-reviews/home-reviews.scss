@@ -57,6 +57,14 @@
             width: 100%;
         }
 
+        @include max(500) {
+            padding-right: 16px;
+            padding-left: 16px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+        }
+
         .title {
             max-width: 397px;
 
@@ -107,6 +115,10 @@
             flex: 0 0 auto;
             gap: 24px;
         }
+
+        @include max(500) {
+            padding: 40px 16px 24px;
+        }
     }
 
     &__title {
@@ -121,6 +133,10 @@
         @include max(1024) {
             padding-bottom: 0;
             border-bottom: none;
+        }
+
+        @include max(500) {
+            font-size: 16px;
         }
     }
 
@@ -139,6 +155,11 @@
             @include max(1024) {
                 margin-top: 24px;
                 padding: 24px 76px;
+            }
+
+            @include max(500) {
+                padding: 12px 24px;
+                width: 100%;
             }
         }
     }
@@ -176,6 +197,10 @@
 
             @include max(1024) {
                 aspect-ratio: 1 / 0.987;
+            }
+
+            @include max(1024) {
+                aspect-ratio: 1 / 1.014;
             }
         }
     }

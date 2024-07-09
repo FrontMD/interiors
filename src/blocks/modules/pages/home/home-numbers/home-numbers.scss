@@ -10,6 +10,10 @@
             gap: 56px;
             align-items: flex-start;
         }
+
+        @include max(500) {
+            gap: 48px;
+        }
     }
 
     &__number:nth-child(1) {
@@ -46,6 +50,14 @@
         @include max(768) {
             min-height: 900px;
             margin-top: 80px;
+            padding-top: 80px;
+        }
+
+        @include max(500) {
+            min-height: 650px;
+            margin-top: 40px;
+            padding-top: 60px;
+            padding-left: 16px;
         }
     }
 
@@ -74,6 +86,11 @@
             gap: 0;
         }
 
+        @include max(500) {
+            flex-wrap: wrap;
+            gap: 16px 0;
+        }
+
         &__symbol {
             align-self: center;
             font-family: $titleFont;
@@ -90,6 +107,10 @@
             @include max(1300) {
                 font-size: 80px;
             }
+
+            @include max(500) {
+                font-size: 56px;
+            }
         }
 
         &__text {
@@ -98,6 +119,11 @@
 
             @include max(1199) {
                 margin-left: 16px;
+            }
+
+            @include max(500) {
+                flex-basis: 100%;
+                margin-left: 0;
             }
         }
     }

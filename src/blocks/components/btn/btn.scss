@@ -9,6 +9,10 @@
     text-decoration: none;
     cursor: pointer;
 
+    @include max(500) {
+        padding: 12px 24px;
+    }
+
     &__text {
         font-size: 16px;
         line-height: 1.5em;
@@ -63,23 +67,6 @@
     }
 }
 
-/*.btn.btn--link {
-    padding: 0;
-    min-width: fit-content;
-    flex-direction: row-reverse;
-    gap: 20px;
-    color: black;
-
-    @include hover() {
-        background-color: transparent;
-
-        .btn__text,
-        .btn__icon {
-            color: $c-white;
-        }
-    }
-}*/
-
 .btn.btn--icon {
     padding: 12px 20px;
     color: $c-white;
@@ -114,11 +101,20 @@
     padding: 40px;
     border-radius: 100%;
 
+    @include max(730) {
+        padding: 12px;
+    }
+
     .btn__icon {
         svg {
             width: 32px;
             height: 32px;
             color: inherit;
+
+            @include max(730) {
+                width: 24px;
+                height: 24px;
+            }
         }
     }
 }
