@@ -126,13 +126,13 @@ body {
     }
 }
 
-/*html {
+html {
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -o-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
-}*/
+}
 
 .main {
     flex-grow: 1;
@@ -144,13 +144,9 @@ body {
     max-width: calc(100% - 64px * 2);
     margin: 0 auto;
 
-    @include max(lg) {
-        max-width: calc(100% - 30px * 2);
+    @include max(1024) {
+        max-width: calc(100% - 48px * 2);
 
-    }
-
-    @include max(md) {
-        max-width: calc(100% - 16px * 2);
     }
 }
 
@@ -170,6 +166,27 @@ body {
 
 .section {
     padding-top: 120px;
+
+    @include max(1024) {
+        padding-top: 80px;
+
+    }
+}
+
+.desktop {
+    display: block;
+
+    @include max(1024) {
+        display: none;
+    }
+}
+
+.mobile {
+    display: none;
+
+    @include max(1024) {
+        display: block;
+    }
 }
 
 .has-scroll {

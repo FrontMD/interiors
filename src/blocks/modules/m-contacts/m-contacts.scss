@@ -5,6 +5,10 @@
         display: flex;
         justify-content: space-between;
         gap: 64px;
+
+        @include max(1024) {
+            gap: 24.59px;
+        }
     }
 
     &__image {
@@ -31,6 +35,10 @@
         @include max(1199) {
             top: 250px;
         }
+
+        @include max(1199) {
+            top: 204px;
+        }
     }
 
     &__contacts {
@@ -40,9 +48,22 @@
         flex-wrap: wrap;
         padding: 32px 48px;
         gap: 48px;
+
+        @include max(1024) {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 32px;
+            margin-top: 145px;
+            padding: 24px 0;
+            border-width: 1px 0px 1px 0px;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.15);
+        }
     }
 
     &__contact {
+        font-family: $titleFont;
         color: $c-beige;
         font-size: 20px;
         line-height: 1.08em;
@@ -61,5 +82,9 @@
 
     &__form {
         margin-top: 72px;
+
+        @include max(1024) {
+            margin-top: 40px;
+        }
     }
 }

@@ -27,7 +27,7 @@
   <body>
     <header class="site-header" data-js="siteHeader">
       <div class="container site-header__container">
-            <button class="btn btn--icon btn--beige mobile-menu__open" type="button" data-hystmodal="mobileMenu"><span class="btn__icon"> 
+            <button class="btn btn--icon btn--beige mobile-menu__open" type="button" data-hystmodal="#mobileMenu"><span class="btn__icon"> 
                 <svg> 
                   <use xlink:href="./img/sprites/sprite.svg#burger"></use>
                 </svg></span>
@@ -85,15 +85,15 @@
         <div class="modal hystmodal mobile-menu" id="mobileMenu">
           <div class="hystmodal__wrap">
             <div class="hystmodal__window" role="dialog" aria-modal="true">
-              <div class="modal__content">
+              <div class="modal__content has-scroll">
                     <button class="btn btn--icon btn--transparent modal__close" type="button" data-hystclose><span class="btn__icon"> 
                         <svg> 
                           <use xlink:href="./img/sprites/sprite.svg#close"></use>
                         </svg></span>
                     </button>
-                <div class="header-menu mobile-menu__menu"><a class="header-menu__item" href="#">Проекты</a><a class="header-menu__item" href="#">Услуги</a><a class="header-menu__item" href="#">О нас</a><a class="header-menu__item" href="#">Награды</a><a class="header-menu__item" href="#">Блог</a><a class="header-menu__item" href="#">Контакты</a><a class="header-menu__item header-menu__item--phone" href="+79112276452">8 (911) 227-64-52</a></div>
-                <div class="header-menu mobile-menu__social"><a class="header-menu__item" href="https://www.houzz.ru/">Houzz</a><a class="header-menu__item" href="https://web.telegram.org/">Telegram</a><a class="header-menu__item" href="https://www.youtube.com/">YouTube</a><a class="header-menu__item" href="https://www.instagram.com/">Instagram</a></div>
-                    <button class="btn btn--btn btn--beige mobile-menu__btn" type="button" data-hystmodal="discussProject"><span class="btn__text">Обсудить проект</span>
+                <div class="mobile-menu__menu"><a class="mobile-menu__item" href="#">Проекты</a><a class="mobile-menu__item" href="#">Услуги</a><a class="mobile-menu__item" href="#">О нас</a><a class="mobile-menu__item" href="#">Награды</a><a class="mobile-menu__item" href="#">Блог</a><a class="mobile-menu__item" href="#">Контакты</a></div><a class="mobile-menu__item mobile-menu__item--phone" href="+79112276452">8 (911) 227-64-52</a>
+                <div class="mobile-menu__social"><a class="mobile-menu__item" href="https://www.houzz.ru/">Houzz</a><a class="mobile-menu__item" href="https://web.telegram.org/">Telegram</a><a class="mobile-menu__item" href="https://www.youtube.com/">YouTube</a><a class="mobile-menu__item" href="https://www.instagram.com/">Instagram</a></div>
+                    <button class="btn btn--btn btn--beige mobile-menu__btn" type="button" data-hystmodal="#discussProject"><span class="btn__text">Обсудить проект</span>
                     </button>
               </div>
             </div>

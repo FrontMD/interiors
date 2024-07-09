@@ -42,6 +42,11 @@
         min-height: 800px;
         margin-top: 64px;
         padding-top: 112px;
+
+        @include max(768) {
+            min-height: 900px;
+            margin-top: 80px;
+        }
     }
 
     &__img {
@@ -101,6 +106,10 @@
         position: relative;
         z-index: 5;
         max-width: 432px;
+
+        @include max(768) {
+            max-width: 350px;
+        }
 
         .quote__icon,
         .quote__text {

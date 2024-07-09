@@ -5,16 +5,35 @@
     font-size: 16px;
     line-height: 1.5em;
 
+    @include max(1024) {
+        padding: 48px;
+    }
+
+    &__container {
+        @include max(1024) {
+            max-width: 100%;
+        }
+    }
+
     &__top {
         display: flex;
         justify-content: flex-start;
         gap: 96px;
+
+        @include max(1024) {
+            flex-wrap: wrap;
+            gap: 48px;
+        }
     }
 
     &__bottom {
         display: flex;
         justify-content: space-between;
         margin-top: 48px;
+
+        @include max(1024) {
+            margin-top: 56px;
+        }
     }
 
     &__column {
@@ -22,6 +41,10 @@
         flex-direction: column;
         gap: 70px;
         flex: 0 0 248px;
+
+        @include max(1024) {
+            gap: 48px;
+        }
 
         &--logo {
             display: flex;
@@ -59,6 +82,11 @@
 
     &__logo {
         max-width: 557px;
+
+        @include max(1024) {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
 
         img {
             width: 100%;

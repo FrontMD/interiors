@@ -78,6 +78,10 @@
         cursor: pointer;
         transition: border-color $tr-time-and-type;
 
+        @include max(1024) {
+            padding: 24px 12px;
+        }
+
         &::placeholder {
             color: $c-beige-3;
             opacity: 1;

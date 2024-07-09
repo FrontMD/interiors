@@ -19,6 +19,10 @@
 
     &__h1 {
         font-size: 56px;
+
+        @include max(768) {
+            font-size: 48px;
+        }
     }
 
     &__h2 {
@@ -33,11 +37,23 @@
             font-size: 175px;
         }
 
+        @include max(1024) {
+            font-size: 132px;
+        }
+
         &--small {
             font-size: 56px;
             text-align: left;
 
             @include max(1300) {
+                font-size: 48px;
+            }
+
+            @include max(1199) {
+                font-size: 48px;
+            }
+
+            @include max(1024) {
                 font-size: 48px;
             }
         }

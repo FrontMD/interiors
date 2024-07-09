@@ -45,6 +45,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-40.3%, -130%);
+
         }
 
         &--2 {
@@ -102,11 +103,21 @@
             justify-content: space-between;
             height: 100vh;
             padding: 335px 0 40px;
+
+            @include max(768) {
+                padding: 72px 0 40px;
+            }
         }
     }
 
     &__title {
         text-align: center;
+
+        @include max(768) {
+            margin-top: auto;
+            margin-bottom: auto;
+            max-width: 500px;
+        }
     }
 
     &__btn {

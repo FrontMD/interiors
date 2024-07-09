@@ -1,7 +1,7 @@
 .modal.hystmodal.mobile-menu(id='mobileMenu')
     .hystmodal__wrap
         .hystmodal__window(role="dialog" aria-modal="true")
-            .modal__content
+            .modal__content.has-scroll
                 +btn({
                     classes: 'modal__close',
                     tag: 'button',
@@ -10,23 +10,23 @@
                     icon: true,
                     iconName: 'close'
                 })(data-hystclose)
-                .header-menu.mobile-menu__menu
-                    a(href="#").header-menu__item Проекты
-                    a(href="#").header-menu__item Услуги
-                    a(href="#").header-menu__item О нас
-                    a(href="#").header-menu__item Награды
-                    a(href="#").header-menu__item Блог
-                    a(href="#").header-menu__item Контакты
-                    a(href="+79112276452").header-menu__item.header-menu__item--phone 8 (911) 227-64-52
-                .header-menu.mobile-menu__social
-                    a(href="https://www.houzz.ru/").header-menu__item Houzz
-                    a(href="https://web.telegram.org/").header-menu__item Telegram
-                    a(href="https://www.youtube.com/").header-menu__item YouTube
-                    a(href="https://www.instagram.com/").header-menu__item Instagram
+                .mobile-menu__menu
+                    a(href="#").mobile-menu__item Проекты
+                    a(href="#").mobile-menu__item Услуги
+                    a(href="#").mobile-menu__item О нас
+                    a(href="#").mobile-menu__item Награды
+                    a(href="#").mobile-menu__item Блог
+                    a(href="#").mobile-menu__item Контакты
+                a(href="+79112276452").mobile-menu__item.mobile-menu__item--phone 8 (911) 227-64-52
+                .mobile-menu__social
+                    a(href="https://www.houzz.ru/").mobile-menu__item Houzz
+                    a(href="https://web.telegram.org/").mobile-menu__item Telegram
+                    a(href="https://www.youtube.com/").mobile-menu__item YouTube
+                    a(href="https://www.instagram.com/").mobile-menu__item Instagram
                 +btn({
                     classes: 'mobile-menu__btn',
                     tag: 'button',
                     vMode: 'btn',
                     text: 'Обсудить проект',
                     cMode: 'beige',
-                })(data-hystmodal="discussProject")
+                })(data-hystmodal="#discussProject")
