@@ -46,8 +46,12 @@
         left: 0;
         width: 48.38%;
         padding-right: 64px;
-        padding-left: 64px;
+        padding-left: calc((100% - 1312px) / 2);
         z-index: 5;
+
+        @include max(1440) {
+            padding-left: 64px;
+        }
 
         @include max(1024) {
             position: relative;
@@ -91,6 +95,9 @@
     }
 
     &__preview {
+        max-width: 198px;
+        max-height: 238px;
+
         @include max(1024) {
             display: none;
         }
