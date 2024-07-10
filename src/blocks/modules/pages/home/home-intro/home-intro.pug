@@ -1,7 +1,10 @@
 section.home-intro(data-js="homeIntro")
     .home-intro__bg(data-js="homeIntroBg")
-        img.desktop(src="./img/home/home_intro.png")
-        img.mobile(src="./img/home/home_intro.png")
+        <picture>
+            <source srcset="./img/home/home_intro_360.jpg" media="(max-width: 500px)">
+            <source srcset="./img/home/home_intro_768.jpg" media="(max-width: 768px)">
+            <img src="./img/home/home_intro.png" alt="">
+        </picture>
         .home-intro__fake.home-intro__fake--2(data-js="homeIntroFake2")
             img(src="./img/home/home_fake-2.png")
         .home-intro__fake.home-intro__fake--1(data-js="homeIntroFake1")
@@ -9,7 +12,10 @@ section.home-intro(data-js="homeIntro")
         .home-intro__fake.home-intro__fake--5(data-js="homeIntroFake5")
             img(src="./img/home/home_fake-5.png")        
         .home-intro__fake.home-intro__fake--3(data-js="homeIntroFake3")
-            img(src="./img/home/home_fake-3.png")
+            <picture>
+                <source srcset="./img/home/home_fake_3_1023.jpg" media="(max-width: 1023px)">
+                img(src="./img/home/home_fake-3.png" alt="")
+            </picture>
         .home-intro__fake.home-intro__fake--4(data-js="homeIntroFake4")
             img(src="./img/home/home_fake-4.png")
     .home-intro__fake.home-intro__fake--logo(data-js="homeIntroFakeLogo")

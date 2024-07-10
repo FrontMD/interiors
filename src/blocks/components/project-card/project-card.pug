@@ -17,7 +17,7 @@ mixin project-card(props = defaultProjectCardProps)
 			bgImage: props.bgImage ? props.bgImage : defaultProjectCardProps.bgImage,
 		}
 
-	.project-card(class=`${checkProps.classes} project-card--${checkProps.type}`)
+	.project-card(class=`${checkProps.classes} project-card--${checkProps.type}` data-js="projectCard")
 		.project-card__bg
 			img(src=`./img/projects/${checkProps.bgImage}` alt=checkProps.title)
 		.project-card__location!= checkProps.location
@@ -27,7 +27,4 @@ mixin project-card(props = defaultProjectCardProps)
 				if(checkProps.type == 'big')
 					!= 'ADD Awards'
 				img(src='./img/award_logo.png' alt='award logo')
-		.project-card__cursor
-			svg
-				use(xlink:href=`./img/sprites/sprite.svg#plus`)
 

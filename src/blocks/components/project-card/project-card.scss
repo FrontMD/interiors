@@ -86,9 +86,15 @@
     }
 
     &__cursor {
-        position: absolute;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30px, -30px);
         width: 27px;
         height: 27px;
+        opacity: 0;
+        z-index: 30;
+        color: $c-white;
 
         svg {
             width: 100%;

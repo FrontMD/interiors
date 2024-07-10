@@ -1,3 +1,5 @@
+@@include("../../../../components/cookie/cookie.js")
+
 function homeIntroAnim() {
 
     document.activeElement.blur()
@@ -15,47 +17,78 @@ function homeIntroAnim() {
 
     if(document.querySelector('[data-js="homeIntro"]')) {
         let tl = gsap.timeline();
-        //расставляем по местам элементы
+        //ставим на место лого
         tl.to('[data-js="homeIntroFakeLogo"]', {
             top: fakeLogoTop,
             duration: 1,
             delay: 1
         })
-        tl.to('[data-js="homeIntroBg"]', {
-            top: '0%',
+        //увеличиваем элементы
+        tl.to('[data-js="homeIntroBg"] > *', {
+            scale: '0.48',
             duration: 2,
         }, '<')
-
-        //увеличиваем элементы
+        tl.to('[data-js="homeIntroFake1"]', {
+            scale: '1',
+            opacity: '1',
+            duration: 1
+        }, '>')
+        tl.to('[data-js="homeIntroFake4"]', {
+            scale: '1',
+            opacity: '1',
+            duration: 1
+        }, '< +0.2')
+        tl.to('[data-js="homeIntroFake2"]', {
+            scale: '1',
+            opacity: '1',
+            duration: 1
+        }, '< +0.2')
+        tl.to('[data-js="homeIntroFake3"]', {
+            scale: '1',
+            opacity: '1',
+            duration: 1
+        }, '< +0.2')
+        tl.to('[data-js="homeIntroFake5"]', {
+            scale: '1',
+            opacity: '1',
+            duration: 1
+        }, '< +0.2')
         tl.to('[data-js="homeIntroBg"] > *', {
             scale: 1,
             duration: 2
-        }, '>')
+        }, '> + 0.2')
+
+        //убираем элементы из окна
         tl.to('[data-js="homeIntroFake1"]', {
-            top: '0%',
-            left: '50%',
-            duration: 2
-        }, '< +0.2')
+            scale: '2',
+            top: '-100%',
+            duration: 1
+        }, '< + 0.5')
         tl.to('[data-js="homeIntroFake4"]', {
-            top: '70%',
-            left: '5%',
-            duration: 2
-        }, '< +0.2')
+            scale: '2',
+            left: '-40%',
+            top: '120%',
+            duration: 1
+        }, '< +0.5')
         tl.to('[data-js="homeIntroFake2"]', {
-            top: '20%',
-            left: '85%',
-            duration: 2
-        }, '< +0.2')
-        tl.to('[data-js="homeIntroFake3"]', {
-            top: '100%',
-            left: '70%',
-            duration: 2
-        }, '< +0.2')
+            scale: '2',
+            left: '140%',
+            top: '50%',
+            duration: 1
+        }, '< +0.5')
         tl.to('[data-js="homeIntroFake5"]', {
+            scale: '2',
+            left: '-60%',
             top: '20%',
-            left: '10%',
-            duration: 2
+            duration: 1
+        }, '< +0.5')
+        tl.to('[data-js="homeIntroFake3"]', {
+            scale: '2',
+            left: '140%',
+            top: '120%',
+            duration: 1
         }, '< +0.2')
+
 
         //показываем контент
         tl.to('[data-js="siteHeader"]', {
@@ -72,7 +105,8 @@ function homeIntroAnim() {
         }, '> +0.5')
         tl.to('[data-js="homeIntroFakeLogo"]', {
             display: 'none',
-            duration: 0
+            duration: 0,
+            onComplete: () => cookieInit()
         }, '>')
 
     }

@@ -9,11 +9,11 @@ function cookieInit() {
     let currentCookieValue = document.cookie.match(new RegExp("(?:^|; )" + cookieName.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
 
     if (!currentCookieValue) {
-        cookieMessage.classList.add('active');
+        $(cookieMessage).fadeIn('slow');
     }
 
     cookieBtn.addEventListener('click', function () {
         document.cookie = `${cookieName}=true`
-        cookieMessage.classList.remove('active');
+        $(cookieMessage).fadeOut('slow');
     });
 }

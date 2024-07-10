@@ -1,3 +1,6 @@
+//preloader
+@@include("../blocks/modules/preloader/preloader.js")
+
 //libs
 @@include("./libs/jquery-3.7.0.min.js")
 @@include("./libs/gsap.min.js")

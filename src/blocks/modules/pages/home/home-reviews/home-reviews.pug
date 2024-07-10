@@ -45,7 +45,7 @@ section.section.home-reviews(data-js="homeReviews")
                                 cMode: 'beige2',
                                 text: 'Читать историю',
                                 icon: false,
-                            })(data-hystmodal='#homeFullReview2')
+                            })(data-hystmodal='#homeFullReview1')
                     .home-reviews__img
                         img(src="./img/home/review.jpg" alt="")
                     .home-reviews__full.full-review(data-js="fullReview")
@@ -138,7 +138,7 @@ section.section.home-reviews(data-js="homeReviews")
                             cMode: 'beige2',
                             text: 'Свернуть историю',
                             icon: false,
-                        })(data-js='fullReviewClose')   
+                        })(data-js='fullReviewClose')
                 .swiper-slide.home-reviews__slide(data-js="homeReviewsSlide")
                     .home-reviews__review
                         .home-reviews__title Интерьер квартиры для ЖК «Монблан»
@@ -151,12 +151,19 @@ section.section.home-reviews(data-js="homeReviews")
                                 author: 'Грибанова Анна'
                             })
                             +btn({
-                                classes: '',
+                                classes: 'desktop',
                                 vMode: 'btn',
                                 cMode: 'beige2',
                                 text: 'Читать историю',
                                 icon: false,
                             })(data-js='fullReviewOpen')
+                            +btn({
+                                classes: 'mobile',
+                                vMode: 'btn',
+                                cMode: 'beige2',
+                                text: 'Читать историю',
+                                icon: false,
+                            })(data-hystmodal='#homeFullReview3')   
                     .home-reviews__img
                         img(src="./img/home/review.jpg" alt="")
                     .home-reviews__full.full-review(data-js="fullReview")
@@ -190,6 +197,6 @@ section.section.home-reviews(data-js="homeReviews")
                             cMode: 'beige2',
                             text: 'Свернуть историю',
                             icon: false,
-                        })(data-js='fullReviewClose')                                                 
+                        })(data-js='fullReviewClose')                                              
 
 

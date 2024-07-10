@@ -24,7 +24,13 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="./img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="stylesheet" href="styles/main.min.css">
   </head>
-  <body>
+  <body class="no-scroll">
+    <div class="preloader" data-js="preloader">
+      <div class="preloader__container">
+        <div class="preloader__logo preloader__logo--1"><img src="./img/preloader_dark.png" alt="preloader logo"></div>
+        <div class="preloader__logo preloader__logo--2"><img src="./img/logo.png" alt="preloader logo"></div>
+      </div>
+    </div>
     <header class="site-header" data-js="siteHeader">
       <div class="container site-header__container">
             <button class="btn btn--icon btn--beige mobile-menu__open" type="button" data-hystmodal="#mobileMenu"><span class="btn__icon"> 
@@ -33,8 +39,8 @@
                 </svg></span>
             </button>
         <nav class="site-header__menu header-menu" data-js="reversHoversBlock"><a class="header-menu__item" href="#" data-js="reversHoversItem">Проекты</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Услуги</a><a class="header-menu__item" href="#" data-js="reversHoversItem">О нас</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Награды</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Блог</a><a class="header-menu__item" href="#" data-js="reversHoversItem">Контакты</a></nav>
-        <div class="site-header__logo site-header__logo--full" data-js="siteHeaderLogoFull"><img src="./img/logo_full.svg" alt="logo"></div>
-        <div class="site-header__logo" data-js="siteHeaderLogo"><img src="./img/logo.svg" alt="logo"></div>
+        <div class="site-header__logo site-header__logo--full" data-js="siteHeaderLogoFull"><img src="./img/logo_full.png" alt="logo"></div>
+        <div class="site-header__logo" data-js="siteHeaderLogo"><img src="./img/logo.png" alt="logo"></div>
         <div class="site-header__menu header-menu" data-js="reversHoversBlock"><a class="header-menu__item" href="https://www.instagram.com/" data-js="reversHoversItem">Instagram</a><a class="header-menu__item" href="+79112276452" data-js="reversHoversItem">8 (911) 227-64-52</a><a class="header-menu__item" href="#" data-js="reversHoversItem" data-hystmodal="#discussProject">Обсудить проект</a></div><a class="btn btn--icon btn--beige site-header__call" href="tel:79112276452"><span class="btn__icon">
                 <svg>
                   <use xlink:href="./img/sprites/sprite.svg#handset"></use>
@@ -44,11 +50,17 @@
     <main class="site-main">
       <div class="page">
         <section class="home-intro" data-js="homeIntro">
-          <div class="home-intro__bg" data-js="homeIntroBg"><img class="desktop" src="./img/home/home_intro.png"><img class="mobile" src="./img/home/home_intro.png">
+          <div class="home-intro__bg" data-js="homeIntroBg"><picture>
+<source srcset="./img/home/home_intro_360.jpg" media="(max-width: 500px)">
+<source srcset="./img/home/home_intro_768.jpg" media="(max-width: 768px)">
+<img src="./img/home/home_intro.png" alt="">
+</picture>
             <div class="home-intro__fake home-intro__fake--2" data-js="homeIntroFake2"><img src="./img/home/home_fake-2.png"></div>
             <div class="home-intro__fake home-intro__fake--1" data-js="homeIntroFake1"><img src="./img/home/home_fake-1.png"></div>
             <div class="home-intro__fake home-intro__fake--5" data-js="homeIntroFake5"><img src="./img/home/home_fake-5.png"></div>
-            <div class="home-intro__fake home-intro__fake--3" data-js="homeIntroFake3"><img src="./img/home/home_fake-3.png"></div>
+            <div class="home-intro__fake home-intro__fake--3" data-js="homeIntroFake3"><picture>
+<source srcset="./img/home/home_fake_3_1023.jpg" media="(max-width: 1023px)"><img src="./img/home/home_fake-3.png" alt=""></picture>
+            </div>
             <div class="home-intro__fake home-intro__fake--4" data-js="homeIntroFake4"><img src="./img/home/home_fake-4.png"></div>
           </div>
           <div class="home-intro__fake home-intro__fake--logo" data-js="homeIntroFakeLogo"><img src="./img/logo.png"></div>
@@ -197,8 +209,145 @@
                 </div>
               </div>
             </div>
+            <div class="modal hystmodal review-modal" id="homeFullReview1" aria-hidden="true">
+              <div class="hystmodal__wrap">
+                <div class="hystmodal__window" role="dialog" aria-modal="true">
+                  <div class="modal__content">
+                        <button class="btn btn--icon btn--transparent modal__close" type="button" data-hystclose><span class="btn__icon"> 
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                            </svg></span>
+                        </button>
+                    <div class="full-review" data-js="fullReview">
+                      <div class="home-reviews__title">Интерьер квартиры для ЖК «Кантале»</div>
+                      <div class="has-scroll full-review__scroll">
+                        <div class="full-review__icon"> 
+                          <svg> 
+                            <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                          </svg>
+                        </div>
+                            <div class="text-editor full-review__text">
+                              <p>У меня красивый и удобный дом. По двум причинам:</p>
+                              <p>- я не знала, во что ввязываюсь</p>
+                              <p>- я встретила по счастливой случайности Арину Волкову</p>
+                              <p>Если бы я представляла сложность такого проекта, я бы, вероятно, не начинала. Покрасила бы ровные стены краской и обошлась без ‘дома мечты’.</p>
+                              <p>Если бы я ввязалась без профессионала, могу только мрачно фантазировать, что было бы с моим кошельком, временем, душевным здоровьем и самим домом.</p>
+                              <p>С неослабевающим изумлением я наблюдала, сколько деталей, нюансов, препятствий скрыто в создании красивого, гармоничного интерьера. И с нарастающим уважением за тем, как Арина и команда с ними справляются.</p>
+                              <p>Арина - дизайнер интерьера высокого класса. Гармония, богатый цвет, форма, целостность, изящность, свой почерк.</p>
+                              <p>По неопытности мне казалось, это главное. И правда, странно, если вид моего дома мне бы не нравился.</p>
+                              <p>Однако, в процессе выяснилось, сколько всего нужно, чтобы картинка стала домом:</p>
+                              <p>- качественные чертежи для строителей</p>
+                              <p>- продуманная эргономика. В красоте должно быть удобно жить</p>
+                              <p>- комплектация с вариантами в зависимости от бюджета</p>
+                              <p>- знание рынка, сеть контактов для всего от плитки до дизайнерских мелочей.</p>
+                              <p>- знание частных мастерских мебельщиков, текстиля, мозаики и тп. Вот этих людей с золотыми руками, которые у себя в мастерской творят буквально итальянское премиальное качество. И их даже можно найти в интернете самим, только замучаешься проверять.</p>
+                              <p>- слаженная команда. Люди, которые любят своё дело и ладят друг с другом создают и атмосферу, и результат.</p>
+                              <p>- Эффективность. Арина не делает лишних движений, не говорит лишних слов. Чтобы ни произошло (а мой ремонт прошёл через 2022 и кризис поставок), Арина ищет варианты - быстро, гибко и с фантазией.</p>
+                              <p>- Ну и кому как, а я ценю воспитание, интеллигентность, образованность и порядочность. Ремонт дело не быстрое, по-моему не все равно, с кем и как общаться по ходу. И ещё ремонт дело дорогое и сложное. Ценно, когда как-то сразу становится ясно, что можно профессионалу доверять.</p>
+                            </div>
+                      </div>
+                      <div class="full-review__author">Грибанова Анна</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal hystmodal review-modal" id="homeFullReview2" aria-hidden="true">
+              <div class="hystmodal__wrap">
+                <div class="hystmodal__window" role="dialog" aria-modal="true">
+                  <div class="modal__content">
+                        <button class="btn btn--icon btn--transparent modal__close" type="button" data-hystclose><span class="btn__icon"> 
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                            </svg></span>
+                        </button>
+                    <div class="full-review" data-js="fullReview">
+                      <div class="home-reviews__title">Интерьер квартиры для ЖК «Кантале»</div>
+                      <div class="has-scroll full-review__scroll">
+                        <div class="full-review__icon"> 
+                          <svg> 
+                            <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                          </svg>
+                        </div>
+                            <div class="text-editor full-review__text">
+                              <p>У меня красивый и удобный дом. По двум причинам:</p>
+                              <p>- я не знала, во что ввязываюсь</p>
+                              <p>- я встретила по счастливой случайности Арину Волкову</p>
+                              <p>Если бы я представляла сложность такого проекта, я бы, вероятно, не начинала. Покрасила бы ровные стены краской и обошлась без ‘дома мечты’.</p>
+                              <p>Если бы я ввязалась без профессионала, могу только мрачно фантазировать, что было бы с моим кошельком, временем, душевным здоровьем и самим домом.</p>
+                              <p>С неослабевающим изумлением я наблюдала, сколько деталей, нюансов, препятствий скрыто в создании красивого, гармоничного интерьера. И с нарастающим уважением за тем, как Арина и команда с ними справляются.</p>
+                              <p>Арина - дизайнер интерьера высокого класса. Гармония, богатый цвет, форма, целостность, изящность, свой почерк.</p>
+                              <p>По неопытности мне казалось, это главное. И правда, странно, если вид моего дома мне бы не нравился.</p>
+                              <p>Однако, в процессе выяснилось, сколько всего нужно, чтобы картинка стала домом:</p>
+                              <p>- качественные чертежи для строителей</p>
+                              <p>- продуманная эргономика. В красоте должно быть удобно жить</p>
+                              <p>- комплектация с вариантами в зависимости от бюджета</p>
+                              <p>- знание рынка, сеть контактов для всего от плитки до дизайнерских мелочей.</p>
+                              <p>- знание частных мастерских мебельщиков, текстиля, мозаики и тп. Вот этих людей с золотыми руками, которые у себя в мастерской творят буквально итальянское премиальное качество. И их даже можно найти в интернете самим, только замучаешься проверять.</p>
+                              <p>- слаженная команда. Люди, которые любят своё дело и ладят друг с другом создают и атмосферу, и результат.</p>
+                              <p>- Эффективность. Арина не делает лишних движений, не говорит лишних слов. Чтобы ни произошло (а мой ремонт прошёл через 2022 и кризис поставок), Арина ищет варианты - быстро, гибко и с фантазией.</p>
+                              <p>- Ну и кому как, а я ценю воспитание, интеллигентность, образованность и порядочность. Ремонт дело не быстрое, по-моему не все равно, с кем и как общаться по ходу. И ещё ремонт дело дорогое и сложное. Ценно, когда как-то сразу становится ясно, что можно профессионалу доверять.</p>
+                            </div>
+                      </div>
+                      <div class="full-review__author">Грибанова Анна</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal hystmodal review-modal" id="homeFullReview3" aria-hidden="true">
+              <div class="hystmodal__wrap">
+                <div class="hystmodal__window" role="dialog" aria-modal="true">
+                  <div class="modal__content">
+                        <button class="btn btn--icon btn--transparent modal__close" type="button" data-hystclose><span class="btn__icon"> 
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                            </svg></span>
+                        </button>
+                    <div class="full-review" data-js="fullReview">
+                      <div class="home-reviews__title">Интерьер квартиры для ЖК «Кантале»</div>
+                      <div class="has-scroll full-review__scroll">
+                        <div class="full-review__icon"> 
+                          <svg> 
+                            <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                          </svg>
+                        </div>
+                            <div class="text-editor full-review__text">
+                              <p>У меня красивый и удобный дом. По двум причинам:</p>
+                              <p>- я не знала, во что ввязываюсь</p>
+                              <p>- я встретила по счастливой случайности Арину Волкову</p>
+                              <p>Если бы я представляла сложность такого проекта, я бы, вероятно, не начинала. Покрасила бы ровные стены краской и обошлась без ‘дома мечты’.</p>
+                              <p>Если бы я ввязалась без профессионала, могу только мрачно фантазировать, что было бы с моим кошельком, временем, душевным здоровьем и самим домом.</p>
+                              <p>С неослабевающим изумлением я наблюдала, сколько деталей, нюансов, препятствий скрыто в создании красивого, гармоничного интерьера. И с нарастающим уважением за тем, как Арина и команда с ними справляются.</p>
+                              <p>Арина - дизайнер интерьера высокого класса. Гармония, богатый цвет, форма, целостность, изящность, свой почерк.</p>
+                              <p>По неопытности мне казалось, это главное. И правда, странно, если вид моего дома мне бы не нравился.</p>
+                              <p>Однако, в процессе выяснилось, сколько всего нужно, чтобы картинка стала домом:</p>
+                              <p>- качественные чертежи для строителей</p>
+                              <p>- продуманная эргономика. В красоте должно быть удобно жить</p>
+                              <p>- комплектация с вариантами в зависимости от бюджета</p>
+                              <p>- знание рынка, сеть контактов для всего от плитки до дизайнерских мелочей.</p>
+                              <p>- знание частных мастерских мебельщиков, текстиля, мозаики и тп. Вот этих людей с золотыми руками, которые у себя в мастерской творят буквально итальянское премиальное качество. И их даже можно найти в интернете самим, только замучаешься проверять.</p>
+                              <p>- слаженная команда. Люди, которые любят своё дело и ладят друг с другом создают и атмосферу, и результат.</p>
+                              <p>- Эффективность. Арина не делает лишних движений, не говорит лишних слов. Чтобы ни произошло (а мой ремонт прошёл через 2022 и кризис поставок), Арина ищет варианты - быстро, гибко и с фантазией.</p>
+                              <p>- Ну и кому как, а я ценю воспитание, интеллигентность, образованность и порядочность. Ремонт дело не быстрое, по-моему не все равно, с кем и как общаться по ходу. И ещё ремонт дело дорогое и сложное. Ценно, когда как-то сразу становится ясно, что можно профессионалу доверять.</p>
+                            </div>
+                      </div>
+                      <div class="full-review__author">Грибанова Анна</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
       </div>
     </noindex>
+    <div class="cookie" data-js="cookie" style="display: none">
+      <div class="cookie__text">Продолжая использовать этот сайт, вы соглашаетесь <a href='#'>с политикой конфиденциальности</a></div><a class="btn btn--btn btn--beige cookie__btn" href="javascript:void(0);" data-js="cookieBtn"><span class="btn__text">Хорошо</span></a>
+    </div>
+    <div class="project-card__cursor" data-js="projectCardCursor">
+      <svg>
+        <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+      </svg>
+    </div>
     <script src="js/main.min.js"></script>
   </body>
 </html>

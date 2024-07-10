@@ -28,9 +28,10 @@ html(lang="ru")
 		link(rel="stylesheet" href="styles/main.css")
 
 
-	body
+	body.no-scroll
 		include ../helpers/mixins
 		+mixins()
+		include ../../blocks/modules/preloader/preloader.pug
 		block header
 			include ../../blocks/modules/header/header
 
@@ -41,6 +42,10 @@ html(lang="ru")
 			include ../../blocks/modules/footer/footer
 
 		include ../../blocks/modules/modals/modals
+		include ../../blocks/components/cookie/cookie
+		.project-card__cursor(data-js="projectCardCursor")
+			svg
+				use(xlink:href=`./img/sprites/sprite.svg#plus`)
 
 		block scripts
 			script(src="js/main.js")

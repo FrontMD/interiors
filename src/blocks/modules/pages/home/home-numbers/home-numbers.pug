@@ -16,7 +16,11 @@ section.section.home-numbers(id='homeNumbers')
     .home-numbers__picture
         .container
             .home-numbers__img
-                img(src="./img/home/home_numbers.png")
+                <picture>
+                    <source srcset="./img/home/home_numbers_360.jpg" media="(max-width: 500px)">
+                    <source srcset="./img/home/home_numbers_768.jpg" media="(max-width: 768px)">
+                    <img src="./img/home/home_numbers.png" alt="">
+                </picture>
             +quote({
                 classes: 'home-numbers__quote',
                 text: 'Мы хотим, чтобы интерьеры отражали Ваш характер. имея собственный. Чтобы смотря на визуализации будущего интерьера Вы чувствовали, что мечты сбываются'

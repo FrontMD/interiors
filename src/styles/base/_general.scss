@@ -214,6 +214,13 @@ html {
     }
 }
 
+.no-scroll {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding-right: 2px;
+}
+
 /*Страница со списком страниц.*/
 .pages-list {
     padding: 150px 0;

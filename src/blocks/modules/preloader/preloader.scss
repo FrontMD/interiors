@@ -1,0 +1,92 @@
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $c-grey-1;
+	z-index: 200;
+
+	&__container {
+		position: relative;
+		overflow: hidden;
+		width: 104px;
+		height: 68px;
+		transform: scale(1.654);
+		animation: sizeAnim 1s linear 3.5s forwards;
+
+		@include max(1199) {
+			width: 87.78px;
+			height: 57.39px;
+		}
+
+		@include max(500) {
+			width: 59.95px;
+			height: 38.04px;
+		}
+	}
+
+	&__logo {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
+		&--1 {
+			z-index: 2;
+		}
+
+		&--2 {
+			position: absolute;
+			width: 0;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			animation: logoAnim 2.5s linear 1s forwards;
+
+			img {
+				display: block;
+				max-width: none;
+				width: 104px;
+				height: 68px;
+
+				@include max(1199) {
+					width: 87.78px;
+					height: 57.39px;
+				}
+
+				@include max(500) {
+					width: 59.95px;
+					height: 38.04px;
+				}
+			}
+		}
+	}
+}
+
+@keyframes logoAnim {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes sizeAnim {
+	0% {
+		transform: scale(1.654);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}

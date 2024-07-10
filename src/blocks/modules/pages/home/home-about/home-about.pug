@@ -1,7 +1,11 @@
 section.section.home-about
     .container.home-about__container
         .home-about__video
-            img(src="./img/home/home_about.png" alt="about video")
+            <picture>
+                <source srcset="./img/home/home_about_360.jpg" media="(max-width: 500px)">
+                <source srcset="./img/home/home_about_768.jpg" media="(max-width: 768px)">
+                <img src="./img/home/home_about.png" alt="">
+            </picture>
             +btn({
                 classes: 'home-about__play',
                 vMode: 'circle',
