@@ -10,6 +10,7 @@ function homeReviews() {
         let homeReviewsSliderEx = new Swiper(homeReviewsSlider, {
             slidesPerView: 1,
             effect: 'fade',
+            speed: 1000,
             allowTouchMove: false,
             navigation: {
                 nextEl: nextBtn,

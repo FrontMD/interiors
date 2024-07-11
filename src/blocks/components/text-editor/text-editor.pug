@@ -9,5 +9,5 @@ mixin text-editor(props = defaultTextEditorProps)
 			classes: props.classes ? props.classes : defaultTextEditorProps.classes,
 		}
 
-	.text-editor(class=checkProps.classes)
+	.text-editor(class=checkProps.classes)&attributes(attributes)
 		block

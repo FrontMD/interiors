@@ -12,7 +12,7 @@ mixin m-contacts(props = defaultMContactsProps)
 
     section.section.m-contacts
         .container.m-contacts__container
-            .m-contacts__images
+            .m-contacts__images(data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000")
                 .m-contacts__image
                     img(src="./img/m-contacts/m_contacts_1.png" alt="")
                 .m-contacts__image
@@ -24,8 +24,8 @@ mixin m-contacts(props = defaultMContactsProps)
             +title({
                 classes: 'm-contacts__title',
                 text: 'Контакты',
-            })
-            .m-contacts__contacts
+            })(data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000")
+            .m-contacts__contacts(data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000")
                 a(href="tel:79112276452").m-contacts__contact +7 911 227 64 52
                 .m-contacts__contact Санкт-Петербург, набережная реки Фонтанки д.8
                 a(href="mailto:arinavolkova@mail.ru").m-contacts__contact Arinavolkova@mail.ru

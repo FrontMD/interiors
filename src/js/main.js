@@ -11,6 +11,7 @@
 @@include("./libs/fancybox.umd.min.js")
 @@include("./libs/hystmodal.min.js")
 @@include("./libs/js.cookie.min.js")
+@@include("./libs/aos.js")
 
 //если желаете подключить библиотеку - раскомментируйте и добавьте @@
 // include("./libs/flatpickr.min.js")

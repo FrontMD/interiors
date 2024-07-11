@@ -23,6 +23,7 @@ function mProjectsSliderInit(mProjectsEl) {
 
     let tabsSliderEx = new Swiper(tabs, {
         slidesPerView: 'auto',
+        speed: 1000,
         spaceBetween: 4,
         freeMode: true,
         breakpoints: {
@@ -32,6 +33,7 @@ function mProjectsSliderInit(mProjectsEl) {
     let slidesSliderEx = new Swiper(slides, {
         slidesPerView: 1,
         effect: 'fade',
+        speed: 1000,
         allowTouchMove: false,
         autoHeight: true,
         thumbs: {
@@ -53,7 +55,7 @@ function mProjectsSliderInit(mProjectsEl) {
         endTrigger: mProjectsAll,
         end: 'bottom bottom',
         pin: true,
-        scrub: true,
+        scrub: 2,
         animation: projectsAnim
     })
 
@@ -77,9 +79,11 @@ function mProjectsSliderInit(mProjectsEl) {
             endTrigger: mProjectsAll,
             end: 'bottom bottom',
             pin: true,
-            scrub: true,
+            scrub: 2,
             animation: projectsAnim
         })
+
+        AOS.refresh()
 
 
     });

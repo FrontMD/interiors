@@ -30,7 +30,11 @@
         position: absolute;
         top: 250px;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) !important;
+
+        &.aos-animate {
+            transform: translateX(-50%) translateZ(0) !important;
+        }
 
         @include max(1300) {
             top: 210px;
