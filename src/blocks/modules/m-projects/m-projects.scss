@@ -1,6 +1,9 @@
 .m-projects {
+    position: relative;
     height: calc(100vh + 315px);
     overflow: hidden;
+    background-color: $c-grey-1;
+    z-index: 15;
 
     @include max(1199) {
         height: auto;
@@ -19,7 +22,7 @@
     }
 
     &__slides {
-        padding-top: 250px;
+        padding-top: 90vh;
 
         @include max(1199) {
             display: flex;
@@ -49,10 +52,6 @@
         @include max(1199) {
             display: none;
         }
-    }
-
-    &__container {
-        transform: translateY(100%);
     }
 
     &__slide {

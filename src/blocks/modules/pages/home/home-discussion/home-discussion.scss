@@ -1,4 +1,5 @@
 .home-discussion {
+    z-index: 35;
     padding-bottom: 120px;
 
     @include max(1024) {

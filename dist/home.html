@@ -48,7 +48,7 @@
       </div>
     </header>
     <main class="site-main">
-      <div class="page">
+      <div class="page" data-js="pageAnimWrap" data-page="home">
         <section class="home-intro" data-js="homeIntro">
           <div class="home-intro__bg" data-js="homeIntroBg"><picture>
 <source srcset="./img/home/home_intro_360.jpg" media="(max-width: 500px)">
@@ -75,7 +75,7 @@
             </div>
           </div>
         </section>
-        <section class="section home-numbers" id="homeNumbers">
+        <section class="section home-numbers" id="homeNumbers" data-js="homeNumbers">
           <div class="container">
             <div class="home-numbers__numbers">
               <div class="home-numbers__number number">
@@ -97,7 +97,12 @@
           </div>
           <div class="home-numbers__picture">
             <div class="container">
-              <div class="home-numbers__img"></div>
+              <div class="home-numbers__img"><picture>
+<source srcset="./img/home/home_numbers_360.jpg" media="(max-width: 500px)">
+<source srcset="./img/home/home_numbers_768.jpg" media="(max-width: 768px)">
+<img src="./img/home/home_numbers.png" alt="">
+</picture>
+              </div>
                   <div class="quote home-numbers__quote">
                     <div class="quote__icon">
                       <svg> 
@@ -354,8 +359,8 @@
                 </div><a class="btn btn--btn btn--beige2 m-projects__all" href="javascript:void(0);" data-js="mProjectsAll"><span class="btn__text">Все проекты</span></a>
               </div>
             </section>
-        <section class="section home-about">
-          <div class="container home-about__container" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+        <section class="section home-about" data-js="homeAbout">
+          <div class="container home-about__container">
             <div class="home-about__video"><picture>
 <source srcset="./img/home/home_about_360.jpg" media="(max-width: 500px)">
 <source srcset="./img/home/home_about_768.jpg" media="(max-width: 768px)">
@@ -564,21 +569,21 @@
             </div>
           </div>
         </section>
-            <section class="section m-contacts">
+            <section class="section m-contacts" data-js="mContacts">
               <div class="container m-contacts__container">
-                <div class="m-contacts__images" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <div class="m-contacts__images">
                   <div class="m-contacts__image"><img src="./img/m-contacts/m_contacts_1.png" alt=""></div>
                   <div class="m-contacts__image"><img src="./img/m-contacts/m_contacts_2.png" alt=""></div>
                   <div class="m-contacts__image"><img src="./img/m-contacts/m_contacts_3.png" alt=""></div>
                   <div class="m-contacts__image"><img src="./img/m-contacts/m_contacts_4.png" alt=""></div>
                 </div>
-                    <div class="title title__h2 m-contacts__title" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <div class="title title__h2 m-contacts__title">
                       <h2>Контакты</h2>
                     </div>
-                <div class="m-contacts__contacts" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"><a class="m-contacts__contact" href="tel:79112276452">+7 911 227 64 52</a>
+                <div class="m-contacts__contacts"><a class="m-contacts__contact" href="tel:79112276452">+7 911 227 64 52</a>
                   <div class="m-contacts__contact">Санкт-Петербург, набережная реки Фонтанки д.8</div><a class="m-contacts__contact" href="mailto:arinavolkova@mail.ru">Arinavolkova@mail.ru</a>
                 </div>
-                    <form class="form m-contacts__form" action="#" data-validate novalidate data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <form class="form m-contacts__form" action="#" data-validate novalidate>
                       <div class="form__content" data-js="form-content">
                         <div class="form__title">Или закажите звонок</div>
                         <div class="form__fields">
@@ -604,15 +609,15 @@
                     </form>
               </div>
             </section>
-        <section class="section home-discussion">
+        <section class="section home-discussion" data-js="homeDiscussion">
           <div class="container home-discussion__container">
-            <div class="home-discussion__left"><a class="btn btn--btn btn--beige2 " href="javascript:void(0);" data-hystmodal="#discussProject" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"><span class="btn__text">Обсудить проект</span></a>
+            <div class="home-discussion__left"><a class="btn btn--btn btn--beige2 " href="javascript:void(0);" data-hystmodal="#discussProject"><span class="btn__text">Обсудить проект</span></a>
             </div>
             <div class="home-discussion__rigth">
-                  <div class="title title__h2 title__h2--small" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                  <div class="title title__h2 title__h2--small">
                     <h2>Интерьеры с характером, дизайн-проекты в Санкт-Петербурге</h2>
                   </div>
-                  <div class="text-editor home-discussion__text" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                  <div class="text-editor home-discussion__text">
                     <p>«Я хотела воссоздать в этом проекте атмосферу семейного быта моих предков, и это мне удалось. Я никогда не бывала в нашей старой квартире на Моховой, но рассказы о семейных традициях, отдельные детали декора, старинные вещи помогли создать убедительный образ дома, где за большим столом собиралась вся семья»</p>
                     <p>Главный акцент в гостиной-столовой — ширма с репродукцией картины Пабло Пикассо «Любительница абсента». Ширма размером 2х3 метра выполнена автором проекта совместно с архитектором Еленой Шируновой.</p>
                     <p>Открытое пространство гостиной-кухни занимает порядка 50 квадратных метров. Над обеденным столом — хрустальная люстра (её привезли из Европы, поставщик — bufet_taburet). Гипсовая розетка изготовлена на заводе «Дикарт».</p>
@@ -623,7 +628,7 @@
         </section>
       </div>
     </main>
-    <footer class="site-footer">
+    <footer class="site-footer" data-js="footer">
       <div class="container site-footer__container">
         <div class="site-footer__top">
           <div class="site-footer__column">

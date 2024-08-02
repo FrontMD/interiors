@@ -1,4 +1,8 @@
 .home-reviews {
+    z-index: 25;
+    padding-top: 0;
+    min-height: 100vh;
+
     @include max(1024) {
         background-color: $c-grey;
     }
@@ -23,7 +27,8 @@
     }
 
     &__slide {
-        height: 730px;
+        height: 100vh;
+        min-height: 730px;
         display: flex;
 
         @include max(1024) {

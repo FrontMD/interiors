@@ -1,5 +1,12 @@
 .home-about {
+    z-index: 20;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 100vh;
+
     &__container {
+        width: 100%;
+        max-width: 100%;
         display: flex;
         align-items: stretch;
 

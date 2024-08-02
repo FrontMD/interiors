@@ -1,17 +1,17 @@
-section.section.home-discussion
+section.section.home-discussion(data-js="homeDiscussion")
     .container.home-discussion__container
         .home-discussion__left
             +btn({   
                 classes: '',
                 text: 'Обсудить проект',
                 cMode: 'beige2',
-            })(data-hystmodal="#discussProject" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000")
+            })(data-hystmodal="#discussProject")
         .home-discussion__rigth
             +title({
                 classes: 'title__h2--small',
                 text: 'Интерьеры с характером, дизайн-проекты в Санкт-Петербурге'
-            })(data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000")
-            +text-editor({classes: 'home-discussion__text'})(data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000")
+            })
+            +text-editor({classes: 'home-discussion__text'})
                 p!=  '«Я хотела воссоздать в этом проекте атмосферу семейного быта моих предков, и это мне удалось. Я никогда не бывала в нашей старой квартире на Моховой, но рассказы о семейных традициях, отдельные детали декора, старинные вещи помогли создать убедительный образ дома, где за большим столом собиралась вся семья»'
                 p!=  'Главный акцент в гостиной-столовой — ширма с репродукцией картины Пабло Пикассо «Любительница абсента». Ширма размером 2х3 метра выполнена автором проекта совместно с архитектором Еленой Шируновой.'
                 p!=  'Открытое пространство гостиной-кухни занимает порядка 50 квадратных метров. Над обеденным столом — хрустальная люстра (её привезли из Европы, поставщик — bufet_taburet). Гипсовая розетка изготовлена на заводе «Дикарт».'

@@ -1,7 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Aos
-    AOS.init();
-
     // скролл по странице
     const anchors = document.querySelectorAll('a[href*="#"]')
 
