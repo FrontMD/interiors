@@ -19,7 +19,7 @@ if(preloader !== null ) {
         if(currentPageName === "home") {
             $('body').removeClass('no-scroll')
             homeIntroAnim();
-            homePageAnimation()
+            startPageAnimation()
         } else {
             $('body').removeClass('no-scroll')
             cookieInit()
@@ -27,6 +27,26 @@ if(preloader !== null ) {
 
 	}, 4600)
 }
+
+function startPageAnimation() {
+    if(currentPageName === "home") {
+        homePageAnimation()
+    } else {
+        return
+    }
+}
+
+function refreshPageAnimation() {
+    if (typeof scrollTriggerObject !== "undefined") scrollTriggerObject.kill();
+	mainTimeline.clear();
+
+    startPageAnimation();
+}
+
+
+window.addEventListener('resize', () => {
+    refreshPageAnimation()
+});
 
 
 /** Стартовая анимация первого экрана главной страницы */
@@ -151,7 +171,7 @@ function homePageAnimation() {
         pin: true,
         start: "top top",
         end: () => "+=" + addTime + "%",
-        scrub: 1,
+        scrub: 1.5,
         animation: mainTimeline,
     })
 
@@ -190,16 +210,33 @@ function homePageAnimation() {
 		y: "0",
 	}, {
 		y: "-100%",
-		duration: 1,
+		duration: 0.9,
 		ease: "none",
 	}, "0");
 
     //цифры
+
+    mainTimeline.fromTo('[data-js="homeNumbersImg"]', {
+		top: "-20%"
+	}, {
+		top: "0",
+		duration: 2.4,
+		ease: "none",
+	}, "<");
+
+    mainTimeline.fromTo('[data-js="homeNumbersQuote"]', {
+		y: "0"
+	}, {
+		y: "150%",
+		duration: 2.4,
+		ease: "none",
+	}, "<");
+
     mainTimeline.fromTo('[data-js="homeNumbers"]', {
 		y: "0"
 	}, {
 		y: "-100%",
-		duration: 1,
+		duration: 1.2,
 		ease: "none",
 	}, "<");
 
@@ -300,17 +337,19 @@ function homePageAnimation() {
     mainTimeline.fromTo('[data-js="mContacts"]', {
 		y: "-100%",
 	}, {
-		y: "-200%",
+		y: () => {
+            return ( 0 - document.querySelector('[data-js="mContacts"]').offsetHeight - document.querySelector('[data-js="homeDiscussion"]').offsetHeight) + "px"
+        },
 		duration: 1,
 		ease: "none",
 	}, ">");
 
     //тексты
     mainTimeline.fromTo('[data-js="homeDiscussion"]', {
-		top: "100%",
+		y: "0",
 	}, {
-		top: "0",
-		duration: 0.8,
+		y: "-100%",
+		duration: 1,
 		ease: "none",
 	}, "<");
 

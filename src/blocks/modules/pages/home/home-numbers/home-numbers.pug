@@ -15,7 +15,7 @@ section.section.home-numbers(id='homeNumbers' data-js="homeNumbers")
                 .number__text литров игристого выпито <br>на завершенных объектах                
     .home-numbers__picture
         .container
-            .home-numbers__img
+            .home-numbers__img(data-js="homeNumbersImg")
                 <picture>
                     <source srcset="./img/home/home_numbers_360.jpg" media="(max-width: 500px)">
                     <source srcset="./img/home/home_numbers_768.jpg" media="(max-width: 768px)">
@@ -24,4 +24,4 @@ section.section.home-numbers(id='homeNumbers' data-js="homeNumbers")
             +quote({
                 classes: 'home-numbers__quote',
                 text: 'Мы хотим, чтобы интерьеры отражали Ваш характер. имея собственный. Чтобы смотря на визуализации будущего интерьера Вы чувствовали, что мечты сбываются'
-            })
+            })(data-js="homeNumbersQuote")

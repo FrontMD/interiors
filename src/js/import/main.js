@@ -7,12 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
         anchor.addEventListener('click', function (e) {
           e.preventDefault()
           
-          const blockID = anchor.getAttribute('href').substr(1)
+          const blockID = anchor.getAttribute('href')
+
+          gsap.to(window, { duration: 2, scrollTo: { y: blockID, offsetY: 120 } });
           
-          document.getElementById(blockID).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          })
         })
       })
     }

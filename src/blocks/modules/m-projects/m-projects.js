@@ -36,5 +36,9 @@ function mProjectsSliderInit(mProjectsEl) {
             swiper: tabsSliderEx
         },
     })
+
+    slidesSliderEx.on('transitionEnd', function () {
+        refreshPageAnimation()
+    })
    
 }
