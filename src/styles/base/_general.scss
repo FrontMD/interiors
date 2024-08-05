@@ -247,6 +247,7 @@ html {
     }
 }
 
+/* анимированные заголовки */
 .title-anim-external {
     display: inline-block;
     height: 1em;
@@ -255,12 +256,8 @@ html {
 
 .title-anim-internal {
     display: inline-block;
-    margin-top: 0;
+    margin-top: 1em;
     transition: margin-top 0.5s linear;
-
-    &.animHidden {
-        margin-top: 1em;
-    }
 }
 
 .height-anim-wrap {
@@ -273,24 +270,20 @@ html {
     }
 }
 
+/* анимированные тексты и картинки */
 .height-anim-el {
     position: relative;
-    height: 100%;
     width: 100%;
     transition: height 0.6s linear;
     overflow: hidden;
-
-    &.animHidden {
-        height: 0;
-        width: 100%;
-    }
 }
 
 .height-anim-content {
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 
+/* анимированные проекты */
 .project-anim {
     display: flex;
     flex-direction: column;
