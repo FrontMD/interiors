@@ -1,5 +1,4 @@
 .home-about {
-    z-index: 20;
     padding-top: 0;
     padding-bottom: 0;
     min-height: 100vh;
@@ -56,7 +55,7 @@
         display: flex;
         flex-direction: column;
         flex-basis: 56.5%;
-        padding: 64px;
+        padding: 184px 64px;
         background-color: $c-grey;
         background-image: url(../img/home/home_about_bg.svg);
         background-repeat: no-repeat;

@@ -49,583 +49,713 @@
     </header>
     <main class="site-main">
       <div class="page" data-js="pageAnimWrap" data-page="home">
-        <section class="home-intro" data-js="homeIntro">
-          <div class="home-intro__bg" data-js="homeIntroBg"><picture>
+        <div class="anim-container anim-container--home1" style="top: 100%; position: absolute;" data-js="animContainerHome1">
+          <section class="home-intro" data-js="homeIntro">
+            <div class="home-intro__bg" data-js="homeIntroBg"><picture>
 <source srcset="./img/home/home_intro_360.jpg" media="(max-width: 500px)">
 <source srcset="./img/home/home_intro_768.jpg" media="(max-width: 768px)">
 <img src="./img/home/home_intro.png" alt="">
 </picture>
-            <div class="home-intro__fake home-intro__fake--2" data-js="homeIntroFake2"><img src="./img/home/home_fake-2.png"></div>
-            <div class="home-intro__fake home-intro__fake--1" data-js="homeIntroFake1"><img src="./img/home/home_fake-1.png"></div>
-            <div class="home-intro__fake home-intro__fake--5" data-js="homeIntroFake5"><img src="./img/home/home_fake-5.png"></div>
-            <div class="home-intro__fake home-intro__fake--3" data-js="homeIntroFake3"><picture>
+              <div class="home-intro__fake home-intro__fake--2" data-js="homeIntroFake2"><img src="./img/home/home_fake-2.png"></div>
+              <div class="home-intro__fake home-intro__fake--1" data-js="homeIntroFake1"><img src="./img/home/home_fake-1.png"></div>
+              <div class="home-intro__fake home-intro__fake--5" data-js="homeIntroFake5"><img src="./img/home/home_fake-5.png"></div>
+              <div class="home-intro__fake home-intro__fake--3" data-js="homeIntroFake3"><picture>
 <source srcset="./img/home/home_fake_3_1023.jpg" media="(max-width: 1023px)"><img src="./img/home/home_fake-3.png" alt=""></picture>
+              </div>
+              <div class="home-intro__fake home-intro__fake--4" data-js="homeIntroFake4"><img src="./img/home/home_fake-4.png"></div>
             </div>
-            <div class="home-intro__fake home-intro__fake--4" data-js="homeIntroFake4"><img src="./img/home/home_fake-4.png"></div>
-          </div>
-          <div class="home-intro__fake home-intro__fake--logo" data-js="homeIntroFakeLogo"><img src="./img/logo.png"></div>
-          <div class="home-intro__content" data-js="homeIntroContent">
+            <div class="home-intro__fake home-intro__fake--logo" data-js="homeIntroFakeLogo"><img src="./img/logo.png"></div>
+            <div class="home-intro__content" data-js="homeIntroContent">
+              <div class="container">
+                    <div class="title title__h1 home-intro__title" data-js="homeIntroTitle">
+                      <h1 data-anim="title">Интерьеры с&nbsp;характером</h1>
+                    </div><a class="btn btn--btn btn--transparent home-intro__btn" href="#homeNumbers"><span class="btn__text">Скролл</span><span class="btn__icon">
+                        <svg>
+                          <use xlink:href="./img/sprites/sprite.svg#scroll"></use>
+                        </svg></span></a>
+              </div>
+            </div>
+          </section>
+          <section class="section home-numbers" id="homeNumbers" data-js="homeNumbers">
             <div class="container">
-                  <div class="title title__h1 home-intro__title">
-                    <h1>Интерьеры с&nbsp;характером</h1>
-                  </div><a class="btn btn--btn btn--transparent home-intro__btn" href="#homeNumbers"><span class="btn__text">Скролл</span><span class="btn__icon">
-                      <svg>
-                        <use xlink:href="./img/sprites/sprite.svg#scroll"></use>
-                      </svg></span></a>
-            </div>
-          </div>
-        </section>
-        <section class="section home-numbers" id="homeNumbers" data-js="homeNumbers">
-          <div class="container">
-            <div class="home-numbers__numbers">
-              <div class="home-numbers__number number">
-                <div class="number__symbol">></div>
-                <div class="number__number">200</div>
-                <div class="number__text">законченных проектов <br>в портфолио</div>
-              </div>
-              <div class="home-numbers__number number">
-                <div class="number__symbol">></div>
-                <div class="number__number">50</div>
-                <div class="number__text">% заказчиков <br>возвращаются  </div>
-              </div>
-              <div class="home-numbers__number number">
-                <div class="number__symbol">></div>
-                <div class="number__number">500</div>
-                <div class="number__text">литров игристого выпито <br>на завершенных объектах                </div>
+              <div class="home-numbers__numbers">
+                <div class="home-numbers__number number">
+                  <div class="number__symbol" data-anim="title">></div>
+                  <div class="number__number" data-anim="title">200</div>
+                  <div class="number__text">законченных проектов <br>в портфолио</div>
+                </div>
+                <div class="home-numbers__number number">
+                  <div class="number__symbol" data-anim="title">></div>
+                  <div class="number__number" data-anim="title">50</div>
+                  <div class="number__text">% заказчиков <br>возвращаются  </div>
+                </div>
+                <div class="home-numbers__number number">
+                  <div class="number__symbol" data-anim="title">></div>
+                  <div class="number__number" data-anim="title">500</div>
+                  <div class="number__text">литров игристого выпито <br>на завершенных объектах                </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="home-numbers__picture">
-            <div class="container">
-              <div class="home-numbers__img" data-js="homeNumbersImg"><picture>
+            <div class="home-numbers__picture">
+              <div class="container">
+                <div class="home-numbers__img" data-js="homeNumbersImg"><picture>
 <source srcset="./img/home/home_numbers_360.jpg" media="(max-width: 500px)">
 <source srcset="./img/home/home_numbers_768.jpg" media="(max-width: 768px)">
 <img src="./img/home/home_numbers.png" alt="">
 </picture>
-              </div>
-                  <div class="quote home-numbers__quote" data-js="homeNumbersQuote">
-                    <div class="quote__icon">
-                      <svg> 
-                        <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
-                      </svg>
-                    </div>
-                    <div class="quote__content">
-                      <div class="quote__text">Мы хотим, чтобы интерьеры отражали Ваш характер. имея собственный. Чтобы смотря на визуализации будущего интерьера Вы чувствовали, что мечты сбываются
+                </div>
+                    <div class="quote home-numbers__quote" data-js="homeNumbersQuote">
+                      <div class="quote__icon">
+                        <svg> 
+                          <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                        </svg>
+                      </div>
+                      <div class="quote__content">
+                        <div class="height-anim-wrap" data-anim="heightWrap">
+                          <div class="height-anim-el" data-anim="heightEl">
+                            <div class="quote__text height-anim-content" data-anim="heightContent">Мы хотим, чтобы интерьеры отражали Ваш характер. имея собственный. Чтобы смотря на визуализации будущего интерьера Вы чувствовали, что мечты сбываются
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+              </div>
             </div>
-          </div>
-        </section>
-            <section class="section m-projects" data-js="mProjects">
-              <div class="m-projects__controls" data-js="mProjectsControls">
-                <div class="m-projects__tabs" data-js="mProjectsTabs">
-                  <div class="swiper-wrapper"><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Квартиры</span></a><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Дома</span></a><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Апартаменты</span></a>
+          </section>
+        </div>
+        <div class="anim-container anim-container--home2" style="top: 100%; position: absolute;" data-js="animContainerHome2">
+              <section class="section m-projects" data-js="mProjects">
+                <div class="m-projects__controls" data-js="mProjectsControls">
+                  <div class="m-projects__tabs" data-js="mProjectsTabs">
+                    <div class="swiper-wrapper"><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Квартиры</span></a><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Дома</span></a><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Апартаменты</span></a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="container" data-js="mProjectsContainer">
-                    <div class="title title__h2 home-projects__title">
-                      <h2>Проекты</h2>
+                <div class="container" data-js="mProjectsContainer">
+                      <div class="title title__h2 home-projects__title">
+                        <h2 data-anim="title">Проекты</h2>
+                      </div>
+                  <div class="m-projects__slides" data-js="mProjectsSlides">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide m-projects__slide">
+                        <div class="m-projects__slide-title">Квартиры</div>
+                        <div class="m-projects__row projects-group">
+                          <div class="projects-group__one">
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--big" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="projects-group__two">
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
+                                        <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                        <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="m-projects__row projects-group">
+                          <div class="projects-group__two">
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
+                                        <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                        <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="projects-group__one">
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--big" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
+                                        <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                        <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="m-projects__row projects-group">
+                          <div class="projects-group__one">
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--big" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-7.jpg" alt="Русский дом"></div>
+                                        <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                        <div class="project-card__title">Русский дом</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="projects-group__two">
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-8.jpg" alt="Старый Арбат II"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Старый Арбат II</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-9.jpg" alt="Старый Арбат"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Старый Арбат</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div><a class="btn btn--btn btn--beige2 m-projects__slide-btn" href="javascript:void(0);"><span class="btn__text">Все проекты квартир</span></a>
+                      </div>
+                      <div class="swiper-slide m-projects__slide">
+                        <div class="m-projects__slide-title">Дома</div>
+                        <div class="m-projects__row projects-group">
+                          <div class="projects-group__one">
+                                <div class="project-card  project-card--big" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
+                                  <div class="project-card__location">Россия, Москва</div>
+                                  <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                          </div>
+                          <div class="projects-group__two">
+                                <div class="project-card  project-card--small" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
+                                  <div class="project-card__location">Россия, Москва</div>
+                                  <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                                <div class="project-card  project-card--small" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
+                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                  <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="m-projects__row projects-group">
+                          <div class="projects-group__two">
+                                <div class="project-card  project-card--small" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
+                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                  <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                                <div class="project-card  project-card--small" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
+                                  <div class="project-card__location">Россия, Москва</div>
+                                  <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                          </div>
+                          <div class="projects-group__one">
+                                <div class="project-card  project-card--big" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
+                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                  <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                          </div>
+                        </div><a class="btn btn--btn btn--beige2 m-projects__slide-btn" href="javascript:void(0);"><span class="btn__text">Все проекты домов</span></a>
+                      </div>
+                      <div class="swiper-slide m-projects__slide">
+                        <div class="m-projects__slide-title">Апартаменты</div>
+                        <div class="m-projects__row projects-group">
+                          <div class="projects-group__one">
+                                <div class="project-card  project-card--big" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
+                                  <div class="project-card__location">Россия, Москва</div>
+                                  <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                          </div>
+                          <div class="projects-group__two">
+                                <div class="project-card  project-card--small" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
+                                  <div class="project-card__location">Россия, Москва</div>
+                                  <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                                <div class="project-card  project-card--small" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
+                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                  <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="m-projects__row projects-group">
+                          <div class="projects-group__two">
+                                <div class="project-card  project-card--small" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
+                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                  <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                                <div class="project-card  project-card--small" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
+                                  <div class="project-card__location">Россия, Москва</div>
+                                  <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                          </div>
+                          <div class="projects-group__one">
+                                <div class="project-card  project-card--big" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
+                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                  <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="m-projects__row projects-group">
+                          <div class="projects-group__one">
+                                <div class="project-card  project-card--big" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-7.jpg" alt="Русский дом"></div>
+                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                  <div class="project-card__title">Русский дом</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                          </div>
+                          <div class="projects-group__two">
+                                <div class="project-card  project-card--small" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-8.jpg" alt="Старый Арбат II"></div>
+                                  <div class="project-card__location">Россия, Москва</div>
+                                  <div class="project-card__title">Старый Арбат II</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                                <div class="project-card  project-card--small" data-js="projectCard">
+                                  <div class="project-card__bg"><img src="./img/projects/project-9.jpg" alt="Старый Арбат"></div>
+                                  <div class="project-card__location">Россия, Москва</div>
+                                  <div class="project-card__title">Старый Арбат</div><a class="project-card__overlay" href="javascript:void(0);">
+                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                    </div></a>
+                                </div>
+                          </div>
+                        </div><a class="btn btn--btn btn--beige2 m-projects__slide-btn" href="javascript:void(0);"><span class="btn__text">Все проекты апартаментов</span></a>
+                      </div>
                     </div>
-                <div class="m-projects__slides" data-js="mProjectsSlides">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide m-projects__slide">
-                      <div class="m-projects__slide-title">Квартиры</div>
-                      <div class="m-projects__row projects-group">
-                        <div class="projects-group__one">
-                              <div class="project-card  project-card--big" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                        <div class="projects-group__two">
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
-                                <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                      </div>
-                      <div class="m-projects__row projects-group">
-                        <div class="projects-group__two">
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
-                                <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                        <div class="projects-group__one">
-                              <div class="project-card  project-card--big" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
-                                <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                      </div>
-                      <div class="m-projects__row projects-group">
-                        <div class="projects-group__one">
-                              <div class="project-card  project-card--big" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-7.jpg" alt="Русский дом"></div>
-                                <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                <div class="project-card__title">Русский дом</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                        <div class="projects-group__two">
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-8.jpg" alt="Старый Арбат II"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Старый Арбат II</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-9.jpg" alt="Старый Арбат"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Старый Арбат</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                      </div><a class="btn btn--btn btn--beige2 m-projects__slide-btn" href="javascript:void(0);"><span class="btn__text">Все проекты квартир</span></a>
-                    </div>
-                    <div class="swiper-slide m-projects__slide">
-                      <div class="m-projects__slide-title">Дома</div>
-                      <div class="m-projects__row projects-group">
-                        <div class="projects-group__one">
-                              <div class="project-card  project-card--big" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                        <div class="projects-group__two">
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
-                                <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                      </div>
-                      <div class="m-projects__row projects-group">
-                        <div class="projects-group__two">
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
-                                <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                        <div class="projects-group__one">
-                              <div class="project-card  project-card--big" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
-                                <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                      </div><a class="btn btn--btn btn--beige2 m-projects__slide-btn" href="javascript:void(0);"><span class="btn__text">Все проекты домов</span></a>
-                    </div>
-                    <div class="swiper-slide m-projects__slide">
-                      <div class="m-projects__slide-title">Апартаменты</div>
-                      <div class="m-projects__row projects-group">
-                        <div class="projects-group__one">
-                              <div class="project-card  project-card--big" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                        <div class="projects-group__two">
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
-                                <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                      </div>
-                      <div class="m-projects__row projects-group">
-                        <div class="projects-group__two">
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
-                                <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                        <div class="projects-group__one">
-                              <div class="project-card  project-card--big" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
-                                <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                      </div>
-                      <div class="m-projects__row projects-group">
-                        <div class="projects-group__one">
-                              <div class="project-card  project-card--big" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-7.jpg" alt="Русский дом"></div>
-                                <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                <div class="project-card__title">Русский дом</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                        <div class="projects-group__two">
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-8.jpg" alt="Старый Арбат II"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Старый Арбат II</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                              <div class="project-card  project-card--small" data-js="projectCard">
-                                <div class="project-card__bg"><img src="./img/projects/project-9.jpg" alt="Старый Арбат"></div>
-                                <div class="project-card__location">Россия, Москва</div>
-                                <div class="project-card__title">Старый Арбат</div><a class="project-card__overlay" href="javascript:void(0);">
-                                  <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                  </div></a>
-                              </div>
-                        </div>
-                      </div><a class="btn btn--btn btn--beige2 m-projects__slide-btn" href="javascript:void(0);"><span class="btn__text">Все проекты апартаментов</span></a>
-                    </div>
-                  </div>
-                </div><a class="btn btn--btn btn--beige2 m-projects__all" href="javascript:void(0);" data-js="mProjectsAll"><span class="btn__text">Все проекты</span></a>
-              </div>
-            </section>
-        <section class="section home-about" data-js="homeAbout">
-          <div class="container home-about__container">
-            <div class="home-about__video"><picture>
+                  </div><a class="btn btn--btn btn--beige2 m-projects__all" href="javascript:void(0);" data-js="mProjectsAll"><span class="btn__text">Все проекты</span></a>
+                </div>
+              </section>
+        </div>
+        <div class="anim-container anim-container--home3" style="top: 100%; position: absolute;" data-js="animContainerHome3">
+          <section class="section home-about" data-js="homeAbout">
+            <div class="container home-about__container">
+              <div class="home-about__video"><picture>
 <source srcset="./img/home/home_about_360.jpg" media="(max-width: 500px)">
 <source srcset="./img/home/home_about_768.jpg" media="(max-width: 768px)">
 <img src="./img/home/home_about.png" alt="">
 </picture><a class="btn btn--circle btn--beige home-about__play" href="javascript:void(0);" data-hystmodal="#homeAboutVideo"><span class="btn__icon">
-                      <svg>
-                        <use xlink:href="./img/sprites/sprite.svg#play"></use>
-                      </svg></span></a>
+                        <svg>
+                          <use xlink:href="./img/sprites/sprite.svg#play"></use>
+                        </svg></span></a>
+              </div>
+              <div class="home-about__text">
+                    <div class="title title__h2 title__h2--small home-about__title">
+                      <h2 data-anim="title">Как мы работаем</h2>
+                    </div>
+                    <div class="quote home-about__quote">
+                      <div class="quote__icon">
+                        <svg> 
+                          <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                        </svg>
+                      </div>
+                      <div class="quote__content">
+                        <div class="height-anim-wrap" data-anim="heightWrap">
+                          <div class="height-anim-el" data-anim="heightEl">
+                            <div class="quote__text height-anim-content" data-anim="heightContent">Уверена, что облик дома формируют арт-объекты, придающие ему интеллектуальность. И с опытом я все больше убеждаюсь в том, что концепцию жилья надо начинать именно с искусства и лишь потом углубляться в технические моменты
+                            </div>
+                          </div>
+                        </div>
+                        <div class="height-anim-wrap" data-anim="heightWrap">
+                          <div class="height-anim-el" data-anim="heightEl">
+                            <div class="quote__author height-anim-content" data-anim="heightContent">Волкова Арина Владимировна
+                            </div>
+                          </div>
+                        </div>
+                        <div class="height-anim-wrap" data-anim="heightWrap">
+                          <div class="height-anim-el" data-anim="heightEl">
+                            <div class="quote__position height-anim-content" data-anim="heightContent">Руководитель студии VI interiors
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><a class="btn btn--btn btn--beige2 home-about__btn" href="javascript:void(0);"><span class="btn__text">Узнать подробнее</span></a>
+              </div>
             </div>
-            <div class="home-about__text">
-                  <div class="title title__h2 title__h2--small home-about__title">
-                    <h2>Как мы работаем</h2>
+          </section>
+        </div>
+        <div class="anim-container anim-container--home4" style="top: 100%; position: absolute;" data-js="animContainerHome4">
+          <section class="section home-reviews" data-js="homeReviews">
+            <div class="home-reviews__container">
+              <div class="home-reviews__slider" data-js="homeReviewsSlider">
+                <div class="home-reviews__header" data-js="homeReviewsHeader">
+                      <div class="title title__h2 title__h2--small">
+                        <h2 data-anim="title">Истории клиентов</h2>
+                      </div>
+                  <div class="home-reviews__controls"><a class="btn btn--slider btn--transparent slider-control slider-control--prev" href="javascript:void(0);" data-js="sliderControlPrev"><span class="btn__icon">
+                            <svg>
+                              <use xlink:href="./img/sprites/sprite.svg#slider_arrow"></use>
+                            </svg></span></a><a class="btn btn--slider btn--transparent slider-control slider-control--next" href="javascript:void(0);" data-js="sliderControlNext"><span class="btn__icon">
+                            <svg>
+                              <use xlink:href="./img/sprites/sprite.svg#slider_arrow"></use>
+                            </svg></span></a>
                   </div>
-                  <div class="quote home-about__quote">
-                    <div class="quote__icon">
-                      <svg> 
-                        <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
-                      </svg>
+                </div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide home-reviews__slide" data-js="homeReviewsSlide">
+                    <div class="home-reviews__review">
+                      <div class="home-reviews__title" data-anim="title">Интерьер квартиры для ЖК «Монблан»</div>
+                      <div class="home-reviews__preview height-anim-wrap" data-anim="heightWrap">
+                        <div class="height-anim-el" data-anim="heightEl">
+                          <div class="height-anim-content" data-anim="heightContent"><img src="./img/home/review_small.jpg" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="home-reviews__info">
+                            <div class="quote home-reviews__quote">
+                              <div class="quote__icon">
+                                <svg> 
+                                  <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                                </svg>
+                              </div>
+                              <div class="quote__content">
+                                <div class="height-anim-wrap" data-anim="heightWrap">
+                                  <div class="height-anim-el" data-anim="heightEl">
+                                    <div class="quote__text height-anim-content" data-anim="heightContent">Рекомендую от души и со всей ответственностью
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="height-anim-wrap" data-anim="heightWrap">
+                                  <div class="height-anim-el" data-anim="heightEl">
+                                    <div class="quote__author height-anim-content" data-anim="heightContent">Грибанова Анна
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div><a class="btn btn--btn btn--beige2 desktop" href="javascript:void(0);" data-js="fullReviewOpen"><span class="btn__text">Читать историю</span></a><a class="btn btn--btn btn--beige2 mobile" href="javascript:void(0);" data-hystmodal="#homeFullReview1"><span class="btn__text">Читать историю</span></a>
+                      </div>
                     </div>
-                    <div class="quote__content">
-                      <div class="quote__text">Уверена, что облик дома формируют арт-объекты, придающие ему интеллектуальность. И с опытом я все больше убеждаюсь в том, что концепцию жилья надо начинать именно с искусства и лишь потом углубляться в технические моменты
-                      </div>
-                      <div class="quote__author">Волкова Арина Владимировна
-                      </div>
-                      <div class="quote__position">Руководитель студии VI interiors
+                    <div class="home-reviews__img height-anim-wrap" data-anim="heightWrap">
+                      <div class="height-anim-el" data-anim="heightEl">
+                        <div class="height-anim-content" data-anim="heightContent"><img src="./img/home/review.jpg" alt=""></div>
                       </div>
                     </div>
-                  </div><a class="btn btn--btn btn--beige2 home-about__btn" href="javascript:void(0);"><span class="btn__text">Узнать подробнее</span></a>
+                    <div class="home-reviews__full full-review" data-js="fullReview">
+                      <div class="home-reviews__title">Интерьер квартиры для ЖК «Монблан»</div>
+                      <div class="has-scroll full-review__scroll">
+                        <div class="full-review__icon"> 
+                          <svg> 
+                            <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                          </svg>
+                        </div>
+                            <div class="text-editor full-review__text">
+                              <p>У меня красивый и удобный дом. По двум причинам:</p>
+                              <p>- я не знала, во что ввязываюсь</p>
+                              <p>- я встретила по счастливой случайности Арину Волкову</p>
+                              <p>Если бы я представляла сложность такого проекта, я бы, вероятно, не начинала. Покрасила бы ровные стены краской и обошлась без ‘дома мечты’.</p>
+                              <p>Если бы я ввязалась без профессионала, могу только мрачно фантазировать, что было бы с моим кошельком, временем, душевным здоровьем и самим домом.</p>
+                              <p>С неослабевающим изумлением я наблюдала, сколько деталей, нюансов, препятствий скрыто в создании красивого, гармоничного интерьера. И с нарастающим уважением за тем, как Арина и команда с ними справляются.</p>
+                              <p>Арина - дизайнер интерьера высокого класса. Гармония, богатый цвет, форма, целостность, изящность, свой почерк.</p>
+                              <p>По неопытности мне казалось, это главное. И правда, странно, если вид моего дома мне бы не нравился.</p>
+                              <p>Однако, в процессе выяснилось, сколько всего нужно, чтобы картинка стала домом:</p>
+                              <p>- качественные чертежи для строителей</p>
+                              <p>- продуманная эргономика. В красоте должно быть удобно жить</p>
+                              <p>- комплектация с вариантами в зависимости от бюджета</p>
+                              <p>- знание рынка, сеть контактов для всего от плитки до дизайнерских мелочей.</p>
+                              <p>- знание частных мастерских мебельщиков, текстиля, мозаики и тп. Вот этих людей с золотыми руками, которые у себя в мастерской творят буквально итальянское премиальное качество. И их даже можно найти в интернете самим, только замучаешься проверять.</p>
+                              <p>- слаженная команда. Люди, которые любят своё дело и ладят друг с другом создают и атмосферу, и результат.</p>
+                              <p>- Эффективность. Арина не делает лишних движений, не говорит лишних слов. Чтобы ни произошло (а мой ремонт прошёл через 2022 и кризис поставок), Арина ищет варианты - быстро, гибко и с фантазией.</p>
+                              <p>- Ну и кому как, а я ценю воспитание, интеллигентность, образованность и порядочность. Ремонт дело не быстрое, по-моему не все равно, с кем и как общаться по ходу. И ещё ремонт дело дорогое и сложное. Ценно, когда как-то сразу становится ясно, что можно профессионалу доверять.</p>
+                            </div>
+                      </div>
+                      <div class="full-review__author">Грибанова Анна</div><a class="btn btn--btn btn--beige2 full-review__close" href="javascript:void(0);" data-js="fullReviewClose"><span class="btn__text">Свернуть историю</span></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide home-reviews__slide" data-js="homeReviewsSlide">
+                    <div class="home-reviews__review">
+                      <div class="home-reviews__title" data-anim="title">Интерьер квартиры для ЖК «Кантале»</div>
+                      <div class="home-reviews__preview"><img src="./img/home/review_small.jpg" alt=""></div>
+                      <div class="home-reviews__info">
+                            <div class="quote home-reviews__quote">
+                              <div class="quote__icon">
+                                <svg> 
+                                  <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                                </svg>
+                              </div>
+                              <div class="quote__content">
+                                <div class="height-anim-wrap" data-anim="heightWrap">
+                                  <div class="height-anim-el" data-anim="heightEl">
+                                    <div class="quote__text height-anim-content" data-anim="heightContent">Рекомендую от души и со всей ответственностью
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="height-anim-wrap" data-anim="heightWrap">
+                                  <div class="height-anim-el" data-anim="heightEl">
+                                    <div class="quote__author height-anim-content" data-anim="heightContent">Грибанова Анна
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div><a class="btn btn--btn btn--beige2 desktop" href="javascript:void(0);" data-js="fullReviewOpen"><span class="btn__text">Читать историю</span></a><a class="btn btn--btn btn--beige2 mobile" href="javascript:void(0);" data-hystmodal="#homeFullReview2"><span class="btn__text">Читать историю</span></a>
+                      </div>
+                    </div>
+                    <div class="home-reviews__img"><img src="./img/projects/project-1.jpg" alt=""></div>
+                    <div class="home-reviews__full full-review desktop" data-js="fullReview">
+                      <div class="home-reviews__title">Интерьер квартиры для ЖК «Кантале»</div>
+                      <div class="has-scroll full-review__scroll">
+                        <div class="full-review__icon"> 
+                          <svg> 
+                            <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                          </svg>
+                        </div>
+                            <div class="text-editor full-review__text">
+                              <p>У меня красивый и удобный дом. По двум причинам:</p>
+                              <p>- я не знала, во что ввязываюсь</p>
+                              <p>- я встретила по счастливой случайности Арину Волкову</p>
+                              <p>Если бы я представляла сложность такого проекта, я бы, вероятно, не начинала. Покрасила бы ровные стены краской и обошлась без ‘дома мечты’.</p>
+                              <p>Если бы я ввязалась без профессионала, могу только мрачно фантазировать, что было бы с моим кошельком, временем, душевным здоровьем и самим домом.</p>
+                              <p>С неослабевающим изумлением я наблюдала, сколько деталей, нюансов, препятствий скрыто в создании красивого, гармоничного интерьера. И с нарастающим уважением за тем, как Арина и команда с ними справляются.</p>
+                              <p>Арина - дизайнер интерьера высокого класса. Гармония, богатый цвет, форма, целостность, изящность, свой почерк.</p>
+                              <p>По неопытности мне казалось, это главное. И правда, странно, если вид моего дома мне бы не нравился.</p>
+                              <p>Однако, в процессе выяснилось, сколько всего нужно, чтобы картинка стала домом:</p>
+                              <p>- качественные чертежи для строителей</p>
+                              <p>- продуманная эргономика. В красоте должно быть удобно жить</p>
+                              <p>- комплектация с вариантами в зависимости от бюджета</p>
+                              <p>- знание рынка, сеть контактов для всего от плитки до дизайнерских мелочей.</p>
+                              <p>- знание частных мастерских мебельщиков, текстиля, мозаики и тп. Вот этих людей с золотыми руками, которые у себя в мастерской творят буквально итальянское премиальное качество. И их даже можно найти в интернете самим, только замучаешься проверять.</p>
+                              <p>- слаженная команда. Люди, которые любят своё дело и ладят друг с другом создают и атмосферу, и результат.</p>
+                              <p>- Эффективность. Арина не делает лишних движений, не говорит лишних слов. Чтобы ни произошло (а мой ремонт прошёл через 2022 и кризис поставок), Арина ищет варианты - быстро, гибко и с фантазией.</p>
+                              <p>- Ну и кому как, а я ценю воспитание, интеллигентность, образованность и порядочность. Ремонт дело не быстрое, по-моему не все равно, с кем и как общаться по ходу. И ещё ремонт дело дорогое и сложное. Ценно, когда как-то сразу становится ясно, что можно профессионалу доверять.</p>
+                            </div>
+                      </div>
+                      <div class="full-review__author">Грибанова Анна</div><a class="btn btn--btn btn--beige2 full-review__close" href="javascript:void(0);" data-js="fullReviewClose"><span class="btn__text">Свернуть историю</span></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide home-reviews__slide" data-js="homeReviewsSlide">
+                    <div class="home-reviews__review">
+                      <div class="home-reviews__title" data-anim="title">Интерьер квартиры для ЖК «Монблан»</div>
+                      <div class="home-reviews__preview"><img src="./img/home/review_small.jpg" alt=""></div>
+                      <div class="home-reviews__info">
+                            <div class="quote home-reviews__quote">
+                              <div class="quote__icon">
+                                <svg> 
+                                  <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                                </svg>
+                              </div>
+                              <div class="quote__content">
+                                <div class="height-anim-wrap" data-anim="heightWrap">
+                                  <div class="height-anim-el" data-anim="heightEl">
+                                    <div class="quote__text height-anim-content" data-anim="heightContent">Рекомендую от души и со всей ответственностью
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="height-anim-wrap" data-anim="heightWrap">
+                                  <div class="height-anim-el" data-anim="heightEl">
+                                    <div class="quote__author height-anim-content" data-anim="heightContent">Грибанова Анна
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div><a class="btn btn--btn btn--beige2 desktop" href="javascript:void(0);" data-js="fullReviewOpen"><span class="btn__text">Читать историю</span></a><a class="btn btn--btn btn--beige2 mobile" href="javascript:void(0);" data-hystmodal="#homeFullReview3"><span class="btn__text">Читать историю</span></a>
+                      </div>
+                    </div>
+                    <div class="home-reviews__img"><img src="./img/home/review.jpg" alt=""></div>
+                    <div class="home-reviews__full full-review" data-js="fullReview">
+                      <div class="home-reviews__title">Интерьер квартиры для ЖК «Монблан»</div>
+                      <div class="has-scroll full-review__scroll">
+                        <div class="full-review__icon"> 
+                          <svg> 
+                            <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
+                          </svg>
+                        </div>
+                            <div class="text-editor full-review__text">
+                              <p>У меня красивый и удобный дом. По двум причинам:</p>
+                              <p>- я не знала, во что ввязываюсь</p>
+                              <p>- я встретила по счастливой случайности Арину Волкову</p>
+                              <p>Если бы я представляла сложность такого проекта, я бы, вероятно, не начинала. Покрасила бы ровные стены краской и обошлась без ‘дома мечты’.</p>
+                              <p>Если бы я ввязалась без профессионала, могу только мрачно фантазировать, что было бы с моим кошельком, временем, душевным здоровьем и самим домом.</p>
+                              <p>С неослабевающим изумлением я наблюдала, сколько деталей, нюансов, препятствий скрыто в создании красивого, гармоничного интерьера. И с нарастающим уважением за тем, как Арина и команда с ними справляются.</p>
+                              <p>Арина - дизайнер интерьера высокого класса. Гармония, богатый цвет, форма, целостность, изящность, свой почерк.</p>
+                              <p>По неопытности мне казалось, это главное. И правда, странно, если вид моего дома мне бы не нравился.</p>
+                              <p>Однако, в процессе выяснилось, сколько всего нужно, чтобы картинка стала домом:</p>
+                              <p>- качественные чертежи для строителей</p>
+                              <p>- продуманная эргономика. В красоте должно быть удобно жить</p>
+                              <p>- комплектация с вариантами в зависимости от бюджета</p>
+                              <p>- знание рынка, сеть контактов для всего от плитки до дизайнерских мелочей.</p>
+                              <p>- знание частных мастерских мебельщиков, текстиля, мозаики и тп. Вот этих людей с золотыми руками, которые у себя в мастерской творят буквально итальянское премиальное качество. И их даже можно найти в интернете самим, только замучаешься проверять.</p>
+                              <p>- слаженная команда. Люди, которые любят своё дело и ладят друг с другом создают и атмосферу, и результат.</p>
+                              <p>- Эффективность. Арина не делает лишних движений, не говорит лишних слов. Чтобы ни произошло (а мой ремонт прошёл через 2022 и кризис поставок), Арина ищет варианты - быстро, гибко и с фантазией.</p>
+                              <p>- Ну и кому как, а я ценю воспитание, интеллигентность, образованность и порядочность. Ремонт дело не быстрое, по-моему не все равно, с кем и как общаться по ходу. И ещё ремонт дело дорогое и сложное. Ценно, когда как-то сразу становится ясно, что можно профессионалу доверять.</p>
+                            </div>
+                      </div>
+                      <div class="full-review__author">Грибанова Анна</div><a class="btn btn--btn btn--beige2 full-review__close" href="javascript:void(0);" data-js="fullReviewClose"><span class="btn__text">Свернуть историю</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="section home-reviews" data-js="homeReviews">
-          <div class="home-reviews__container">
-            <div class="home-reviews__slider" data-js="homeReviewsSlider">
-              <div class="home-reviews__header" data-js="homeReviewsHeader">
+          </section>
+              <section class="section m-contacts" data-js="mContacts">
+                <div class="container m-contacts__container">
+                  <div class="m-contacts__images">
+                    <div class="m-contacts__image height-anim-wrap" data-anim="heightWrap">
+                      <div class="height-anim-el" data-anim="heightEl">
+                        <div class="height-anim-content" data-anim="heightContent"><img src="./img/m-contacts/m_contacts_1.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="m-contacts__image height-anim-wrap height-anim-wrap--toBottom" data-anim="heightWrap">
+                      <div class="height-anim-el" data-anim="heightEl">
+                        <div class="height-anim-content" data-anim="heightContent"><img src="./img/m-contacts/m_contacts_2.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="m-contacts__image height-anim-wrap" data-anim="heightWrap">
+                      <div class="height-anim-el" data-anim="heightEl">
+                        <div class="height-anim-content" data-anim="heightContent"><img src="./img/m-contacts/m_contacts_3.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="m-contacts__image height-anim-wrap height-anim-wrap--toBottom" data-anim="heightWrap">
+                      <div class="height-anim-el" data-anim="heightEl">
+                        <div class="height-anim-content" data-anim="heightContent"><img src="./img/m-contacts/m_contacts_4.png" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                      <div class="title title__h2 m-contacts__title">
+                        <h2 data-anim="title">Контакты</h2>
+                      </div>
+                  <div class="m-contacts__contacts"><a class="m-contacts__contact" href="tel:79112276452">+7 911 227 64 52</a>
+                    <div class="m-contacts__contact">Санкт-Петербург, набережная реки Фонтанки д.8</div><a class="m-contacts__contact" href="mailto:arinavolkova@mail.ru">Arinavolkova@mail.ru</a>
+                  </div>
+                      <form class="form m-contacts__form" action="#" data-validate novalidate>
+                        <div class="form__content" data-js="form-content">
+                          <div class="form__title" data-anim="title">Или закажите звонок</div>
+                          <div class="form__fields">
+                                <label class="field   " data-js="formField">
+                                  <input class="field__input" type="text" placeholder="Ваше имя*" required=""><span class="field__error field-error"><span class="field-error__icon">
+                                      <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#invalid_field"></use>
+                                      </svg></span><span class="field-error__text" data-js="fieldError"></span></span>
+                                </label>
+                                <label class="field   " data-js="formField">
+                                  <input class="field__input" type="tel" placeholder="+7 (___)___-__-__*" data-type="phoneNumber" data-v-name="phone" required=""><span class="field__error field-error"><span class="field-error__icon">
+                                      <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#invalid_field"></use>
+                                      </svg></span><span class="field-error__text" data-js="fieldError"></span></span>
+                                </label>
+                          </div>
+                          <div class="form__privacy">
+                            <p>Нажимая на кнопку «Отправить заявку» я соглашаюсь <a href="#" target="_blank">с политикой конфиденциальности</a></p>
+                          </div>
+                              <button class="btn btn--btn btn--beige form__submit" type="submit"><span class="btn__text">Отправить заявку</span>
+                              </button>
+                        </div>
+                      </form>
+                </div>
+              </section>
+          <section class="section home-discussion" data-js="homeDiscussion">
+            <div class="container home-discussion__container">
+              <div class="home-discussion__left"><a class="btn btn--btn btn--beige2 " href="javascript:void(0);" data-hystmodal="#discussProject"><span class="btn__text">Обсудить проект</span></a>
+              </div>
+              <div class="home-discussion__rigth">
                     <div class="title title__h2 title__h2--small">
-                      <h2>Истории клиентов</h2>
+                      <h2 data-anim="title">Интерьеры с характером, дизайн-проекты в&nbsp;Санкт-Петербурге</h2>
                     </div>
-                <div class="home-reviews__controls"><a class="btn btn--slider btn--transparent slider-control slider-control--prev" href="javascript:void(0);" data-js="sliderControlPrev"><span class="btn__icon">
-                          <svg>
-                            <use xlink:href="./img/sprites/sprite.svg#slider_arrow"></use>
-                          </svg></span></a><a class="btn btn--slider btn--transparent slider-control slider-control--next" href="javascript:void(0);" data-js="sliderControlNext"><span class="btn__icon">
-                          <svg>
-                            <use xlink:href="./img/sprites/sprite.svg#slider_arrow"></use>
-                          </svg></span></a>
-                </div>
-              </div>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide home-reviews__slide" data-js="homeReviewsSlide">
-                  <div class="home-reviews__review">
-                    <div class="home-reviews__title">Интерьер квартиры для ЖК «Монблан»</div>
-                    <div class="home-reviews__preview"><img src="./img/home/review_small.jpg" alt=""></div>
-                    <div class="home-reviews__info">
-                          <div class="quote home-reviews__quote">
-                            <div class="quote__icon">
-                              <svg> 
-                                <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
-                              </svg>
-                            </div>
-                            <div class="quote__content">
-                              <div class="quote__text">Рекомендую от души и со всей ответственностью
-                              </div>
-                              <div class="quote__author">Грибанова Анна
-                              </div>
-                            </div>
-                          </div><a class="btn btn--btn btn--beige2 desktop" href="javascript:void(0);" data-js="fullReviewOpen"><span class="btn__text">Читать историю</span></a><a class="btn btn--btn btn--beige2 mobile" href="javascript:void(0);" data-hystmodal="#homeFullReview1"><span class="btn__text">Читать историю</span></a>
-                    </div>
-                  </div>
-                  <div class="home-reviews__img"><img src="./img/home/review.jpg" alt=""></div>
-                  <div class="home-reviews__full full-review" data-js="fullReview">
-                    <div class="home-reviews__title">Интерьер квартиры для ЖК «Монблан»</div>
-                    <div class="has-scroll full-review__scroll">
-                      <div class="full-review__icon"> 
-                        <svg> 
-                          <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
-                        </svg>
-                      </div>
-                          <div class="text-editor full-review__text">
-                            <p>У меня красивый и удобный дом. По двум причинам:</p>
-                            <p>- я не знала, во что ввязываюсь</p>
-                            <p>- я встретила по счастливой случайности Арину Волкову</p>
-                            <p>Если бы я представляла сложность такого проекта, я бы, вероятно, не начинала. Покрасила бы ровные стены краской и обошлась без ‘дома мечты’.</p>
-                            <p>Если бы я ввязалась без профессионала, могу только мрачно фантазировать, что было бы с моим кошельком, временем, душевным здоровьем и самим домом.</p>
-                            <p>С неослабевающим изумлением я наблюдала, сколько деталей, нюансов, препятствий скрыто в создании красивого, гармоничного интерьера. И с нарастающим уважением за тем, как Арина и команда с ними справляются.</p>
-                            <p>Арина - дизайнер интерьера высокого класса. Гармония, богатый цвет, форма, целостность, изящность, свой почерк.</p>
-                            <p>По неопытности мне казалось, это главное. И правда, странно, если вид моего дома мне бы не нравился.</p>
-                            <p>Однако, в процессе выяснилось, сколько всего нужно, чтобы картинка стала домом:</p>
-                            <p>- качественные чертежи для строителей</p>
-                            <p>- продуманная эргономика. В красоте должно быть удобно жить</p>
-                            <p>- комплектация с вариантами в зависимости от бюджета</p>
-                            <p>- знание рынка, сеть контактов для всего от плитки до дизайнерских мелочей.</p>
-                            <p>- знание частных мастерских мебельщиков, текстиля, мозаики и тп. Вот этих людей с золотыми руками, которые у себя в мастерской творят буквально итальянское премиальное качество. И их даже можно найти в интернете самим, только замучаешься проверять.</p>
-                            <p>- слаженная команда. Люди, которые любят своё дело и ладят друг с другом создают и атмосферу, и результат.</p>
-                            <p>- Эффективность. Арина не делает лишних движений, не говорит лишних слов. Чтобы ни произошло (а мой ремонт прошёл через 2022 и кризис поставок), Арина ищет варианты - быстро, гибко и с фантазией.</p>
-                            <p>- Ну и кому как, а я ценю воспитание, интеллигентность, образованность и порядочность. Ремонт дело не быстрое, по-моему не все равно, с кем и как общаться по ходу. И ещё ремонт дело дорогое и сложное. Ценно, когда как-то сразу становится ясно, что можно профессионалу доверять.</p>
-                          </div>
-                    </div>
-                    <div class="full-review__author">Грибанова Анна</div><a class="btn btn--btn btn--beige2 full-review__close" href="javascript:void(0);" data-js="fullReviewClose"><span class="btn__text">Свернуть историю</span></a>
-                  </div>
-                </div>
-                <div class="swiper-slide home-reviews__slide" data-js="homeReviewsSlide">
-                  <div class="home-reviews__review">
-                    <div class="home-reviews__title">Интерьер квартиры для ЖК «Кантале»</div>
-                    <div class="home-reviews__preview"><img src="./img/home/review_small.jpg" alt=""></div>
-                    <div class="home-reviews__info">
-                          <div class="quote home-reviews__quote">
-                            <div class="quote__icon">
-                              <svg> 
-                                <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
-                              </svg>
-                            </div>
-                            <div class="quote__content">
-                              <div class="quote__text">Рекомендую от души и со всей ответственностью
-                              </div>
-                              <div class="quote__author">Грибанова Анна
-                              </div>
-                            </div>
-                          </div><a class="btn btn--btn btn--beige2 desktop" href="javascript:void(0);" data-js="fullReviewOpen"><span class="btn__text">Читать историю</span></a><a class="btn btn--btn btn--beige2 mobile" href="javascript:void(0);" data-hystmodal="#homeFullReview2"><span class="btn__text">Читать историю</span></a>
-                    </div>
-                  </div>
-                  <div class="home-reviews__img"><img src="./img/projects/project-1.jpg" alt=""></div>
-                  <div class="home-reviews__full full-review desktop" data-js="fullReview">
-                    <div class="home-reviews__title">Интерьер квартиры для ЖК «Кантале»</div>
-                    <div class="has-scroll full-review__scroll">
-                      <div class="full-review__icon"> 
-                        <svg> 
-                          <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
-                        </svg>
-                      </div>
-                          <div class="text-editor full-review__text">
-                            <p>У меня красивый и удобный дом. По двум причинам:</p>
-                            <p>- я не знала, во что ввязываюсь</p>
-                            <p>- я встретила по счастливой случайности Арину Волкову</p>
-                            <p>Если бы я представляла сложность такого проекта, я бы, вероятно, не начинала. Покрасила бы ровные стены краской и обошлась без ‘дома мечты’.</p>
-                            <p>Если бы я ввязалась без профессионала, могу только мрачно фантазировать, что было бы с моим кошельком, временем, душевным здоровьем и самим домом.</p>
-                            <p>С неослабевающим изумлением я наблюдала, сколько деталей, нюансов, препятствий скрыто в создании красивого, гармоничного интерьера. И с нарастающим уважением за тем, как Арина и команда с ними справляются.</p>
-                            <p>Арина - дизайнер интерьера высокого класса. Гармония, богатый цвет, форма, целостность, изящность, свой почерк.</p>
-                            <p>По неопытности мне казалось, это главное. И правда, странно, если вид моего дома мне бы не нравился.</p>
-                            <p>Однако, в процессе выяснилось, сколько всего нужно, чтобы картинка стала домом:</p>
-                            <p>- качественные чертежи для строителей</p>
-                            <p>- продуманная эргономика. В красоте должно быть удобно жить</p>
-                            <p>- комплектация с вариантами в зависимости от бюджета</p>
-                            <p>- знание рынка, сеть контактов для всего от плитки до дизайнерских мелочей.</p>
-                            <p>- знание частных мастерских мебельщиков, текстиля, мозаики и тп. Вот этих людей с золотыми руками, которые у себя в мастерской творят буквально итальянское премиальное качество. И их даже можно найти в интернете самим, только замучаешься проверять.</p>
-                            <p>- слаженная команда. Люди, которые любят своё дело и ладят друг с другом создают и атмосферу, и результат.</p>
-                            <p>- Эффективность. Арина не делает лишних движений, не говорит лишних слов. Чтобы ни произошло (а мой ремонт прошёл через 2022 и кризис поставок), Арина ищет варианты - быстро, гибко и с фантазией.</p>
-                            <p>- Ну и кому как, а я ценю воспитание, интеллигентность, образованность и порядочность. Ремонт дело не быстрое, по-моему не все равно, с кем и как общаться по ходу. И ещё ремонт дело дорогое и сложное. Ценно, когда как-то сразу становится ясно, что можно профессионалу доверять.</p>
-                          </div>
-                    </div>
-                    <div class="full-review__author">Грибанова Анна</div><a class="btn btn--btn btn--beige2 full-review__close" href="javascript:void(0);" data-js="fullReviewClose"><span class="btn__text">Свернуть историю</span></a>
-                  </div>
-                </div>
-                <div class="swiper-slide home-reviews__slide" data-js="homeReviewsSlide">
-                  <div class="home-reviews__review">
-                    <div class="home-reviews__title">Интерьер квартиры для ЖК «Монблан»</div>
-                    <div class="home-reviews__preview"><img src="./img/home/review_small.jpg" alt=""></div>
-                    <div class="home-reviews__info">
-                          <div class="quote home-reviews__quote">
-                            <div class="quote__icon">
-                              <svg> 
-                                <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
-                              </svg>
-                            </div>
-                            <div class="quote__content">
-                              <div class="quote__text">Рекомендую от души и со всей ответственностью
-                              </div>
-                              <div class="quote__author">Грибанова Анна
-                              </div>
-                            </div>
-                          </div><a class="btn btn--btn btn--beige2 desktop" href="javascript:void(0);" data-js="fullReviewOpen"><span class="btn__text">Читать историю</span></a><a class="btn btn--btn btn--beige2 mobile" href="javascript:void(0);" data-hystmodal="#homeFullReview3"><span class="btn__text">Читать историю</span></a>
-                    </div>
-                  </div>
-                  <div class="home-reviews__img"><img src="./img/home/review.jpg" alt=""></div>
-                  <div class="home-reviews__full full-review" data-js="fullReview">
-                    <div class="home-reviews__title">Интерьер квартиры для ЖК «Монблан»</div>
-                    <div class="has-scroll full-review__scroll">
-                      <div class="full-review__icon"> 
-                        <svg> 
-                          <use xlink:href="./img/sprites/sprite.svg#quotes"></use>
-                        </svg>
-                      </div>
-                          <div class="text-editor full-review__text">
-                            <p>У меня красивый и удобный дом. По двум причинам:</p>
-                            <p>- я не знала, во что ввязываюсь</p>
-                            <p>- я встретила по счастливой случайности Арину Волкову</p>
-                            <p>Если бы я представляла сложность такого проекта, я бы, вероятно, не начинала. Покрасила бы ровные стены краской и обошлась без ‘дома мечты’.</p>
-                            <p>Если бы я ввязалась без профессионала, могу только мрачно фантазировать, что было бы с моим кошельком, временем, душевным здоровьем и самим домом.</p>
-                            <p>С неослабевающим изумлением я наблюдала, сколько деталей, нюансов, препятствий скрыто в создании красивого, гармоничного интерьера. И с нарастающим уважением за тем, как Арина и команда с ними справляются.</p>
-                            <p>Арина - дизайнер интерьера высокого класса. Гармония, богатый цвет, форма, целостность, изящность, свой почерк.</p>
-                            <p>По неопытности мне казалось, это главное. И правда, странно, если вид моего дома мне бы не нравился.</p>
-                            <p>Однако, в процессе выяснилось, сколько всего нужно, чтобы картинка стала домом:</p>
-                            <p>- качественные чертежи для строителей</p>
-                            <p>- продуманная эргономика. В красоте должно быть удобно жить</p>
-                            <p>- комплектация с вариантами в зависимости от бюджета</p>
-                            <p>- знание рынка, сеть контактов для всего от плитки до дизайнерских мелочей.</p>
-                            <p>- знание частных мастерских мебельщиков, текстиля, мозаики и тп. Вот этих людей с золотыми руками, которые у себя в мастерской творят буквально итальянское премиальное качество. И их даже можно найти в интернете самим, только замучаешься проверять.</p>
-                            <p>- слаженная команда. Люди, которые любят своё дело и ладят друг с другом создают и атмосферу, и результат.</p>
-                            <p>- Эффективность. Арина не делает лишних движений, не говорит лишних слов. Чтобы ни произошло (а мой ремонт прошёл через 2022 и кризис поставок), Арина ищет варианты - быстро, гибко и с фантазией.</p>
-                            <p>- Ну и кому как, а я ценю воспитание, интеллигентность, образованность и порядочность. Ремонт дело не быстрое, по-моему не все равно, с кем и как общаться по ходу. И ещё ремонт дело дорогое и сложное. Ценно, когда как-то сразу становится ясно, что можно профессионалу доверять.</p>
-                          </div>
-                    </div>
-                    <div class="full-review__author">Грибанова Анна</div><a class="btn btn--btn btn--beige2 full-review__close" href="javascript:void(0);" data-js="fullReviewClose"><span class="btn__text">Свернуть историю</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-            <section class="section m-contacts" data-js="mContacts">
-              <div class="container m-contacts__container">
-                <div class="m-contacts__images">
-                  <div class="m-contacts__image"><img src="./img/m-contacts/m_contacts_1.png" alt=""></div>
-                  <div class="m-contacts__image"><img src="./img/m-contacts/m_contacts_2.png" alt=""></div>
-                  <div class="m-contacts__image"><img src="./img/m-contacts/m_contacts_3.png" alt=""></div>
-                  <div class="m-contacts__image"><img src="./img/m-contacts/m_contacts_4.png" alt=""></div>
-                </div>
-                    <div class="title title__h2 m-contacts__title">
-                      <h2>Контакты</h2>
-                    </div>
-                <div class="m-contacts__contacts"><a class="m-contacts__contact" href="tel:79112276452">+7 911 227 64 52</a>
-                  <div class="m-contacts__contact">Санкт-Петербург, набережная реки Фонтанки д.8</div><a class="m-contacts__contact" href="mailto:arinavolkova@mail.ru">Arinavolkova@mail.ru</a>
-                </div>
-                    <form class="form m-contacts__form" action="#" data-validate novalidate>
-                      <div class="form__content" data-js="form-content">
-                        <div class="form__title">Или закажите звонок</div>
-                        <div class="form__fields">
-                              <label class="field   " data-js="formField">
-                                <input class="field__input" type="text" placeholder="Ваше имя*" required=""><span class="field__error field-error"><span class="field-error__icon">
-                                    <svg>
-                                      <use xlink:href="./img/sprites/sprite.svg#invalid_field"></use>
-                                    </svg></span><span class="field-error__text" data-js="fieldError"></span></span>
-                              </label>
-                              <label class="field   " data-js="formField">
-                                <input class="field__input" type="tel" placeholder="+7 (___)___-__-__*" data-type="phoneNumber" data-v-name="phone" required=""><span class="field__error field-error"><span class="field-error__icon">
-                                    <svg>
-                                      <use xlink:href="./img/sprites/sprite.svg#invalid_field"></use>
-                                    </svg></span><span class="field-error__text" data-js="fieldError"></span></span>
-                              </label>
+                <div class="height-anim-wrap" data-anim="heightWrap">
+                  <div class="height-anim-el" data-anim="heightEl">
+                        <div class="text-editor home-discussion__text height-anim-content" data-anim="heightContent">
+                          <p>«Я хотела воссоздать в этом проекте атмосферу семейного быта моих предков, и это мне удалось. Я никогда не бывала в нашей старой квартире на Моховой, но рассказы о семейных традициях, отдельные детали декора, старинные вещи помогли создать убедительный образ дома, где за большим столом собиралась вся семья»</p>
+                          <p>Главный акцент в гостиной-столовой — ширма с репродукцией картины Пабло Пикассо «Любительница абсента». Ширма размером 2х3 метра выполнена автором проекта совместно с архитектором Еленой Шируновой.</p>
+                          <p>Открытое пространство гостиной-кухни занимает порядка 50 квадратных метров. Над обеденным столом — хрустальная люстра (её привезли из Европы, поставщик — bufet_taburet). Гипсовая розетка изготовлена на заводе «Дикарт».</p>
+                          <p>В этом с любовью сделанном интерьере нашли своё место и старинные вещи, например, подстолье для швейной машинки «Зингер». «Я увидела его в 2005 году и принесла домой, за что меня чуть не предали анафеме. Но я его отстояла, и оно, накрытое столешницей, «изображало» консоль в прихожей, а в новую квартиру переехало в гостевой санузел в качестве подстолья для раковины».</p>
                         </div>
-                        <div class="form__privacy">
-                          <p>Нажимая на кнопку «Отправить заявку» я соглашаюсь <a href="#" target="_blank">с политикой конфиденциальности</a></p>
-                        </div>
-                            <button class="btn btn--btn btn--beige form__submit" type="submit"><span class="btn__text">Отправить заявку</span>
-                            </button>
-                      </div>
-                    </form>
+                  </div>
+                </div>
               </div>
-            </section>
-        <section class="section home-discussion" data-js="homeDiscussion">
-          <div class="container home-discussion__container">
-            <div class="home-discussion__left"><a class="btn btn--btn btn--beige2 " href="javascript:void(0);" data-hystmodal="#discussProject"><span class="btn__text">Обсудить проект</span></a>
             </div>
-            <div class="home-discussion__rigth">
-                  <div class="title title__h2 title__h2--small">
-                    <h2>Интерьеры с характером, дизайн-проекты в Санкт-Петербурге</h2>
-                  </div>
-                  <div class="text-editor home-discussion__text">
-                    <p>«Я хотела воссоздать в этом проекте атмосферу семейного быта моих предков, и это мне удалось. Я никогда не бывала в нашей старой квартире на Моховой, но рассказы о семейных традициях, отдельные детали декора, старинные вещи помогли создать убедительный образ дома, где за большим столом собиралась вся семья»</p>
-                    <p>Главный акцент в гостиной-столовой — ширма с репродукцией картины Пабло Пикассо «Любительница абсента». Ширма размером 2х3 метра выполнена автором проекта совместно с архитектором Еленой Шируновой.</p>
-                    <p>Открытое пространство гостиной-кухни занимает порядка 50 квадратных метров. Над обеденным столом — хрустальная люстра (её привезли из Европы, поставщик — bufet_taburet). Гипсовая розетка изготовлена на заводе «Дикарт».</p>
-                    <p>В этом с любовью сделанном интерьере нашли своё место и старинные вещи, например, подстолье для швейной машинки «Зингер». «Я увидела его в 2005 году и принесла домой, за что меня чуть не предали анафеме. Но я его отстояла, и оно, накрытое столешницей, «изображало» консоль в прихожей, а в новую квартиру переехало в гостевой санузел в качестве подстолья для раковины».</p>
-                  </div>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </main>
     <footer class="site-footer" data-js="footer">
@@ -685,7 +815,7 @@
                         </button>
                         <form class="form discuss-project__form" action="#" data-validate novalidate>
                           <div class="form__content" data-js="form-content">
-                            <div class="form__title">Обсудить проект</div>
+                            <div class="form__title" data-anim="title">Обсудить проект</div>
                             <div class="form__fields">
                                   <label class="field   " data-js="formField">
                                     <input class="field__input" type="text" placeholder="Ваше имя*" required=""><span class="field__error field-error"><span class="field-error__icon">

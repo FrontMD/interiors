@@ -7,10 +7,12 @@ let scrollTriggerObject;
 let mainTimeline = gsap.timeline();
 let addTime = 800;
 
+
 const preloader = document.querySelector('[data-js="preloader"]')
 const currentPage = document.querySelector('[data-js="pageAnimWrap"]')
 let currentPageName = currentPage ? currentPage.dataset.page : ""
 
+const windowHeight = window.innerHeight
 
 if(preloader !== null ) {
 	setTimeout(() => {
@@ -147,7 +149,10 @@ function homeIntroAnim() {
         }, '>')
         tl.to('[data-js="homeIntroContent"]', {
             opacity: 1,
-            duration: 1
+            duration: 1,
+            onComplete: () => {
+                titleAnim(document.querySelector('[data-js="homeIntroTitle"]'))
+            }
         }, '<')
         tl.to('[data-js="homeIntroFakeLogo"]', {
             opacity: 0,
@@ -166,6 +171,13 @@ function homeIntroAnim() {
 
 /** Общая анимация главной страницы */
 function homePageAnimation() {
+
+    currentPage.style.minHeight = "100vh"
+
+    const footer = document.querySelector('[data-js="footer"]')
+    footer.style.bottom = "0"
+    footer.style.position = 'relative'
+
     scrollTriggerObject = ScrollTrigger.create({
         trigger: currentPage,
         pin: true,
@@ -175,52 +187,49 @@ function homePageAnimation() {
         animation: mainTimeline,
     })
 
-    currentPage.style.minHeight = "100vh"
+    titlesMarkup()
+    heightAnimMarkup()
 
-    const allSectionSelectors = [
-        '[data-js="homeIntro"]',
-        '[data-js="homeNumbers"]',
-        '[data-js="mProjects"]',
-        '[data-js="homeAbout"]',
-        '[data-js="homeReviews"]',
-        '[data-js="mContacts"]',
-        '[data-js="homeDiscussion"]',
-        '[data-js="footer"]'
-    ]
 
-    allSectionSelectors.forEach((selector, index) => {
-
-        let section = document.querySelector(selector)
-
-        section.style.position = 'absolute'
-        section.style.width = "100%"
-
-        if(index == 0) {
-            section.style.top = "0"
-        } else if (index == allSectionSelectors.length - 1) {
-            section.style.bottom = "0"
-            section.style.position = 'relative'
-        } else {
-            section.style.top = "100%"
-        }
-    })
-
-    //первый экран
-    mainTimeline.fromTo('[data-js="homeIntro"]', {
+    //первый экран и цифры с картинкой
+    mainTimeline.fromTo('[data-js="animContainerHome1"]', {
 		y: "0",
 	}, {
-		y: "-100%",
-		duration: 0.9,
+		y: () => {
+            let containerHeight = document.querySelector('[data-js="animContainerHome1"]').offsetHeight;
+            return -((containerHeight - window.innerHeight) / containerHeight * 100) + "%"
+        },
+		duration: 2,
 		ease: "none",
 	}, "0");
 
-    //цифры
+    mainTimeline.fromTo('[data-js="homeNumbers"]', {}, {
+		duration: 0.5,
+		ease: "none",
+        onComplete: () => {
+            let wrap = document.querySelector('[data-js="homeNumbers"]')
+            wrap.querySelectorAll('[data-anim="title"]').forEach(title => {
+                titleAnim(title)
+            })
+        },
+	}, "<");
+
+    mainTimeline.fromTo('[data-js="homeNumbers"]', {}, {
+		duration: 1,
+		ease: "none",
+        onComplete: () => {
+            let wrap = document.querySelector('[data-js="homeNumbers"]')
+            wrap.querySelectorAll('[data-anim="heightEl"]').forEach(el => {
+                heightAnim(el)
+            })
+        }
+	}, "<");
 
     mainTimeline.fromTo('[data-js="homeNumbersImg"]', {
 		top: "-20%"
 	}, {
 		top: "0",
-		duration: 2.4,
+		duration: 3.2,
 		ease: "none",
 	}, "<");
 
@@ -228,31 +237,34 @@ function homePageAnimation() {
 		y: "0"
 	}, {
 		y: "150%",
-		duration: 2.4,
+		duration: 3.2,
 		ease: "none",
 	}, "<");
 
-    mainTimeline.fromTo('[data-js="homeNumbers"]', {
-		y: "0"
+    mainTimeline.fromTo('[data-js="animContainerHome1"]', {
+		top: "0",
 	}, {
-		y: "-100%",
+		top: "-100vh",
 		duration: 1.2,
 		ease: "none",
-	}, "<");
-
-    mainTimeline.fromTo('[data-js="homeNumbers"]', {
-		y: "-100%"
-	}, {
-		y: "-200%",
-		duration: 1.2,
-		ease: "none",
-	}, ">");
+	}, "> -1.2");
 
     //проекты
-    mainTimeline.fromTo('[data-js="mProjects"]', {
-		top: "100%",
+    mainTimeline.fromTo('[data-js="animContainerHome2"]', {}, {
+		duration: 0.3,
+		ease: "none",
+        onComplete: () => {
+            let wrap = document.querySelector('[data-js="animContainerHome2"]')
+            wrap.querySelectorAll('[data-anim="title"]').forEach(title => {
+                titleAnim(title)
+            })
+        }
+	}, "<");
+
+    mainTimeline.fromTo('[data-js="animContainerHome2"]', {
+		y: "0",
 	}, {
-		top: "-315px",
+		y: "-100%",
 		duration: 1,
 		ease: "none",
 	}, "<");
@@ -265,6 +277,9 @@ function homePageAnimation() {
         },
 		duration: 1.5,
 		ease: "none",
+        onUpdate: () => {
+            projectsAnimation()
+        },
 	}, ">");
 
     mainTimeline.fromTo('[data-js="mProjectsContainer"]', {
@@ -284,7 +299,7 @@ function homePageAnimation() {
 	}, "<");
 
     //как мы работаем
-    mainTimeline.fromTo('[data-js="homeAbout"]', {
+    mainTimeline.fromTo('[data-js="animContainerHome3"]', {
 		y: "0",
 	}, {
 		y: "-100%",
@@ -292,15 +307,24 @@ function homePageAnimation() {
 		ease: "none",
 	}, "< -0.2");
 
-    mainTimeline.fromTo('[data-js="homeAbout"]', {
+    mainTimeline.fromTo('[data-js="animContainerHome3"]', {
 		scale: "0.3",
 	}, {
 		scale: "1",
 		duration: 1,
 		ease: "none",
+        onComplete: () => {
+            let wrap = document.querySelector('[data-js="animContainerHome3"]')
+            wrap.querySelectorAll('[data-anim="title"]').forEach(title => {
+                titleAnim(title)
+            })
+            wrap.querySelectorAll('[data-anim="heightEl"]').forEach(el => {
+                heightAnim(el)
+            })
+        }
 	}, ">");
 
-    mainTimeline.fromTo('[data-js="homeAbout"]', {
+    mainTimeline.fromTo('[data-js="animContainerHome3"]', {
 		y: "-100%",
 	}, {
 		y: "-200%",
@@ -308,50 +332,63 @@ function homePageAnimation() {
 		ease: "none",
 	}, "> +0.2");
 
-    //истории
-    mainTimeline.fromTo('[data-js="homeReviews"]', {
+    //истории, контакты, текст
+    mainTimeline.fromTo('[data-js="animContainerHome4"]', {
 		y: "0",
 	}, {
 		y: "-100%",
-		duration: 1,
+		duration: 3,
 		ease: "none",
 	}, "<");
 
-    mainTimeline.fromTo('[data-js="homeReviews"]', {
-		y: "-100%",
-	}, {
-		y: "-200%",
-		duration: 1,
+    mainTimeline.fromTo('[data-js="animContainerHome4"]', {}, {
+		duration: 0.4,
 		ease: "none",
+        onComplete: () => {
+            let wrap = document.querySelector('[data-js="homeReviews"]')
+            wrap.querySelectorAll('[data-anim="title"]').forEach(title => {
+                titleAnim(title)
+            })
+            wrap.querySelectorAll('[data-anim="heightEl"]').forEach(el => {
+                heightAnim(el)
+            })
+        }
+	}, "<");
+
+    mainTimeline.fromTo('[data-js="animContainerHome4"]', {}, {
+		duration: 1.1,
+		ease: "none",
+        onComplete: () => {
+            let wrap = document.querySelector('[data-js="mContacts"]')
+            titleAnim(wrap.querySelector('.m-contacts__title'))
+            wrap.querySelectorAll('[data-anim="heightEl"]').forEach(el => {
+                heightAnim(el)
+            })
+        }
 	}, ">");
 
-    //контакты
-    mainTimeline.fromTo('[data-js="mContacts"]', {
-		y: "0",
-	}, {
-		y: "-100%",
-		duration: 1.2,
+    mainTimeline.fromTo('[data-js="animContainerHome4"]', {}, {
+		duration: 0.4,
 		ease: "none",
-	}, "<");
-
-    mainTimeline.fromTo('[data-js="mContacts"]', {
-		y: "-100%",
-	}, {
-		y: () => {
-            return ( 0 - document.querySelector('[data-js="mContacts"]').offsetHeight - document.querySelector('[data-js="homeDiscussion"]').offsetHeight) + "px"
-        },
-		duration: 1,
-		ease: "none",
+        onComplete: () => {
+            let wrap = document.querySelector('[data-js="mContacts"]')
+            titleAnim(wrap.querySelector('.form__title'))
+        }
 	}, ">");
 
-    //тексты
-    mainTimeline.fromTo('[data-js="homeDiscussion"]', {
-		y: "0",
-	}, {
-		y: "-100%",
-		duration: 1,
+    mainTimeline.fromTo('[data-js="animContainerHome4"]', {}, {
+		duration: 0.7,
 		ease: "none",
-	}, "<");
+        onComplete: () => {
+            let wrap = document.querySelector('[data-js="homeDiscussion"]')
+            wrap.querySelectorAll('[data-anim="title"]').forEach(title => {
+                titleAnim(title)
+            })
+            wrap.querySelectorAll('[data-anim="heightEl"]').forEach(el => {
+                heightAnim(el)
+            })
+        }
+	}, ">");
 
     //подвал
     /*mainTimeline.fromTo('[data-js="footer"]', {
@@ -361,4 +398,95 @@ function homePageAnimation() {
 		duration: 1,
 		ease: "none",
 	}, ">");*/
+}
+
+
+/* разметка заголовков */
+function titlesMarkup() {
+    const titles = document.querySelectorAll('[data-anim="title"]')
+
+    if(titles.length < 1) return
+
+    titles.forEach(title => {
+        let titleText = title.innerHTML
+        let textArray = titleText.split(" ")
+
+        let newTitleHtml = ''
+
+        textArray.forEach(textItem => {
+            newTitleHtml += ` <span class="title-anim-external"><span class="title-anim-internal animHidden" data-js="titleAnimInternal">${textItem}</span></span>`
+        })
+
+        title.innerHTML = newTitleHtml
+    })
+}
+
+/* анимация заголовков */
+function titleAnim(title) {
+    const titlesAnimInternal = title.querySelectorAll('[data-js="titleAnimInternal"]')
+
+    titlesAnimInternal.forEach(item => {
+        item.classList.remove('animHidden')
+    })
+}
+
+/* разметка анимации высоты */
+function heightAnimMarkup() {
+    const els = document.querySelectorAll('[data-anim="heightEl"]')
+
+    if(els.length < 1) return
+
+    els.forEach(el => {
+
+        let elHeight = el.offsetHeight
+        let elWrap = el.closest('[data-anim="heightWrap"]')
+        let elContent = el.querySelector('[data-anim="heightContent"]')
+
+        elWrap.style.height = elHeight + "px"
+        elContent.style.height = elHeight + "px"
+        elContent.style.position = "absolute"
+
+        el.classList.add("animHidden")
+    })
+}
+
+/* анимации высоты */
+function heightAnim(el) {
+    el.classList.remove("animHidden")
+}
+
+/* анимация проектов */
+function projectsAnimation() {
+    console.log(document.querySelector('[data-js="animContainerHome1"]').getBoundingClientRect())
+    console.log(document.querySelector('[data-js="animContainerHome2"]').getBoundingClientRect())
+    console.log(document.querySelector('[data-js="animContainerHome3"]').getBoundingClientRect())
+    console.log(document.querySelector('[data-js="animContainerHome4"]').getBoundingClientRect())
+    const projectsAnim = document.querySelectorAll('[data-js="mProjectsSlides"] .swiper-slide-active [data-anim="projectAnim"]')
+    const showPosition = 20
+
+    if(projectsAnim.length < 1) return
+
+    projectsAnim.forEach((projectAnim, index)=> {
+
+        console.log("элемент: " + index)
+        console.log(projectAnim)
+        
+        let projectAnimPosition = projectAnim.getBoundingClientRect()
+        let projectAnimBottomPosition = windowHeight - (projectAnimPosition.y + projectAnimPosition.height)
+        console.log(projectAnimPosition)
+
+        console.log(windowHeight)
+        console.log(projectAnimPosition.y)
+        console.log(projectAnimPosition.height)
+
+        console.log(projectAnimBottomPosition)
+
+        let projectAnimWrap = projectAnim.querySelector('[data-anim="projectAnimWrap"]')
+    
+        if(projectAnimBottomPosition > showPosition) {
+            projectAnimWrap.style.height = "100%"
+        } else {
+            projectAnimWrap.style.height = "0%"
+        }
+    })
 }

@@ -5,210 +5,241 @@ block variables
 
 block content
     .page(data-js="pageAnimWrap" data-page="home")
-        include ../../blocks/modules/pages/home/home-intro/home-intro.pug
-        include ../../blocks/modules/pages/home/home-numbers/home-numbers.pug
-        +m-projects()
-            .swiper-slide.m-projects__slide
-                .m-projects__slide-title Квартиры
-                .m-projects__row.projects-group
-                    .projects-group__one
-                        +project-card()
-                    .projects-group__two
-                        +project-card({
-                            type: 'small',
-                            title: 'Монблан',
-                            location: 'Россия, Москва',
-                            bgImage: 'project-2.jpg',
-                        })
-                        +project-card({
-                            type: 'small',
-                            title: 'Галерная 12',
-                            location: 'Россия, Санкт-Петербург',
-                            bgImage: 'project-3.jpg',
-                        })
-                .m-projects__row.projects-group
-                    .projects-group__two
-                        +project-card({
-                            type: 'small',
-                            title: 'Neva House',
-                            location: 'Россия, Санкт-Петербург',
-                            bgImage: 'project-4.jpg',
-                        })
-                        +project-card({
-                            type: 'small',
-                            title: 'Бассейная 45',
-                            location: 'Россия, Москва',
-                            bgImage: 'project-5.jpg',
-                        }) 
-                    .projects-group__one
-                        +project-card({
-                            type: 'big',
-                            title: 'Маленькая Франция',
-                            location: 'Россия, Санкт-Петербург',
-                            bgImage: 'project-6.jpg',
-                        })    
-                .m-projects__row.projects-group
-                    .projects-group__one
-                        +project-card({
-                            type: 'big',
-                            title: 'Русский дом',
-                            location: 'Россия, Санкт-Петербург',
-                            bgImage: 'project-7.jpg',
-                        })
-                    .projects-group__two
-                        +project-card({
-                            type: 'small',
-                            title: 'Старый Арбат II',
-                            location: 'Россия, Москва',
-                            bgImage: 'project-8.jpg',
-                        })
-                        +project-card({
-                            type: 'small',
-                            title: 'Старый Арбат',
-                            location: 'Россия, Москва',
-                            bgImage: 'project-9.jpg',
-                        }) 
-                +btn({
-                    classes: 'm-projects__slide-btn',
-                    text: 'Все проекты квартир',
-                    cMode: 'beige2',
-                })
+        .anim-container.anim-container--home1(style="top: 100%; position: absolute;" data-js="animContainerHome1")
+            include ../../blocks/modules/pages/home/home-intro/home-intro.pug
+            include ../../blocks/modules/pages/home/home-numbers/home-numbers.pug
+        .anim-container.anim-container--home2(style="top: 100%; position: absolute;" data-js="animContainerHome2")
+            +m-projects()
+                .swiper-slide.m-projects__slide
+                    .m-projects__slide-title Квартиры
+                    .m-projects__row.projects-group
+                        .projects-group__one
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card()
+                        .projects-group__two
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Монблан',
+                                            location: 'Россия, Москва',
+                                            bgImage: 'project-2.jpg',
+                                        })
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Галерная 12',
+                                            location: 'Россия, Санкт-Петербург',
+                                            bgImage: 'project-3.jpg',
+                                        })
+                    .m-projects__row.projects-group
+                        .projects-group__two
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Neva House',
+                                            location: 'Россия, Санкт-Петербург',
+                                            bgImage: 'project-4.jpg',
+                                        })
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Бассейная 45',
+                                            location: 'Россия, Москва',
+                                            bgImage: 'project-5.jpg',
+                                        }) 
+                        .projects-group__one
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'big',
+                                            title: 'Маленькая Франция',
+                                            location: 'Россия, Санкт-Петербург',
+                                            bgImage: 'project-6.jpg',
+                                        })    
+                    .m-projects__row.projects-group
+                        .projects-group__one
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'big',
+                                            title: 'Русский дом',
+                                            location: 'Россия, Санкт-Петербург',
+                                            bgImage: 'project-7.jpg',
+                                        })
+                        .projects-group__two
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Старый Арбат II',
+                                            location: 'Россия, Москва',
+                                            bgImage: 'project-8.jpg',
+                                        })
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Старый Арбат',
+                                            location: 'Россия, Москва',
+                                            bgImage: 'project-9.jpg',
+                                        }) 
+                    +btn({
+                        classes: 'm-projects__slide-btn',
+                        text: 'Все проекты квартир',
+                        cMode: 'beige2',
+                    })
 
-            .swiper-slide.m-projects__slide
-                .m-projects__slide-title Дома
-                .m-projects__row.projects-group
-                    .projects-group__one
-                        +project-card()
-                    .projects-group__two
-                        +project-card({
-                            type: 'small',
-                            title: 'Монблан',
-                            location: 'Россия, Москва',
-                            bgImage: 'project-2.jpg',
-                        })
-                        +project-card({
-                            type: 'small',
-                            title: 'Галерная 12',
-                            location: 'Россия, Санкт-Петербург',
-                            bgImage: 'project-3.jpg',
-                        })
-                .m-projects__row.projects-group
-                    .projects-group__two
-                        +project-card({
-                            type: 'small',
-                            title: 'Neva House',
-                            location: 'Россия, Санкт-Петербург',
-                            bgImage: 'project-4.jpg',
-                        })
-                        +project-card({
-                            type: 'small',
-                            title: 'Бассейная 45',
-                            location: 'Россия, Москва',
-                            bgImage: 'project-5.jpg',
-                        }) 
-                    .projects-group__one
-                        +project-card({
-                            type: 'big',
-                            title: 'Маленькая Франция',
-                            location: 'Россия, Санкт-Петербург',
-                            bgImage: 'project-6.jpg',
-                        })  
-                +btn({
-                    classes: 'm-projects__slide-btn',
-                    text: 'Все проекты домов',
-                    cMode: 'beige2',
-                })     
+                .swiper-slide.m-projects__slide
+                    .m-projects__slide-title Дома
+                    .m-projects__row.projects-group
+                        .projects-group__one
+                            +project-card()
+                        .projects-group__two
+                            +project-card({
+                                type: 'small',
+                                title: 'Монблан',
+                                location: 'Россия, Москва',
+                                bgImage: 'project-2.jpg',
+                            })
+                            +project-card({
+                                type: 'small',
+                                title: 'Галерная 12',
+                                location: 'Россия, Санкт-Петербург',
+                                bgImage: 'project-3.jpg',
+                            })
+                    .m-projects__row.projects-group
+                        .projects-group__two
+                            +project-card({
+                                type: 'small',
+                                title: 'Neva House',
+                                location: 'Россия, Санкт-Петербург',
+                                bgImage: 'project-4.jpg',
+                            })
+                            +project-card({
+                                type: 'small',
+                                title: 'Бассейная 45',
+                                location: 'Россия, Москва',
+                                bgImage: 'project-5.jpg',
+                            }) 
+                        .projects-group__one
+                            +project-card({
+                                type: 'big',
+                                title: 'Маленькая Франция',
+                                location: 'Россия, Санкт-Петербург',
+                                bgImage: 'project-6.jpg',
+                            })  
+                    +btn({
+                        classes: 'm-projects__slide-btn',
+                        text: 'Все проекты домов',
+                        cMode: 'beige2',
+                    })     
 
-            .swiper-slide.m-projects__slide
-                .m-projects__slide-title Апартаменты
-                .m-projects__row.projects-group
-                    .projects-group__one
-                        +project-card()
-                    .projects-group__two
-                        +project-card({
-                            type: 'small',
-                            title: 'Монблан',
-                            location: 'Россия, Москва',
-                            bgImage: 'project-2.jpg',
-                        })
-                        +project-card({
-                            type: 'small',
-                            title: 'Галерная 12',
-                            location: 'Россия, Санкт-Петербург',
-                            bgImage: 'project-3.jpg',
-                        })
-                .m-projects__row.projects-group
-                    .projects-group__two
-                        +project-card({
-                            type: 'small',
-                            title: 'Neva House',
-                            location: 'Россия, Санкт-Петербург',
-                            bgImage: 'project-4.jpg',
-                        })
-                        +project-card({
-                            type: 'small',
-                            title: 'Бассейная 45',
-                            location: 'Россия, Москва',
-                            bgImage: 'project-5.jpg',
-                        }) 
-                    .projects-group__one
-                        +project-card({
-                            type: 'big',
-                            title: 'Маленькая Франция',
-                            location: 'Россия, Санкт-Петербург',
-                            bgImage: 'project-6.jpg',
-                        })    
-                .m-projects__row.projects-group
-                    .projects-group__one
-                        +project-card({
-                            type: 'big',
-                            title: 'Русский дом',
-                            location: 'Россия, Санкт-Петербург',
-                            bgImage: 'project-7.jpg',
-                        })
-                    .projects-group__two
-                        +project-card({
-                            type: 'small',
-                            title: 'Старый Арбат II',
-                            location: 'Россия, Москва',
-                            bgImage: 'project-8.jpg',
-                        })
-                        +project-card({
-                            type: 'small',
-                            title: 'Старый Арбат',
-                            location: 'Россия, Москва',
-                            bgImage: 'project-9.jpg',
-                        })  
-                +btn({
-                    classes: 'm-projects__slide-btn',
-                    text: 'Все проекты апартаментов',
-                    cMode: 'beige2',
+                .swiper-slide.m-projects__slide
+                    .m-projects__slide-title Апартаменты
+                    .m-projects__row.projects-group
+                        .projects-group__one
+                            +project-card()
+                        .projects-group__two
+                            +project-card({
+                                type: 'small',
+                                title: 'Монблан',
+                                location: 'Россия, Москва',
+                                bgImage: 'project-2.jpg',
+                            })
+                            +project-card({
+                                type: 'small',
+                                title: 'Галерная 12',
+                                location: 'Россия, Санкт-Петербург',
+                                bgImage: 'project-3.jpg',
+                            })
+                    .m-projects__row.projects-group
+                        .projects-group__two
+                            +project-card({
+                                type: 'small',
+                                title: 'Neva House',
+                                location: 'Россия, Санкт-Петербург',
+                                bgImage: 'project-4.jpg',
+                            })
+                            +project-card({
+                                type: 'small',
+                                title: 'Бассейная 45',
+                                location: 'Россия, Москва',
+                                bgImage: 'project-5.jpg',
+                            }) 
+                        .projects-group__one
+                            +project-card({
+                                type: 'big',
+                                title: 'Маленькая Франция',
+                                location: 'Россия, Санкт-Петербург',
+                                bgImage: 'project-6.jpg',
+                            })    
+                    .m-projects__row.projects-group
+                        .projects-group__one
+                            +project-card({
+                                type: 'big',
+                                title: 'Русский дом',
+                                location: 'Россия, Санкт-Петербург',
+                                bgImage: 'project-7.jpg',
+                            })
+                        .projects-group__two
+                            +project-card({
+                                type: 'small',
+                                title: 'Старый Арбат II',
+                                location: 'Россия, Москва',
+                                bgImage: 'project-8.jpg',
+                            })
+                            +project-card({
+                                type: 'small',
+                                title: 'Старый Арбат',
+                                location: 'Россия, Москва',
+                                bgImage: 'project-9.jpg',
+                            })  
+                    +btn({
+                        classes: 'm-projects__slide-btn',
+                        text: 'Все проекты апартаментов',
+                        cMode: 'beige2',
+                    })
+        .anim-container.anim-container--home3(style="top: 100%; position: absolute;" data-js="animContainerHome3")
+            include ../../blocks/modules/pages/home/home-about/home-about.pug
+        .anim-container.anim-container--home4(style="top: 100%; position: absolute;" data-js="animContainerHome4")
+            include ../../blocks/modules/pages/home/home-reviews/home-reviews.pug
+            +m-contacts()
+                +form({
+                    classes: 'm-contacts__form',
+                    title: 'Или закажите звонок',
+                    btnText: 'Отправить заявку',
                 })
-        include ../../blocks/modules/pages/home/home-about/home-about.pug
-        include ../../blocks/modules/pages/home/home-reviews/home-reviews.pug
-        +m-contacts()
-            +form({
-                classes: 'm-contacts__form',
-                title: 'Или закажите звонок',
-                btnText: 'Отправить заявку',
-            })
-                +field({
-                    classes: '',
-                    placeholder: 'Ваше имя*',
-                    inputAttr: {
-                        "required": ""
-                    },
-                    isRequired: true
-                })
-                +field({
-                    classes: '',
-                    type: 'tel',
-                    placeholder: '+7 (___)___-__-__*',
-                    inputAttr: {
-                        "data-type": "phoneNumber",
-                        "data-v-name": "phone",
-                        "required": ""
-                    },
-                    isRequired: true
-                })
-        include ../../blocks/modules/pages/home/home-discussion/home-discussion.pug
+                    +field({
+                        classes: '',
+                        placeholder: 'Ваше имя*',
+                        inputAttr: {
+                            "required": ""
+                        },
+                        isRequired: true
+                    })
+                    +field({
+                        classes: '',
+                        type: 'tel',
+                        placeholder: '+7 (___)___-__-__*',
+                        inputAttr: {
+                            "data-type": "phoneNumber",
+                            "data-v-name": "phone",
+                            "required": ""
+                        },
+                        isRequired: true
+                    })
+            include ../../blocks/modules/pages/home/home-discussion/home-discussion.pug

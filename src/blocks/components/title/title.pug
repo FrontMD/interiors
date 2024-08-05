@@ -16,19 +16,19 @@ mixin title(props = defaultTitleProps)
     case checkProps.tag
         when 'h1'
             .title.title__h1(class=checkProps.classes)&attributes(attributes)
-                h1!= checkProps.text
+                h1(data-anim="title")!= checkProps.text
         when 'h2'
             .title.title__h2(class=checkProps.classes)&attributes(attributes)
-                h2!= checkProps.text
+                h2(data-anim="title")!= checkProps.text
         when 'h3'
             .title.title__h3(class=checkProps.classes)&attributes(attributes)
-                h3!= checkProps.text
+                h3(data-anim="title")!= checkProps.text
         when 'h4'
             .title.title__h4(class=checkProps.classes)&attributes(attributes)
-                h4!= checkProps.text
+                h4(data-anim="title")!= checkProps.text
         when 'h5'
             .title.title__h5(class=checkProps.classes)&attributes(attributes)
-                h5!= checkProps.text
+                h5(data-anim="title")!= checkProps.text
         when 'h6'
             .title.title__h6(class=checkProps.classes)&attributes(attributes)
-                h6!= checkProps.text				
+                h6(data-anim="title")!= checkProps.text				

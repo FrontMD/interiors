@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
           
           const blockID = anchor.getAttribute('href')
 
-          gsap.to(window, { duration: 2, scrollTo: { y: blockID, offsetY: 120 } });
+          gsap.to(window, { duration: 2, scrollTo: { y: blockID, offsetY: -250 } });
           
         })
       })

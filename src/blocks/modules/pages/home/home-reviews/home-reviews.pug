@@ -23,9 +23,11 @@ section.section.home-reviews(data-js="homeReviews")
             .swiper-wrapper
                 .swiper-slide.home-reviews__slide(data-js="homeReviewsSlide")
                     .home-reviews__review
-                        .home-reviews__title Интерьер квартиры для ЖК «Монблан»
-                        .home-reviews__preview
-                            img(src="./img/home/review_small.jpg" alt="")
+                        .home-reviews__title(data-anim="title") Интерьер квартиры для ЖК «Монблан»
+                        .home-reviews__preview.height-anim-wrap(data-anim="heightWrap")
+                            .height-anim-el(data-anim="heightEl")
+                                .height-anim-content(data-anim="heightContent")
+                                    img(src="./img/home/review_small.jpg" alt="")
                         .home-reviews__info
                             +quote({
                                 classes: 'home-reviews__quote',
@@ -46,8 +48,10 @@ section.section.home-reviews(data-js="homeReviews")
                                 text: 'Читать историю',
                                 icon: false,
                             })(data-hystmodal='#homeFullReview1')
-                    .home-reviews__img
-                        img(src="./img/home/review.jpg" alt="")
+                    .home-reviews__img.height-anim-wrap(data-anim="heightWrap")
+                        .height-anim-el(data-anim="heightEl")
+                            .height-anim-content(data-anim="heightContent")
+                                img(src="./img/home/review.jpg" alt="")
                     .home-reviews__full.full-review(data-js="fullReview")
                         .home-reviews__title Интерьер квартиры для ЖК «Монблан»
                         .has-scroll.full-review__scroll
@@ -82,7 +86,7 @@ section.section.home-reviews(data-js="homeReviews")
                         })(data-js='fullReviewClose')                        
                 .swiper-slide.home-reviews__slide(data-js="homeReviewsSlide")
                     .home-reviews__review
-                        .home-reviews__title Интерьер квартиры для ЖК «Кантале»
+                        .home-reviews__title(data-anim="title") Интерьер квартиры для ЖК «Кантале»
                         .home-reviews__preview
                             img(src="./img/home/review_small.jpg" alt="")
                         .home-reviews__info
@@ -141,7 +145,7 @@ section.section.home-reviews(data-js="homeReviews")
                         })(data-js='fullReviewClose')
                 .swiper-slide.home-reviews__slide(data-js="homeReviewsSlide")
                     .home-reviews__review
-                        .home-reviews__title Интерьер квартиры для ЖК «Монблан»
+                        .home-reviews__title(data-anim="title") Интерьер квартиры для ЖК «Монблан»
                         .home-reviews__preview
                             img(src="./img/home/review_small.jpg" alt="")
                         .home-reviews__info

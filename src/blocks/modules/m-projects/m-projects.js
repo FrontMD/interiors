@@ -3,6 +3,8 @@ function mProjects() {
 
     if(!mProjectsEl) return
 
+    projectsAnimationMarkup()
+
     const windowWidth = $(window).width()
 
     if(windowWidth > 1199) {
@@ -41,4 +43,24 @@ function mProjectsSliderInit(mProjectsEl) {
         refreshPageAnimation()
     })
    
+}
+
+/* разметка проектов */
+function projectsAnimationMarkup() {
+    const projectsAnim = document.querySelectorAll('[data-anim="projectAnim"]')
+
+    if(projectsAnim.length < 1) return
+
+    projectsAnim.forEach(projectAnim => {
+
+        let project = projectAnim.querySelector('[data-js="projectCard"]')
+
+        let projectHeight = project.offsetHeight
+        let projectWidth = project.offsetWidth
+
+        projectAnim.style.height = projectHeight + "px"
+        projectAnim.style.width = projectWidth + "px"
+
+    })
+
 }

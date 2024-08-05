@@ -17,7 +17,7 @@ mixin form(props = defaultFormProps)
 
     form.form(action="#" class= checkProps.classes data-validate novalidate)&attributes(attributes)
         .form__content(data-js='form-content')
-            .form__title!= checkProps.title
+            .form__title(data-anim="title")!= checkProps.title
             - if(checkProps.text.length > 0)
                 .form__text!= checkProps.text
             .form__fields

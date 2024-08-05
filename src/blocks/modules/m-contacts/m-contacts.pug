@@ -13,14 +13,22 @@ mixin m-contacts(props = defaultMContactsProps)
     section.section.m-contacts(data-js="mContacts")
         .container.m-contacts__container
             .m-contacts__images
-                .m-contacts__image
-                    img(src="./img/m-contacts/m_contacts_1.png" alt="")
-                .m-contacts__image
-                    img(src="./img/m-contacts/m_contacts_2.png" alt="")
-                .m-contacts__image
-                    img(src="./img/m-contacts/m_contacts_3.png" alt="")
-                .m-contacts__image
-                    img(src="./img/m-contacts/m_contacts_4.png" alt="")
+                .m-contacts__image.height-anim-wrap(data-anim="heightWrap")
+                    .height-anim-el(data-anim="heightEl")
+                        .height-anim-content(data-anim="heightContent")
+                            img(src="./img/m-contacts/m_contacts_1.png" alt="")
+                .m-contacts__image.height-anim-wrap.height-anim-wrap--toBottom(data-anim="heightWrap")
+                    .height-anim-el(data-anim="heightEl")
+                        .height-anim-content(data-anim="heightContent")
+                            img(src="./img/m-contacts/m_contacts_2.png" alt="")
+                .m-contacts__image.height-anim-wrap(data-anim="heightWrap")
+                    .height-anim-el(data-anim="heightEl")
+                        .height-anim-content(data-anim="heightContent")
+                            img(src="./img/m-contacts/m_contacts_3.png" alt="")
+                .m-contacts__image.height-anim-wrap.height-anim-wrap--toBottom(data-anim="heightWrap")
+                    .height-anim-el(data-anim="heightEl")
+                        .height-anim-content(data-anim="heightContent")
+                            img(src="./img/m-contacts/m_contacts_4.png" alt="")
             +title({
                 classes: 'm-contacts__title',
                 text: 'Контакты',

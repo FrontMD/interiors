@@ -8,6 +8,10 @@
         gap: 16px;
     }
 
+    &__content {
+        width: 100%;
+    }
+
     &__icon {
         color: $c-beige;
         flex-shrink: 0;

@@ -22,11 +22,17 @@ mixin quote(props = defaultQuoteProps)
                 use(xlink:href=`./img/sprites/sprite.svg#quotes`)
         .quote__content
             if(checkProps.text)
-                .quote__text
-                    != checkProps.text
+                .height-anim-wrap(data-anim="heightWrap")
+                    .height-anim-el(data-anim="heightEl")
+                        .quote__text.height-anim-content(data-anim="heightContent")
+                            != checkProps.text
             if(checkProps.author)
-                .quote__author
-                    != checkProps.author
+                .height-anim-wrap(data-anim="heightWrap")
+                    .height-anim-el(data-anim="heightEl")
+                        .quote__author.height-anim-content(data-anim="heightContent")
+                            != checkProps.author
             if(checkProps.position)
-                .quote__position
-                    != checkProps.position
+                .height-anim-wrap(data-anim="heightWrap")
+                    .height-anim-el(data-anim="heightEl")
+                        .quote__position.height-anim-content(data-anim="heightContent")
+                            != checkProps.position
