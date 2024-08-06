@@ -3,6 +3,14 @@
     padding-bottom: 0;
     min-height: 100vh;
 
+    @media (max-width: 1024px) {
+        padding-top: 0;
+    }
+
+    @media (max-width: 500px) {
+        padding-top: 0;
+    }
+
     &__container {
         width: 100%;
         max-width: 100%;
@@ -54,6 +62,7 @@
     &__text {
         display: flex;
         flex-direction: column;
+        min-height: 100vh;
         flex-basis: 56.5%;
         padding: 184px 64px;
         background-color: $c-grey;
@@ -63,6 +72,7 @@
         background-position: bottom 48px right 48px;
 
         @include max(1024) {
+            min-height: auto;
             background-size: 37.76% auto;
             background-position: bottom 110px right 50px;
         }

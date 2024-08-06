@@ -114,7 +114,7 @@
                 flex-basis: 50%;
             }
 
-            &__two .project-card {
+            &__two>div {
                 display: none;
 
                 &:nth-child(1) {

@@ -13,12 +13,12 @@ block content
                 .swiper-slide.m-projects__slide
                     .m-projects__slide-title Квартиры
                     .m-projects__row.projects-group
-                        .projects-group__one(data-js="mProjectsGroup")
+                        .projects-group__one
                             .project-anim(data-anim="projectAnim")
                                 .project-anim__wrap(data-anim="projectAnimWrap")
                                     .project-anim__content
                                         +project-card()
-                        .projects-group__two(data-js="mProjectsGroup")
+                        .projects-group__two
                             .project-anim(data-anim="projectAnim")
                                 .project-anim__wrap(data-anim="projectAnimWrap")
                                     .project-anim__content
@@ -38,7 +38,7 @@ block content
                                             bgImage: 'project-3.jpg',
                                         })
                     .m-projects__row.projects-group
-                        .projects-group__two(data-js="mProjectsGroup")
+                        .projects-group__two
                             .project-anim(data-anim="projectAnim")
                                 .project-anim__wrap(data-anim="projectAnimWrap")
                                     .project-anim__content
@@ -57,7 +57,7 @@ block content
                                             location: 'Россия, Москва',
                                             bgImage: 'project-5.jpg',
                                         }) 
-                        .projects-group__one(data-js="mProjectsGroup")
+                        .projects-group__one
                             .project-anim(data-anim="projectAnim")
                                 .project-anim__wrap(data-anim="projectAnimWrap")
                                     .project-anim__content
@@ -68,7 +68,7 @@ block content
                                             bgImage: 'project-6.jpg',
                                         })    
                     .m-projects__row.projects-group
-                        .projects-group__one(data-js="mProjectsGroup")
+                        .projects-group__one
                             .project-anim(data-anim="projectAnim")
                                 .project-anim__wrap(data-anim="projectAnimWrap")
                                     .project-anim__content
@@ -78,7 +78,7 @@ block content
                                             location: 'Россия, Санкт-Петербург',
                                             bgImage: 'project-7.jpg',
                                         })
-                        .projects-group__two(data-js="mProjectsGroup")
+                        .projects-group__two
                             .project-anim(data-anim="projectAnim")
                                 .project-anim__wrap(data-anim="projectAnimWrap")
                                     .project-anim__content
@@ -107,41 +107,59 @@ block content
                     .m-projects__slide-title Дома
                     .m-projects__row.projects-group
                         .projects-group__one
-                            +project-card()
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card()
                         .projects-group__two
-                            +project-card({
-                                type: 'small',
-                                title: 'Монблан',
-                                location: 'Россия, Москва',
-                                bgImage: 'project-2.jpg',
-                            })
-                            +project-card({
-                                type: 'small',
-                                title: 'Галерная 12',
-                                location: 'Россия, Санкт-Петербург',
-                                bgImage: 'project-3.jpg',
-                            })
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Монблан',
+                                            location: 'Россия, Москва',
+                                            bgImage: 'project-2.jpg',
+                                        })
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Галерная 12',
+                                            location: 'Россия, Санкт-Петербург',
+                                            bgImage: 'project-3.jpg',
+                                        })
                     .m-projects__row.projects-group
                         .projects-group__two
-                            +project-card({
-                                type: 'small',
-                                title: 'Neva House',
-                                location: 'Россия, Санкт-Петербург',
-                                bgImage: 'project-4.jpg',
-                            })
-                            +project-card({
-                                type: 'small',
-                                title: 'Бассейная 45',
-                                location: 'Россия, Москва',
-                                bgImage: 'project-5.jpg',
-                            }) 
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Neva House',
+                                            location: 'Россия, Санкт-Петербург',
+                                            bgImage: 'project-4.jpg',
+                                        })
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content            
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Бассейная 45',
+                                            location: 'Россия, Москва',
+                                            bgImage: 'project-5.jpg',
+                                        }) 
                         .projects-group__one
-                            +project-card({
-                                type: 'big',
-                                title: 'Маленькая Франция',
-                                location: 'Россия, Санкт-Петербург',
-                                bgImage: 'project-6.jpg',
-                            })  
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'big',
+                                            title: 'Маленькая Франция',
+                                            location: 'Россия, Санкт-Петербург',
+                                            bgImage: 'project-6.jpg',
+                                        })  
                     +btn({
                         classes: 'm-projects__slide-btn',
                         text: 'Все проекты домов',
@@ -152,62 +170,89 @@ block content
                     .m-projects__slide-title Апартаменты
                     .m-projects__row.projects-group
                         .projects-group__one
-                            +project-card()
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card()
                         .projects-group__two
-                            +project-card({
-                                type: 'small',
-                                title: 'Монблан',
-                                location: 'Россия, Москва',
-                                bgImage: 'project-2.jpg',
-                            })
-                            +project-card({
-                                type: 'small',
-                                title: 'Галерная 12',
-                                location: 'Россия, Санкт-Петербург',
-                                bgImage: 'project-3.jpg',
-                            })
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Монблан',
+                                            location: 'Россия, Москва',
+                                            bgImage: 'project-2.jpg',
+                                        })
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content            
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Галерная 12',
+                                            location: 'Россия, Санкт-Петербург',
+                                            bgImage: 'project-3.jpg',
+                                        })
                     .m-projects__row.projects-group
                         .projects-group__two
-                            +project-card({
-                                type: 'small',
-                                title: 'Neva House',
-                                location: 'Россия, Санкт-Петербург',
-                                bgImage: 'project-4.jpg',
-                            })
-                            +project-card({
-                                type: 'small',
-                                title: 'Бассейная 45',
-                                location: 'Россия, Москва',
-                                bgImage: 'project-5.jpg',
-                            }) 
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Neva House',
+                                            location: 'Россия, Санкт-Петербург',
+                                            bgImage: 'project-4.jpg',
+                                        })
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Бассейная 45',
+                                            location: 'Россия, Москва',
+                                            bgImage: 'project-5.jpg',
+                                        }) 
                         .projects-group__one
-                            +project-card({
-                                type: 'big',
-                                title: 'Маленькая Франция',
-                                location: 'Россия, Санкт-Петербург',
-                                bgImage: 'project-6.jpg',
-                            })    
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'big',
+                                            title: 'Маленькая Франция',
+                                            location: 'Россия, Санкт-Петербург',
+                                            bgImage: 'project-6.jpg',
+                                        })    
                     .m-projects__row.projects-group
                         .projects-group__one
-                            +project-card({
-                                type: 'big',
-                                title: 'Русский дом',
-                                location: 'Россия, Санкт-Петербург',
-                                bgImage: 'project-7.jpg',
-                            })
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'big',
+                                            title: 'Русский дом',
+                                            location: 'Россия, Санкт-Петербург',
+                                            bgImage: 'project-7.jpg',
+                                        })
                         .projects-group__two
-                            +project-card({
-                                type: 'small',
-                                title: 'Старый Арбат II',
-                                location: 'Россия, Москва',
-                                bgImage: 'project-8.jpg',
-                            })
-                            +project-card({
-                                type: 'small',
-                                title: 'Старый Арбат',
-                                location: 'Россия, Москва',
-                                bgImage: 'project-9.jpg',
-                            })  
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Старый Арбат II',
+                                            location: 'Россия, Москва',
+                                            bgImage: 'project-8.jpg',
+                                        })
+                            .project-anim(data-anim="projectAnim")
+                                .project-anim__wrap(data-anim="projectAnimWrap")
+                                    .project-anim__content            
+                                        +project-card({
+                                            type: 'small',
+                                            title: 'Старый Арбат',
+                                            location: 'Россия, Москва',
+                                            bgImage: 'project-9.jpg',
+                                        })  
                     +btn({
                         classes: 'm-projects__slide-btn',
                         text: 'Все проекты апартаментов',

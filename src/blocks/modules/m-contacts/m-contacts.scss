@@ -1,6 +1,19 @@
 .m-contacts {
     position: relative;
 
+    &__container {
+        position: relative;
+    }
+
+    &__anim {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        aspect-ratio: 1 / 0.25;
+        z-index: 10;
+    }
+
     &__images {
         display: flex;
         justify-content: space-between;
@@ -28,24 +41,16 @@
 
     &__title {
         position: absolute;
-        top: 250px;
+        top: 130px;
         left: 50%;
         transform: translateX(-50%) !important;
 
-        @include max(1300) {
-            top: 210px;
-        }
-
-        @include max(1199) {
-            top: 250px;
-        }
-
-        @include max(1024) {
-            top: 204px;
+        @include max(768) {
+            top: 75px;
         }
 
         @include max(500) {
-            top: 109px;
+            top: 40px;
         }
     }
 

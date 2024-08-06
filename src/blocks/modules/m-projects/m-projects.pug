@@ -11,7 +11,7 @@ mixin m-projects(props = defaultMProjectsProps)
             filters: props.filters ? props.filters : defaultMProjectsProps.filters
         }
 
-    section.section.m-projects(data-js="mProjects")
+    section.section.m-projects(data-js="mProjects" id="mProjects")
         .m-projects__controls(data-js="mProjectsControls")
             .m-projects__tabs(data-js="mProjectsTabs")
                 .swiper-wrapper

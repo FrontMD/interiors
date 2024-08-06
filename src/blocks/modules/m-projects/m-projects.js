@@ -41,6 +41,7 @@ function mProjectsSliderInit(mProjectsEl) {
 
     slidesSliderEx.on('transitionEnd', function () {
         refreshPageAnimation()
+        gsap.to(window, { duration: 2, scrollTo: { y: "#mProjects", offsetY: 0 } });
     })
    
 }

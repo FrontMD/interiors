@@ -4,6 +4,7 @@
 
     @include max(1024) {
         background-color: $c-grey;
+        min-height: auto;
     }
 
     &__container {
@@ -32,6 +33,7 @@
 
         @include max(1024) {
             height: auto;
+            min-height: auto;
             flex-direction: column;
         }
 
@@ -208,6 +210,7 @@
             object-fit: cover;
 
             @include max(1024) {
+                min-height: 100%;
                 aspect-ratio: 1 / 0.987;
             }
 

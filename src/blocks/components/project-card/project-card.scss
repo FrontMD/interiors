@@ -8,6 +8,10 @@
     max-width: 100%;
     cursor: pointer;
 
+    @include max(500) {
+        max-width: calc(100vw - 32px);
+    }
+
     &__bg {
         position: absolute;
         left: 0;

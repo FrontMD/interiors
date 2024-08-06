@@ -124,7 +124,7 @@
           </section>
         </div>
         <div class="anim-container anim-container--home2" style="top: 100%; position: absolute;" data-js="animContainerHome2">
-              <section class="section m-projects" data-js="mProjects">
+              <section class="section m-projects" data-js="mProjects" id="mProjects">
                 <div class="m-projects__controls" data-js="mProjectsControls">
                   <div class="m-projects__tabs" data-js="mProjectsTabs">
                     <div class="swiper-wrapper"><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Квартиры</span></a><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Дома</span></a><a class="btn btn--tab btn--beige swiper-slide m-projects__tab" href="javascript:void(0);"><span class="btn__text">Апартаменты</span></a>
@@ -140,7 +140,7 @@
                       <div class="swiper-slide m-projects__slide">
                         <div class="m-projects__slide-title">Квартиры</div>
                         <div class="m-projects__row projects-group">
-                          <div class="projects-group__one" data-js="mProjectsGroup">
+                          <div class="projects-group__one">
                             <div class="project-anim" data-anim="projectAnim">
                               <div class="project-anim__wrap" data-anim="projectAnimWrap">
                                 <div class="project-anim__content">
@@ -155,7 +155,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="projects-group__two" data-js="mProjectsGroup">
+                          <div class="projects-group__two">
                             <div class="project-anim" data-anim="projectAnim">
                               <div class="project-anim__wrap" data-anim="projectAnimWrap">
                                 <div class="project-anim__content">
@@ -185,7 +185,7 @@
                           </div>
                         </div>
                         <div class="m-projects__row projects-group">
-                          <div class="projects-group__two" data-js="mProjectsGroup">
+                          <div class="projects-group__two">
                             <div class="project-anim" data-anim="projectAnim">
                               <div class="project-anim__wrap" data-anim="projectAnimWrap">
                                 <div class="project-anim__content">
@@ -213,7 +213,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="projects-group__one" data-js="mProjectsGroup">
+                          <div class="projects-group__one">
                             <div class="project-anim" data-anim="projectAnim">
                               <div class="project-anim__wrap" data-anim="projectAnimWrap">
                                 <div class="project-anim__content">
@@ -230,7 +230,7 @@
                           </div>
                         </div>
                         <div class="m-projects__row projects-group">
-                          <div class="projects-group__one" data-js="mProjectsGroup">
+                          <div class="projects-group__one">
                             <div class="project-anim" data-anim="projectAnim">
                               <div class="project-anim__wrap" data-anim="projectAnimWrap">
                                 <div class="project-anim__content">
@@ -245,7 +245,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="projects-group__two" data-js="mProjectsGroup">
+                          <div class="projects-group__two">
                             <div class="project-anim" data-anim="projectAnim">
                               <div class="project-anim__wrap" data-anim="projectAnimWrap">
                                 <div class="project-anim__content">
@@ -279,56 +279,92 @@
                         <div class="m-projects__slide-title">Дома</div>
                         <div class="m-projects__row projects-group">
                           <div class="projects-group__one">
-                                <div class="project-card  project-card--big" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
-                                  <div class="project-card__location">Россия, Москва</div>
-                                  <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--big" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
+                              </div>
+                            </div>
                           </div>
                           <div class="projects-group__two">
-                                <div class="project-card  project-card--small" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
-                                  <div class="project-card__location">Россия, Москва</div>
-                                  <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
-                                <div class="project-card  project-card--small" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
-                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                  <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                              </div>
+                            </div>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
+                                        <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                        <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <div class="m-projects__row projects-group">
                           <div class="projects-group__two">
-                                <div class="project-card  project-card--small" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
-                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                  <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
+                                        <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                        <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
-                                <div class="project-card  project-card--small" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
-                                  <div class="project-card__location">Россия, Москва</div>
-                                  <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                              </div>
+                            </div>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">           
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
+                              </div>
+                            </div>
                           </div>
                           <div class="projects-group__one">
-                                <div class="project-card  project-card--big" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
-                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                  <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--big" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
+                                        <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                        <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
+                              </div>
+                            </div>
                           </div>
                         </div><a class="btn btn--btn btn--beige2 m-projects__slide-btn" href="javascript:void(0);"><span class="btn__text">Все проекты домов</span></a>
                       </div>
@@ -336,83 +372,137 @@
                         <div class="m-projects__slide-title">Апартаменты</div>
                         <div class="m-projects__row projects-group">
                           <div class="projects-group__one">
-                                <div class="project-card  project-card--big" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
-                                  <div class="project-card__location">Россия, Москва</div>
-                                  <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--big" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-1.jpg" alt="Кантале"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Кантале</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
+                              </div>
+                            </div>
                           </div>
                           <div class="projects-group__two">
-                                <div class="project-card  project-card--small" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
-                                  <div class="project-card__location">Россия, Москва</div>
-                                  <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-2.jpg" alt="Монблан"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Монблан</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
-                                <div class="project-card  project-card--small" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
-                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                  <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                              </div>
+                            </div>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">           
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-3.jpg" alt="Галерная 12"></div>
+                                        <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                        <div class="project-card__title">Галерная 12</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <div class="m-projects__row projects-group">
                           <div class="projects-group__two">
-                                <div class="project-card  project-card--small" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
-                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                  <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-4.jpg" alt="Neva House"></div>
+                                        <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                        <div class="project-card__title">Neva House</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
-                                <div class="project-card  project-card--small" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
-                                  <div class="project-card__location">Россия, Москва</div>
-                                  <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                              </div>
+                            </div>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-5.jpg" alt="Бассейная 45"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Бассейная 45</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
+                              </div>
+                            </div>
                           </div>
                           <div class="projects-group__one">
-                                <div class="project-card  project-card--big" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
-                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                  <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--big" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-6.jpg" alt="Маленькая Франция"></div>
+                                        <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                        <div class="project-card__title">Маленькая Франция</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <div class="m-projects__row projects-group">
                           <div class="projects-group__one">
-                                <div class="project-card  project-card--big" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-7.jpg" alt="Русский дом"></div>
-                                  <div class="project-card__location">Россия, Санкт-Петербург</div>
-                                  <div class="project-card__title">Русский дом</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--big" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-7.jpg" alt="Русский дом"></div>
+                                        <div class="project-card__location">Россия, Санкт-Петербург</div>
+                                        <div class="project-card__title">Русский дом</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award">ADD Awards<img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
+                              </div>
+                            </div>
                           </div>
                           <div class="projects-group__two">
-                                <div class="project-card  project-card--small" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-8.jpg" alt="Старый Арбат II"></div>
-                                  <div class="project-card__location">Россия, Москва</div>
-                                  <div class="project-card__title">Старый Арбат II</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-8.jpg" alt="Старый Арбат II"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Старый Арбат II</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
-                                <div class="project-card  project-card--small" data-js="projectCard">
-                                  <div class="project-card__bg"><img src="./img/projects/project-9.jpg" alt="Старый Арбат"></div>
-                                  <div class="project-card__location">Россия, Москва</div>
-                                  <div class="project-card__title">Старый Арбат</div><a class="project-card__overlay" href="javascript:void(0);">
-                                    <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
-                                    </div></a>
+                              </div>
+                            </div>
+                            <div class="project-anim" data-anim="projectAnim">
+                              <div class="project-anim__wrap" data-anim="projectAnimWrap">
+                                <div class="project-anim__content">           
+                                      <div class="project-card  project-card--small" data-js="projectCard">
+                                        <div class="project-card__bg"><img src="./img/projects/project-9.jpg" alt="Старый Арбат"></div>
+                                        <div class="project-card__location">Россия, Москва</div>
+                                        <div class="project-card__title">Старый Арбат</div><a class="project-card__overlay" href="javascript:void(0);">
+                                          <div class="project-card__award"><img src="./img/award_logo.png" alt="award logo">
+                                          </div></a>
+                                      </div>
                                 </div>
+                              </div>
+                            </div>
                           </div>
                         </div><a class="btn btn--btn btn--beige2 m-projects__slide-btn" href="javascript:void(0);"><span class="btn__text">Все проекты апартаментов</span></a>
                       </div>
@@ -680,6 +770,7 @@
           </section>
               <section class="section m-contacts" data-js="mContacts">
                 <div class="container m-contacts__container">
+                  <div class="m-contacts__anim" data-js="cursorRunAwayTrigger"></div>
                   <div class="m-contacts__images" data-js="cursorRunAwayBlock">
                     <div class="m-contacts__image height-anim-wrap" data-anim="heightWrap">
                       <div class="height-anim-el" data-anim="heightEl">
